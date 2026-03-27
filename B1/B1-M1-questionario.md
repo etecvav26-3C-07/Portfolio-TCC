@@ -149,3 +149,39 @@ Com o avanço das tecnologias web e ferramentas modernas de documentação como 
 Do ponto de vista técnico, o projeto não exige alto poder computacional, diferentemente de aplicações que utilizam processamento gráfico intensivo com **GPU (_Graphics Processing Unit_)** ou técnicas avançadas como _ray tracing_. A utilização de conteúdos já disponíveis, como documentações de **APIs** gráficas como **OpenGL** e **Vulkan**, permite focar na organização e curadoria da informação, evitando a necessidade de desenvolvimento de soluções complexas do zero e tornando o processo mais viável dentro do contexto acadêmico.
 
 Além disso, a viabilidade também se destaca pelo baixo custo e pela possibilidade de desenvolvimento incremental, onde o sistema pode ser expandido conforme novos conteúdos são adicionados. Diferente de projetos que demandam infraestrutura robusta como **servidores Xeon** ou grande investimento financeiro, devido a natureza simples de indexação um notebook velho por ser usado como *host*. Dessa forma, o projeto se mostra compatível com o tempo, os recursos e os objetivos de um Trabalho de Conclusão de Curso, garantindo sua execução prática e eficiente.
+
+# 5️⃣Cronograma do projeto
+
+## Qual é a importância de definir um cronograma em um projeto?
+
+Definir um cronograma é essencial para organizar o desenvolvimento do projeto, por meio dela  as etapas  seram realizadas  de forma estruturada e dentro do prazo estabelecido.
+
+No cronograma, é importante indicar:
+
+-  **O que cada integrante deverá fazer:**  Estipular quem vai mexer no *Front-end*, *Back-end*, Design e conteúdo  
+- **A ordem das atividades:** definir a prioridades das atividades, assim o projeto pode tomar forma  do começo  
+- **O prazo para cada etapa:** ajuda em evitar procrastinação e da uma noção de quanto tempo cada tarefa tomará.   
+
+O cronograma é uma ferramenta de organização que ajuda a:
+
+- Planejar as etapas do projeto  
+- Distribuir tarefas entre os integrantes  
+- Controlar prazos  
+- Garantir que o trabalho seja entregue no tempo previsto  
+
+## 6️⃣ Tipos de pesquisa utilizados no TCC
+
+Durante a elaboração da nossa pesquisa, será utilizada majoritariamente a:
+
+- **Documentação indireta**, pois, devido à natureza de fichamento e indexação de informações tratadas em um site mais acessível, é favorável utilizar:
+
+### Indiretas
+- **Pesquisa documental:** para repositórios, conteúdos autorais, blogs, projetos independentes e comunidades.  
+- **Pesquisa bibliográfica:** materiais acadêmicos de outros países, projetos *enterprise* e documentação de *software*.  
+- **Fichamento de livros e artigos científicos:** materiais majoritariamente internacionais, de instituições provedoras de *software* da área, além de livros que aprofundam a base de uso desses softwares e a documentação da evolução tecnológica desse ramo.
+
+### Diretas
+- **Questionário:** após a elaboração do esboço, o projeto contará com um questionário de ***feedback***, podendo sugerir adições ao ***índice*** com mais conteúdos.
+
+**Em resumo**, este trabalho utiliza principalmente a documentação indireta, reunindo informações de materiais já existentes, como livros, artigos, repositórios e conteúdos online. Isso permite organizar e compreender melhor o tema com base em fontes confiáveis e variadas.
+
