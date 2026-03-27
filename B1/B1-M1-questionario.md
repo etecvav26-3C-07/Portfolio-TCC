@@ -89,3 +89,63 @@ Esse cenário reforça um ciclo de **consumismo tecnológico**, no qual inovaç�
 -   Desenvolvimento de produtos moduláveis e reparáveis como a [**FrameWork**](https://frame.work/).
 
 Assim, a questão da obsolescência e dos ecossistemas fechados evidencia que os impactos ambientais da tecnologia não estão apenas na produção, mas também no **padrão de consumo incentivado pela indústria**.
+
+# 3️⃣Segurança do trabalho na área de tecnologia
+
+## Doenças ocupacionais relacionadas ao uso de computadores
+
+Com o avanço da **Tecnologia da Informação (TI)** e a crescente dependência de computadores no ambiente de trabalho, surgem diversos riscos ocupacionais associados, principalmente devido ao **trabalho sedentário** e ao uso prolongado de telas. [trabalhadores de TI apresentam uma exposição significativamente maior ao comportamento sedentário tanto que chega a ser mais de **5 vezes maior** em comparação com outros profissionais. Esse fator está diretamente ligado ao desenvolvimento de problemas de saúde](https://academic.oup.com/occmed/article/71/2/68/6124582#:~:text=Overall%2C%2010%20931,CI%3A%201.35%E2%80%931.51)).
+
+
+Entre as principais doenças ocupacionais, destacam-se:
+
+-   **LER/DORT (Lesões por Esforço Repetitivo / Distúrbios Osteomusculares Relacionados ao Trabalho):**  
+    Causadas por movimentos repetitivos (digitação, uso do mouse) e postura inadequada, afetando mãos, punhos, braços e ombros.
+-   **Problemas de visão (fadiga ocular):**  
+    O uso prolongado de telas pode causar sintomas como olhos secos, irritação, visão embaçada e dores de cabeça, associados à chamada _síndrome da visão computacional_.
+-   **Problemas de postura:**  
+    Permanecer sentado por longos períodos, muitas vezes em posições inadequadas, pode gerar dores na coluna, cervical e lombar, além de contribuir para problemas crônicos.
+-   **Estresse e fadiga mental:**  
+    A alta carga cognitiva, prazos curtos e longas horas em frente ao computador podem levar ao estresse, ansiedade e até síndrome de **burnout**.
+
+Além disso, o estudo aponta que trabalhadores de TI também tendem a passar mais tempo em frente a telas **fora do trabalho**, o que intensifica esses riscos e reduz o tempo de recuperação física e mental.
+
+
+## Como essas doenças podem ser evitadas
+
+A prevenção dessas doenças envolve mudanças tanto no ambiente de trabalho quanto nos hábitos individuais. Algumas medidas importantes incluem:
+
+-   **Ergonomia no ambiente de trabalho:**  
+    Ajustar cadeira, mesa e monitor para manter uma postura correta, com a tela na altura dos olhos e apoio adequado para costas e braços.
+-   **[Pausas regulares:](https://www.todoist.com/pt-BR/productivity-methods/pomodoro-technique)**  
+    Realizar intervalos a cada 50–60 minutos para alongamento e descanso, reduzindo a sobrecarga muscular e mental.
+-   **Exercícios físicos, Calistenia**  
+    A prática regular de atividades físicas ajuda a combater os efeitos do sedentarismo, apontado como um dos principais riscos ocupacionais na área de TI, tanto que a Calistenia ajuda a manter as articulações saudáveis.
+-   **[Regra 20-20-20 para os olhos:](https://www-healthline-com.translate.goog/health/eye-health/20-20-20-rule?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt&_x_tr_pto=tc#:~:text=Um%20m%C3%A9todo%20popular%20para%20aliviar%20esse%20desconforto%20%C3%A9%20a%20regra%2020%2D20%2D20%2C%20uma%20t%C3%A9cnica%20f%C3%A1cil%20de%20seguir%20que%20incentiva%20pausas%20regulares%20longe%20das%20telas%20ou%20da%20concentra%C3%A7%C3%A3o%20intensa.)**  
+    A cada 20 minutos, olhar para algo a 20 pés (cerca de 6 metros) por 20 segundos para reduzir a fadiga ocular.
+-   **Organização da carga de trabalho:**  
+    Evitar jornadas excessivas e gerenciar melhor o tempo para reduzir o estresse e a fadiga mental.
+-   **[Redução do tempo de tela fora do trabalho por diminuição de estimulo ***Gray Screen*** :](https://www.healthline.com/health/we-tried-it-does-setting-your-phone-to-grayscale-reduce-screen-time)**:
+A diminuição dos estímulos relacionados a aparelhos pode beneficiar, sendo  atingida por eliminar as cores vibrantes desses aparelhos em troca de um filtro cinza que diminui bastante a dopamina liberada no uso.  
+
+
+## Conclusão
+
+O trabalho com computadores, embora essencial na sociedade atual, apresenta riscos ocupacionais relevantes, principalmente relacionados ao **sedentarismo, esforço repetitivo e sobrecarga mental**(*Burn-out*), compreender esses riscos é fundamental para implementar estratégias de prevenção.
+
+Assim, a adoção de práticas ergonômicas, pausas regulares e hábitos saudáveis é essencial para garantir a **saúde e qualidade de vida dos profissionais de tecnologia**, reduzindo impactos negativos a longo prazo.
+
+# 4️⃣ Análise do tema do TCC
+## O tema é **pertinente?**
+Nosso TCC está relacionado com o curso de Desenvolvimento de Sistema por meio da área de renderização e desenvolvimento de aplicações 3d, além que abordará ferramentas explorados no curso como o **C#**, **Python**, ***front-end***  e ***back-end***, ***self-host-servers*** no desenvolvimento do objetivo. Usaremos também ferramentas externas como **Vulkan**, **OpenGL**, **VitePress**.
+Além disso, o desenvolvimento de aplicações 3D e técnicas de renderização tem um custo alto de processamento e pesquisa, especialmente com o uso de **GPUs** modernas e arquiteturas paralelas, que a todo momento vem se desenvolvendo com novas arquiteturas e métodos . No Brasil, o custo elevado desses equipamentos, aliado à forte dependência de importação de hardware, limita o acesso de estudantes e pequenas empresas a essa infraestrutura, dificultando tanto a aprendizagem prática quanto a inovação na área, o que dificulta a implementação total d**a Indústria 4.0**  matriz tecnológica brasileira .
+## O tema é relevante?
+O mercado de computação gráfica avançada no Brasil apresenta uma carência significativa de cursos e disciplinas específicas, apesar da crescente demanda por profissionais qualificados. A formação na área de tecnologia da informação ainda é, em grande parte, generalista, o que resulta em lacunas no ensino de áreas como renderização, realidade virtual e simulação gráfica.
+
+Técnicas modernas de renderização, como **ray tracing** em tempo real, exigem não apenas hardware avançado, mas também conhecimento aprofundado em APIs gráficas como **Vulkan** e **OpenGL**, além de compreensão de conceitos matemáticos e físicos aplicados à iluminação e processamento gráfico. Essa complexidade aumenta a barreira de entrada para novos desenvolvedores, especialmente em contextos onde o acesso a recursos é limitado.
+## O tema é viável de ser realizado 
+Com o avanço das tecnologias web e ferramentas modernas de documentação como o **VitePress**, torna-se possível desenvolver soluções eficientes sem a necessidade de criar sistemas altamente complexos como engines gráficas ou aplicações com renderização em tempo real. A proposta do projeto se baseia na **indexação de materiais** sobre renderização 3D e computação gráfica, permitindo organizar conteúdos como documentações, bibliotecas e tutoriais de forma estruturada e acessível, reduzindo significativamente a complexidade do desenvolvimento.
+
+Do ponto de vista técnico, o projeto não exige alto poder computacional, diferentemente de aplicações que utilizam processamento gráfico intensivo com **GPU (_Graphics Processing Unit_)** ou técnicas avançadas como _ray tracing_. A utilização de conteúdos já disponíveis, como documentações de **APIs** gráficas como **OpenGL** e **Vulkan**, permite focar na organização e curadoria da informação, evitando a necessidade de desenvolvimento de soluções complexas do zero e tornando o processo mais viável dentro do contexto acadêmico.
+
+Além disso, a viabilidade também se destaca pelo baixo custo e pela possibilidade de desenvolvimento incremental, onde o sistema pode ser expandido conforme novos conteúdos são adicionados. Diferente de projetos que demandam infraestrutura robusta como **servidores Xeon** ou grande investimento financeiro, devido a natureza simples de indexação um notebook velho por ser usado como *host*. Dessa forma, o projeto se mostra compatível com o tempo, os recursos e os objetivos de um Trabalho de Conclusão de Curso, garantindo sua execução prática e eficiente.
