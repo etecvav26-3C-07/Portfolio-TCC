@@ -25,8 +25,10 @@ hero:
 
 features:
   - icon:
-      src: /public/icons/folder-code.svg
+           src: /public/icons/folder-code.svg
     title: Software
+    link: /software
+
     details:
   - icon:
       src: /icons/book-marked.svg     
