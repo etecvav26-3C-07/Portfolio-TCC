@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Vulkan SDK 1.4.350 lançado – atualizações para KosmicKrisp, 16 novas extensões e ferramentas aprimoradas",
+    "link": "https://vulkan.lunarg.com/",
+    "date": "2026-05-12T16:30:00.000Z",
+    "content": "O Vulkan SDK 1.4.350.0 já está disponível para download simultaneamente para Linux, macOS e Windows. Os destaques desta versão incluem atualizações importantes para KosmicKrisp, suporte para 16 novas extensões e suporte ARM64X para a camada de captura GFXReconstruct. No geral, esta atualização focada na manutenção traz ferramentas e melhorias específicas da plataforma, ao mesmo tempo que continua a evolução constante do Vulkan."
+  },
+  {
+    "title": "Divulgados os resultados da pesquisa do ecossistema LunarG Vulkan de 2026",
+    "link": "https://www.lunarg.com/2026-lunarg-ecosystem-survey-results-released/",
+    "date": "2026-03-27T17:27:00.000Z",
+    "content": "LunarG compartilhou os resultados de sua Pesquisa LunarG Vulkan Ecosystem 2026 – o check-in anual com a comunidade de desenvolvedores Vulkan. Com 360 entrevistados (um aumento de quase 30% em relação aos 279 em 2025), a pesquisa capturou insights valiosos tanto de desenvolvedores comerciais (49%) quanto daqueles que estudam sozinhos ou trabalham em ambientes acadêmicos (51%). O feedback vem de um grupo experiente: 71% dos entrevistados foram identificados como desenvolvedores Vulkan regulares, avançados ou especialistas (semelhante aos 72% em 2025), com usuários comerciais direcionando ainda mais para níveis avançados/especializados. Essa perspectiva experiente ajuda a orientar as prioridades para o Vulkan SDK, camadas de validação, ferramentas e melhorias mais amplas no ecossistema."
+  },
+  {
+    "title": "Frame Advisor 2026.1: uma grande atualização para Vulkan Capture",
+    "link": "https://developer.arm.com/community/arm-community-blogs/b/mobile-graphics-and-gaming-blog/posts/frame-advisor-a-major-upgrade-to-vulkan-capture",
+    "date": "2026-03-27T12:55:00.000Z",
+    "content": "Arm's Frame Advisor é uma ferramenta de análise de quadros dentro do Arm Performance Studio, um conjunto gratuito de ferramentas de criação de perfil e análise de desempenho para CPUs e GPUs Arm. Ajuda os desenvolvedores gráficos a capturar e analisar quadros Vulkan. Também os ajuda a visualizar a estrutura da carga de trabalho da GPU e a identificar gargalos de desempenho com clareza e precisão. O Frame Advisor 2026.1 oferece uma grande atualização para a captura Vulkan. Ele apresenta um novo pipeline de captura construído em GFXReconstruct. Essa mudança arquitetônica moderniza a forma como o Frame Advisor coleta dados de quadros. Ele melhora significativamente a confiabilidade, a correção e a escalabilidade de longo prazo da captura para cargas de trabalho Vulkan complexas. Esta nova base melhora a experiência de captura atual."
+  },
+  {
+    "title": "Artigo técnico sobre configuração de camadas Vulkan atualizado",
+    "link": "https://www.lunarg.com/updated-configuring-vulkan-layers-white-paper/",
+    "date": "2026-03-20T13:07:00.000Z",
+    "content": "O white paper do LunarG, Configurando camadas Vulkan, foi atualizado para Vulkan SDK 1.4.335 e mais recente. Este guia abrangente serve como referência para configurar camadas Vulkan. A nova atualização traz maior consistência, descoberta mais fácil de recursos de camada e fluxos de trabalho mais suaves para desenvolvedores que trabalham com validação, perfis, extensões e camadas de utilitários no ecossistema Vulkan."
+  },
+  {
+    "title": "Codificação e decodificação de vídeo com Vulkan Compute Shaders no FFmpeg",
+    "link": "https://www.khronos.org/blog/video-encoding-and-decoding-with-vulkan-compute-shaders-in-ffmpeg",
+    "date": "2026-03-16T17:10:00.000Z",
+    "content": "Neste blog contribuído, exploramos como o FFmpeg usa Vulkan Compute para acelerar perfeitamente a codificação e decodificação de vídeos de nível profissional em GPUs de consumo - desbloqueando o paralelismo de computação de GPU em escala, sem hardware especializado. Essa abordagem complementa o suporte ao codec de função fixa do Vulkan Video, estendendo a aceleração a formatos e fluxos de trabalho não cobertos."
+  },
+  {
+    "title": "Novo tutorial do mecanismo de jogo Vulkan: crie seu próprio mecanismo de renderização pronto para produção",
+    "link": "https://www.khronos.org/blog/new-vulkan-game-engine-tutorial-build-your-own-production-ready-rendering-engine?utm_medium=social&amp;utm_source=newsroom&amp;utm_campaign=game_engine&amp;=",
+    "date": "2026-02-25T13:56:00.000Z",
+    "content": "O Grupo de Trabalho Vulkan publicou Construindo um Motor de Jogo Simples, um novo tutorial aprofundado para desenvolvedores prontos para ir além do básico e entrar no desenvolvimento de motores de nível profissional. A série se baseia no Tutorial Core Vulkan, orientando você através de princípios arquitetônicos e padrões de design desenvolvidos especificamente para mecanismos de renderização baseados em Vulkan — ajudando você a projetar sistemas modulares e limpos que se adaptam ao seu projeto."
+  },
+  {
+    "title": "Minecraft muda para Vulkan para visuais vibrantes",
+    "link": "https://www.minecraft.net/en-us/article/another-step-towards-vibrant-visuals-for-java-edition",
+    "date": "2026-02-19T16:12:00.000Z",
+    "content": "Minecraft: Java Edition está trabalhando duro para preparar o Vibrant Visuals. Eles têm explorado a refatoração e procurado maneiras de modernizar seu código de renderização. Após este trabalho, eles estão agora se preparando para fazer uma mudança na tecnologia subjacente que usam para renderizar o jogo, mudando de OpenGL para Vulkan."
+  },
+  {
+    "title": "Mesa 26.0 lançado com muitas melhorias de driver Vulkan",
+    "link": "https://docs.mesa3d.org/relnotes/26.0.0.html",
+    "date": "2026-02-12T00:20:00.000Z",
+    "content": "A pilha gráfica de código aberto Mesa 26.0 foi lançada como uma atualização importante que introduz novos recursos e melhorias na maioria dos drivers gráficos incluídos. Os destaques do Mesa 26.0 incluem KosmicKrisp, um novo driver em camadas Vulkan to Metal para macOS, melhorias significativas de desempenho de raytracing para o driver RADV Vulkan para GPUs AMD e outras melhorias Vulkan."
+  },
+  {
+    "title": "Simplificando o Vulkan, um subsistema de cada vez",
+    "link": "https://www.khronos.org/blog/simplifying-vulkan-one-subsystem-at-a-time",
+    "date": "2026-02-05T13:52:00.000Z",
+    "content": "Neste blog, o diretor de estratégia da Vulkan, Tobias Hector, explica o recente lançamento da extensão VK_EXT_descriptor_heap. Esta extensão é a primeira tentativa concreta de substituir totalmente o subsistema de conjunto de descritores existente no Vulkan. Embora seja enviado como um EXT por enquanto, está a caminho de se tornar uma funcionalidade central futura. O Grupo de Trabalho Vulkan tentou corrigir o modelo de descritor com VK_EXT_descriptor_buffer, com o qual os desenvolvedores tiveram algum sucesso, mas usamos melhorias incrementais (se grandes!) Na funcionalidade do conjunto de descritores existente, tornando necessário verificar se há uma variedade de extensões de conjunto de descritores. Esta abordagem incremental também não atraiu amplo apoio da indústria, resultando em problemas de portabilidade entre fornecedores. Então, pegamos as lições aprendidas com VK_EXT_descriptor_buffer e projetamos um subsistema completamente novo."
+  },
+  {
+    "title": "Vulkan SDK 1.4.341 lançado – agora com suporte para VK_EXT_descriptor_heap",
+    "link": "https://www.lunarg.com/lunarg-releases-vulkan-sdk-1-4-341-0/",
+    "date": "2026-02-03T23:41:00.000Z",
+    "content": "LunarG anunciou o lançamento do Vulkan SDK 1.4.341.0 para Linux, macOS e Windows. Esta atualização oferece suporte para Vulkan API 1.4.341, incorpora o perfil Roadmap 2026 para maior consistência de hardware, avança o KosmicKrisp para beta no silício da Apple, oferece suporte a várias novas extensões e aprimora as camadas de validação em geral."
+  }
+]
