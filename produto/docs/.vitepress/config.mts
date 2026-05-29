@@ -1,4 +1,7 @@
 import { defineConfig } from 'vitepress'
+import { RSSOptions, RssPlugin } from 'vitepress-plugin-rss'
+
+
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -11,7 +14,7 @@ export default defineConfig({
     nav: [
       { text: 'Atualizações', link: '/' },
       { text: 'Backups', link: '/markdown-examples' },
-      { text: 'Nóticias', link: '/markdown-examples' }
+      { text: 'Notícias', link: '/noticias' }
     ],
 
     sidebar: [
