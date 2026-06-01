@@ -29,13 +29,14 @@ export default defineConfig({
       {
         text: 'Index',
         items: [
+           { text: 'Software', link: '/sotfware.md' },
           { text: 'Vulkan', link: '/vulkan.md' },
           { text: 'OpenGL', link: '/opengl.md' },
-          { text: 'Web', link: '/web.md' },
-          { text: 'Mobile', link: '/mobile.md' },
+          { text: '🖥️Web', link: '/web.md' },
+          { text: '📱Mobile', link: '/mobile.md' },
           { text: 'Blender', link: '/blender.md' },
-          { text: 'Edição de Vídeo', link: '/edicao-de-video.md' },
-          { text: 'Impressão 3D e Modelagem', link: '/impressao-3d-e-modelagem.md' }
+          { text: '🎥Edição de Vídeo', link: '/edicao-de-video.md' },
+          { text: '🖨️Impressão 3D e Modelagem', link: '/impressao-3d-e-modelagem.md' }
         ]
       },
       {
