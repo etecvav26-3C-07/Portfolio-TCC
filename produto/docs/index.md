@@ -13,15 +13,15 @@ hero:
   actions:
     - theme: brand
       text: Guia para iniciantes
-      link: /markdown-examples
+      link: /guia
 
     - theme: alt
       text: Postagem
-      link: /api-examples
+      link: /postagens
 
     - theme: alt
       text: Contribuir
-      link: /api-examples
+      link: /contribuir
 
 features:
   - icon:

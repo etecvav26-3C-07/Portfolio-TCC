@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress'
-import { RSSOptions, RssPlugin } from 'vitepress-plugin-rss'
+
 
 
 
@@ -12,8 +12,8 @@ export default defineConfig({
     logo: '/box.svg',
 
     nav: [
-      { text: 'Atualizações', link: '/' },
-      { text: 'Backups', link: '/markdown-examples' },
+      { text: 'Atualizações', link: '/atualizacoes' },
+      { text: 'Backups', link: '/backups' },
       { text: 'Notícias', link: '/noticias' }
     ],
 
@@ -21,8 +21,9 @@ export default defineConfig({
       {
         text: 'Index',
         items: [
-          { text: 'Guia para iniciantes', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'Guia para iniciantes', link: '/guia' },
+          { text: 'Postagens', link: '/postagens' },
+          { text: 'Contribuir', link: '/contribuir' }
         ]
       },
       {
