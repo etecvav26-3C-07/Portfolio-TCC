@@ -22,7 +22,5 @@ Nosso projeto se consiste em produzir um ambiente onde seja possível encontrar 
 
 Por meio do  conceito de [Awesome Index](https://github.com/sindresorhus/awesome) que busca organizar links com arquivos MarkDown, facilitando a edição e sintese de informação.
 
-
-
-
+[![My Skills](https://skillicons.dev/icons?i=js,html,css,vue,vite,nodejs)](https://skillicons.dev)
 
