@@ -3,8 +3,8 @@ layout: home
 
 hero:
   name: Render Index
-  text: Um site vitepress para indexação de conteúdo
-  tagline: Uma coleção de conteúdo sobre renderização para todos.
+  text:  Site sobre computação gráfica 
+  tagline: Uma coleção de contéudo sobre renderização e gráfico ferramentas para todos.
 
   image:
     src: /box.svg
