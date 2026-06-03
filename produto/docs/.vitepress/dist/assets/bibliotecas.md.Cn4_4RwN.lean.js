@@ -1,0 +1,1 @@
+import{c as e,M as t,h as a}from"./chunks/framework.MukIDqOt.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"bibliotecas.md","filePath":"bibliotecas.md"}'),o={name:"bibliotecas.md"};function s(c,i,r,n,l,p){return t(),a("div")}const m=e(o,[["render",s]]);export{_ as __pageData,m as default};

@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Cache de textura de ciclos",
+    "link": "https://code.blender.org/2026/05/cycles-texture-cache/",
+    "date": "Fri, 01 May 2026 11:50:44 +0000",
+    "content": "No Blender 5.2 LTS, renderizar cenas com muitas texturas de imagem se tornará muito mais eficiente em termos de memória."
+  },
+  {
+    "title": "Inverno de Qualidade 2026",
+    "link": "https://code.blender.org/2026/02/winter-of-quality-2026/",
+    "date": "Mon, 16 Feb 2026 12:11:43 +0000",
+    "content": "Durante o inverno (norte) de 2025–2026, a equipe de desenvolvimento do Blender priorizou a melhoria da estabilidade e da qualidade geral."
+  },
+  {
+    "title": "Workshop de nós de geometria: setembro de 2025",
+    "link": "https://code.blender.org/2025/10/geometry-nodes-workshop-september-2025/",
+    "date": "Wed, 22 Oct 2025 15:03:32 +0000",
+    "content": "Resumo do que foi discutido no workshop Geometry Nodes em setembro de 2025."
+  },
+  {
+    "title": "Resultados do Google Summer of Code 2025",
+    "link": "https://code.blender.org/2025/10/google-summer-of-code-2025-results/",
+    "date": "Tue, 21 Oct 2025 09:37:52 +0000",
+    "content": "Veja o resultado dos oito projetos que farão parte do Google Summer of Code 2025."
+  },
+  {
+    "title": "Grades de volume em nós de geometria",
+    "link": "https://code.blender.org/2025/10/volume-grids-in-geometry-nodes/",
+    "date": "Tue, 07 Oct 2025 20:29:49 +0000",
+    "content": "No Blender 5.0, o suporte dos Geometry Nodes para dados volumétricos será significativamente melhor."
+  },
+  {
+    "title": "Pacotes e fechamentos",
+    "link": "https://code.blender.org/2025/08/bundles-and-closures/",
+    "date": "Fri, 08 Aug 2025 11:48:32 +0000",
+    "content": "Apresentando pacotes e fechamentos em nós de geometria no Blender 5.0."
+  },
+  {
+    "title": "Novos formatos de soquete",
+    "link": "https://code.blender.org/2025/08/new-socket-shapes/",
+    "date": "Fri, 08 Aug 2025 07:41:15 +0000",
+    "content": "Mudando o significado dos formatos de soquete para o Blender 5.0."
+  },
+  {
+    "title": "Blender para Windows no braço",
+    "link": "https://code.blender.org/2025/08/blender-for-windows-on-arm/",
+    "date": "Tue, 05 Aug 2025 18:34:16 +0000",
+    "content": "Trabalho passado, presente e futuro para disponibilizar o Blender para Windows on Arm."
+  },
+  {
+    "title": "Workshop de nós de geometria: julho de 2025",
+    "link": "https://code.blender.org/2025/07/geometry-nodes-workshop-july-2025/",
+    "date": "Thu, 24 Jul 2025 17:05:10 +0000",
+    "content": "Resumo do que foi discutido no workshop Geometry Nodes em julho de 2025."
+  },
+  {
+    "title": "Além do mouse e teclado",
+    "link": "https://code.blender.org/2025/07/beyond-mouse-keyboard/",
+    "date": "Thu, 24 Jul 2025 12:57:56 +0000",
+    "content": "Prepare-se para misturar em qualquer lugar."
+  }
+]

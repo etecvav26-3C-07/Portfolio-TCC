@@ -1,0 +1,1 @@
+function r(e){const s=new e.SphereGeometry(.9,32,32),n=new e.MeshStandardMaterial({color:16773494,emissive:new e.Color(16774557),emissiveIntensity:.6,roughness:.2,metalness:.1});return new e.Mesh(s,n)}export{r as createMesh};

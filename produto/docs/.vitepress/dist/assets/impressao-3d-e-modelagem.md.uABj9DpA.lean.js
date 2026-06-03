@@ -1,0 +1,1 @@
+import{c as e,M as a,h as t}from"./chunks/framework.MukIDqOt.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"impressao-3d-e-modelagem.md","filePath":"impressao-3d-e-modelagem.md"}'),o={name:"impressao-3d-e-modelagem.md"};function s(r,m,d,c,n,p){return a(),t("div")}const _=e(o,[["render",s]]);export{l as __pageData,_ as default};

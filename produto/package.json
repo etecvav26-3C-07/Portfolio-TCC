@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "google-translate-api-x": "^10.7.3",
-    "rss-parser": "^3.13.0"
+    "rss-parser": "^3.13.0",
+    "three": "^0.160.0"
   }
 }

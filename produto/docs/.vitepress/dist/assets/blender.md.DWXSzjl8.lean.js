@@ -1,0 +1,1 @@
+import{c as e,M as t,h as r}from"./chunks/framework.MukIDqOt.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"blender.md","filePath":"blender.md"}'),a={name:"blender.md"};function n(o,s,c,d,l,p){return t(),r("div")}const m=e(a,[["render",n]]);export{_ as __pageData,m as default};
