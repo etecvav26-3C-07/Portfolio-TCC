@@ -45,9 +45,10 @@ Além de uma explicação prévia sobre **Blender, OpenGL, Vulkan e WebGL** que 
 - [ ] Introdução ao OpenGL
 - [ ] Introdução ao Vulkan
 - [ ] Introdução ao WebGL
-- [ ] Indexação Software
-- [ ] Glossário
+- [x] Indexação Software
+- [x] Glossário
 - [ ] Conceitos
 - [ ] Web
 - [ ] impressao
 - [ ] bibliotecas
+- [x] material educativo
