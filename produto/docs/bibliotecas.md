@@ -122,18 +122,3 @@ Ferramentas que servem como base para criar seu próprio motor gráfico.
 
 ---
 
-# Ordem Recomendada de Estudo
-
-1. 🐐 Scratchapixel
-2. 🐐 Ray Tracing in One Weekend
-3. 🐐 TinyRenderer
-4. 🐐 bgfx
-5. 🐐 OGRE
-6. 🐐 Magnum
-7. 🐐 PBRT
-8. 🐐 Mitsuba
-9. 🐐 Embree
-10. 🐐 MoonRay
-11. 🐐 VTK
-
-Objetivo final: ser capaz de implementar um renderizador completo com rasterização, ray tracing, iluminação física, materiais PBR, aceleração espacial e pós-processamento.
