@@ -52,3 +52,9 @@ Além de uma explicação prévia sobre **Blender, OpenGL, Vulkan e WebGL** que 
 - [ ] impressao
 - [ ] bibliotecas
 - [x] material educativo
+
+### APIs web para adicionar
+- [X] Three.js
+- [ ] WebGL
+- [ ] WebGPU
+- [ ] Babylon.js
