@@ -31,13 +31,13 @@ Por meio do  conceito de [Awesome Index](https://github.com/sindresorhus/awesome
 Além de uma explicação prévia sobre **Blender, OpenGL, Vulkan e WebGL** que usaram frameworks que integram animações na web para demostrar conceitos.
 
 ### Estrutura
-- [x] Criar repositório
-- [x] Configurar VitePress
-- [x] Criar página inicial
-- [x] Criar sistema de navegação
+- [X] Criar repositório
+- [X] Configurar VitePress
+- [X] Criar página inicial
+- [X] Criar sistema de navegação
 - [ ] Adicionar busca
 - [X] Sistema de nóticias RSS 
-- [x] paniel custom para animações web
+- [X] paniel custom para animações web
 - [X] Histórico das páginas client-side
 ### Conteúdo
 - [O] Introdução à Computação Gráfica
@@ -50,8 +50,8 @@ Além de uma explicação prévia sobre **Blender, OpenGL, Vulkan e WebGL** que 
 - [ ] Conceitos
 - [ ] Web
 - [ ] impressao
-- [ ] bibliotecas
-- [x] material educativo
+- [X] bibliotecas
+- [X] material educativo
 
 ### APIs web para adicionar
 - [X] Three.js
