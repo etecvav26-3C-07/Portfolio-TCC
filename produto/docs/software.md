@@ -11,155 +11,145 @@
 
 # Modelagem 3D
 
-* 🐐 💎 🔥 ⭐ [Blender](https://www.blender.org/)
-* ⭐ [Autodesk Maya](https://www.autodesk.com/products/maya)
-* ⭐ [3ds Max](https://www.autodesk.com/products/3ds-max)
-* ⭐ [Cinema 4D](https://www.maxon.net/en/cinema-4d)
-* 🐐 ⭐ [Houdini](https://www.sidefx.com/products/houdini/)
-* ⭐ [Modo](https://www.foundry.com/products/modo)
-* ⭐ [LightWave 3D](https://www.lightwave3d.com/)
-* ⭐ [SketchUp](https://www.sketchup.com/)
-* ⭐ [Rhinoceros 3D](https://www.rhino3d.com/)
-* ⭐ [Spline](https://spline.design/)
-* 💎 [Wings 3D](http://www.wings3d.com/)
-* 💎 [Dust3D](https://dust3d.org/)
+* 🐐 💎 🔥 ⭐ [Blender](https://www.blender.org/) - Modelagem / Escultura / Animação / Geometry Nodes / Cycles / Addons
+* ⭐ [Autodesk Maya](https://www.autodesk.com/products/maya) - Animação / Rigging / Pipeline AAA / Filmes
+* ⭐ [3ds Max](https://www.autodesk.com/products/3ds-max) - ArchViz / Modelagem / V-Ray
+* ⭐ [Cinema 4D](https://www.maxon.net/en/cinema-4d) - Motion Graphics / MoGraph / VFX
+* 🐐 ⭐ [Houdini](https://www.sidefx.com/products/houdini/) - Procedural / Simulações / VEX / Nodes
+* ⭐ [Modo](https://www.foundry.com/products/modo) - Hard Surface / UV
+* ⭐ [LightWave 3D](https://www.lightwave3d.com/) - Animação / Modelagem
+* ⭐ [SketchUp](https://www.sketchup.com/) - Arquitetura / Interiores
+* ⭐ [Rhinoceros 3D](https://www.rhino3d.com/) - NURBS / Design Industrial
+* ⭐ [Spline](https://spline.design/) - Web 3D / Colaboração
+* 💎 [Wings 3D](http://www.wings3d.com/) - Lightweight / Subdivision
+* 💎 [Dust3D](https://dust3d.org/) - Personagens / Open Source
+* ⭐ [Plasticity](https://www.plasticity.xyz/) - CAD-Like / Hard Surface
+* ⭐ [Shade3D](https://shade3d.jp/en/) - Modelagem / Rendering
+* ⭐ [Rocket 3F](https://www.rocket3f.com/) - Poly Modeling
 
 ---
 
 # CAD
 
-* 🐐 💎 🔥 ⭐ [FreeCAD](https://www.freecad.org/)
-* 💎 ⭐ [OpenSCAD](https://openscad.org/)
-* 💎 ⭐ [SolveSpace](https://solvespace.com/)
-* 💎 [LibreCAD](https://librecad.org/)
-* ⭐ [Fusion](https://www.autodesk.com/products/fusion-360)
-* ⭐ [SolidWorks](https://www.solidworks.com/)
-* ⭐ [Onshape](https://www.onshape.com/)
-* ⭐ [Solid Edge](https://solidedge.siemens.com/)
-* ⭐ [CATIA](https://www.3ds.com/products/catia/)
-* ⭐ [Creo](https://www.ptc.com/en/products/creo)
-* ⭐ [Shapr3D](https://www.shapr3d.com/)
-* ⭐ [Alibre Design](https://www.alibre.com/)
-* 💎 [CADQuery](https://cadquery.readthedocs.io/)
-* 💎 [build123d](https://build123d.readthedocs.io/)
+* 🐐 💎 🔥 ⭐ [FreeCAD](https://www.freecad.org/) - Paramétrico / FEM / CAM / Python
+* 💎 ⭐ [OpenSCAD](https://openscad.org/) - CAD por Código / Paramétrico
+* 💎 ⭐ [SolveSpace](https://solvespace.com/) - Sketches / Paramétrico
+* 💎 [LibreCAD](https://librecad.org/) - 2D CAD
+* ⭐ [Fusion](https://www.autodesk.com/products/fusion-360) - CAD / CAM / PCB
+* ⭐ [SolidWorks](https://www.solidworks.com/) - Engenharia Mecânica
+* ⭐ [Onshape](https://www.onshape.com/) - Cloud CAD
+* ⭐ [Solid Edge](https://solidedge.siemens.com/) - Siemens
+* ⭐ [CATIA](https://www.3ds.com/products/catia/) - Aeroespacial
+* ⭐ [Creo](https://www.ptc.com/en/products/creo) - Indústria
+* ⭐ [Shapr3D](https://www.shapr3d.com/) - Tablet / Apple Pencil
+* ⭐ [Alibre Design](https://www.alibre.com/) - Engenharia
+* 💎 [CADQuery](https://cadquery.readthedocs.io/) - Python CAD
+* 💎 [build123d](https://build123d.readthedocs.io/) - CAD Python
+* ⭐ [BricsCAD](https://www.bricsys.com/) - AutoCAD Alternative
 
 ---
 
 # Escultura Digital
 
-* 🐐 ⭐ [ZBrush](https://www.maxon.net/en/zbrush)
-* 💎 ⭐ [Blender](https://www.blender.org/)
-* ⭐ [Mudbox](https://www.autodesk.com/products/mudbox)
-* ⭐ [Nomad Sculpt](https://nomadsculpt.com/)
-* ⭐ [3DCoat](https://3dcoat.com/)
+* 🐐 ⭐ [ZBrush](https://www.maxon.net/en/zbrush) - AAA / Personagens / Brushes
+* 💎 ⭐ [Blender](https://www.blender.org/) - Dyntopo / Sculpt
+* ⭐ [Mudbox](https://www.autodesk.com/products/mudbox) - Autodesk
+* ⭐ [Nomad Sculpt](https://nomadsculpt.com/) - Mobile / Tablet
+* ⭐ [3DCoat](https://3dcoat.com/) - Sculpt / Retopo / Paint
+
+---
+
+# Texturização
+
+* 🐐 ⭐ [Substance 3D Painter](https://www.adobe.com/products/substance3d-painter.html) - PBR / Smart Materials
+* 🐐 ⭐ [Substance 3D Designer](https://www.adobe.com/products/substance3d-designer.html) - Procedural Materials
+* ⭐ [Quixel Mixer](https://quixel.com/mixer) - Megascans
+* ⭐ [ArmorPaint](https://armorpaint.org/) - GPU Painting
+* 💎 [Material Maker](https://www.materialmaker.org/) - Node Based
+* ⭐ [PixPlant](https://www.pixplant.com/) - Texture Generation
 
 ---
 
 # Voxel Art
 
-* 🐐 ⭐ [MagicaVoxel](https://ephtracy.github.io/)
-* ⭐ [VoxelShop](https://blackflux.com/node/11)
-* 💎 [Goxel](https://goxel.xyz/)
-* ⭐ [Qubicle](https://minddesk.com/)
-
----
-
-# Animação 3D
-
-* 🐐 💎 ⭐ [Blender](https://www.blender.org/)
-* 🐐 ⭐ [Maya](https://www.autodesk.com/products/maya)
-* ⭐ [Houdini](https://www.sidefx.com/)
-* ⭐ [Cinema 4D](https://www.maxon.net/)
-* ⭐ [Cascadeur](https://cascadeur.com/)
-* ⭐ [iClone](https://www.reallusion.com/iclone/)
+* 🐐 ⭐ [MagicaVoxel](https://ephtracy.github.io/) - Voxels / Renderer
+* ⭐ [VoxelShop](https://blackflux.com/node/11) - Editing
+* 💎 [Goxel](https://goxel.xyz/) - Open Source
+* ⭐ [Qubicle](https://minddesk.com/) - Game Assets
 
 ---
 
 # Renderização
 
-* 🐐 💎 ⭐ [Cycles](https://www.blender.org/features/rendering/)
-* ⭐ [V-Ray](https://www.chaos.com/vray)
-* ⭐ [Arnold](https://www.autodesk.com/products/arnold)
-* ⭐ [Redshift](https://www.maxon.net/redshift)
-* ⭐ [OctaneRender](https://home.otoy.com/render/octane-render/)
-* ⭐ [Corona Renderer](https://corona-renderer.com/)
-* ⭐ [LuxCoreRender](https://luxcorerender.org/)
-* 💎 [Mitsuba](https://mitsuba-renderer.org/)
-* 💎 [Appleseed](https://appleseedhq.net/)
+* 🐐 💎 ⭐ [Cycles](https://www.blender.org/features/rendering/) - Path Tracing / GPU
+* ⭐ [V-Ray](https://www.chaos.com/vray) - ArchViz / Production
+* ⭐ [Arnold](https://www.autodesk.com/products/arnold) - Cinema / VFX
+* ⭐ [Redshift](https://www.maxon.net/redshift) - GPU Renderer
+* ⭐ [OctaneRender](https://home.otoy.com/render/octane-render/) - RTX
+* ⭐ [Corona Renderer](https://corona-renderer.com/) - ArchViz
+* ⭐ [KeyShot](https://www.keyshot.com/) - Product Design
+* 💎 [LuxCoreRender](https://luxcorerender.org/) - Open Source
+* 💎 [Mitsuba](https://mitsuba-renderer.org/) - Research
+* 💎 [Appleseed](https://appleseedhq.net/) - Production Renderer
+* ⭐ [FStorm](https://fstormrender.com/) - GPU Render
+* ⭐ [Thea Render](https://www.thearender.com/) - Hybrid Render
 
 ---
 
 # Game Engines
 
-* 🐐 ⭐ [Unreal Engine](https://www.unrealengine.com/)
-* ⭐ 🔥 [Unity](https://unity.com/)
-* 🐐 💎 🔥 ⭐ [Godot](https://godotengine.org/)
-* 💎 [O3DE](https://www.o3de.org/)
-* 💎 [Stride](https://www.stride3d.net/)
-* 💎 [Armory3D](https://armory3d.org/)
-* 💎 [UPBGE](https://upbge.org/)
-
----
-
-# Fotogrametria
-
-* 🐐 💎 ⭐ [Meshroom](https://alicevision.org/)
-* ⭐ [RealityCapture](https://www.capturingreality.com/)
-* ⭐ [Metashape](https://www.agisoft.com/)
-* ⭐ [3DF Zephyr](https://www.3dflow.net/)
-
----
-
-# Personagens
-
-* ⭐ [Character Creator](https://www.reallusion.com/character-creator/)
-* ⭐ [MetaHuman Creator](https://www.metahuman.com/)
-* ⭐ [VRoid Studio](https://vroid.com/en/studio)
-* ⭐ [MakeHuman](https://www.makehumancommunity.org/)
-* 💎 [MB-Lab](https://mb-lab-community.github.io/MB-Lab.github.io/)
-
----
-
-# Impressão 3D
-
-* ⭐ [PrusaSlicer](https://www.prusa3d.com/page/prusaslicer_424/)
-* ⭐ [OrcaSlicer](https://orcaslicer.com/)
-* ⭐ [Cura](https://ultimaker.com/software/ultimaker-cura/)
-* ⭐ [Bambu Studio](https://bambulab.com/)
-* ⭐ [Lychee Slicer](https://lychee.mango3d.io/)
-* ⭐ [ChiTuBox](https://www.chitubox.com/)
-
----
-
-# Simulação
-
-* 🐐 ⭐ [Houdini](https://www.sidefx.com/)
-* ⭐ [RealFlow](https://realflow.com/)
-* ⭐ [EmberGen](https://jangafx.com/software/embergen/)
-* ⭐ [Phoenix FD](https://www.chaos.com/phoenix)
-* ⭐ [TyFlow](https://tyflow.com/)
+* 🐐 ⭐ [Unreal Engine](https://www.unrealengine.com/) - Nanite / Lumen / Metahuman
+* ⭐ 🔥 [Unity](https://unity.com/) - Mobile / XR / Asset Store
+* 🐐 💎 🔥 ⭐ [Godot](https://godotengine.org/) - GDScript / C#
+* 💎 [O3DE](https://www.o3de.org/) - AWS / Multiplayer
+* 💎 [Stride](https://www.stride3d.net/) - C#
+* 💎 [Armory3D](https://armory3d.org/) - Blender Integration
+* 💎 [UPBGE](https://upbge.org/) - Blender Game Engine
+* 💎 [Flax Engine](https://flaxengine.com/) - C#
+* ⭐ [CryEngine](https://www.cryengine.com/) - AAA Graphics
+* ⭐ [GameGuru MAX](https://www.game-guru.com/) - No-Code
 
 ---
 
 # Arquitetura
 
-* ⭐ [Twinmotion](https://www.twinmotion.com/)
-* ⭐ [Lumion](https://lumion.com/)
-* ⭐ [D5 Render](https://www.d5render.com/)
-* ⭐ [Enscape](https://enscape3d.com/)
-* ⭐ [Chief Architect](https://www.chiefarchitect.com/)
+* ⭐ [Twinmotion](https://www.twinmotion.com/) - Unreal Based
+* ⭐ [Lumion](https://lumion.com/) - Visualization
+* ⭐ [D5 Render](https://www.d5render.com/) - Real Time
+* ⭐ [Enscape](https://enscape3d.com/) - BIM
+* ⭐ [Chief Architect](https://www.chiefarchitect.com/) - House Design
+* ⭐ [Planner 5D](https://planner5d.com/) - Interior Design
+
+---
+
+# Terrenos
+
+* 🐐 [Gaea](https://quadspinner.com/) - Terrain Generator
+* ⭐ [World Creator](https://www.world-creator.com/) - GPU Terrain
+* ⭐ [World Machine](https://www.world-machine.com/) - Terrain Nodes
+* ⭐ [SpeedTree](https://store.speedtree.com/) - Vegetation
+
+---
+
+# Fotogrametria
+
+* 🐐 💎 ⭐ [Meshroom](https://alicevision.org/) - Open Source
+* ⭐ [RealityCapture](https://www.capturingreality.com/) - Industry Standard
+* ⭐ [Metashape](https://www.agisoft.com/) - GIS
+* ⭐ [3DF Zephyr](https://www.3dflow.net/) - Reconstruction
+* ⭐ [Polycam](https://poly.cam/) - Mobile Scanning
 
 ---
 
 # GOATs da Computação Gráfica
 
-* 🐐 Blender
-* 🐐 Houdini
-* 🐐 Maya
-* 🐐 FreeCAD
-* 🐐 OpenSCAD
-* 🐐 Unreal Engine
-* 🐐 Godot
-* 🐐 ZBrush
-* 🐐 Meshroom
-* 🐐 Cycles
+* 🐐 Blender - All-in-One / Open Source
+* 🐐 Houdini - Procedural / VFX
+* 🐐 Maya - Animation Industry
+* 🐐 FreeCAD - Open Source CAD
+* 🐐 Unreal Engine - Real Time Graphics
+* 🐐 Godot - Open Source Engine
+* 🐐 ZBrush - Digital Sculpting
+* 🐐 Substance Painter - Texturing
+* 🐐 Meshroom - Photogrammetry
+* 🐐 Cycles - Path Tracing
