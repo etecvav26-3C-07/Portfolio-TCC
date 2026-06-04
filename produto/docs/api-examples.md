@@ -1,6 +1,10 @@
 ---
+title: API Examples
+sidebar_label: API Examples
+description: Exemplos de uso das APIs de runtime do VitePress.
 outline: deep
 ---
+
 
 # Runtime API Examples
 

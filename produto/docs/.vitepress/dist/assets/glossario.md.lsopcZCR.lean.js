@@ -1,1 +1,0 @@
-import{c as e,M as t,h as a}from"./chunks/framework.MukIDqOt.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"glossario.md","filePath":"glossario.md"}'),o={name:"glossario.md"};function s(r,c,n,i,l,p){return t(),a("div")}const m=e(o,[["render",s]]);export{_ as __pageData,m as default};

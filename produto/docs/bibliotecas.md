@@ -1,3 +1,8 @@
+---
+title: Bibliotecas de Renderização
+sidebar_label: Bibliotecas
+description: Bibliotecas e motores gráficos para renderização em tempo real, ray tracing e pesquisa.
+---
 # 🎨 Awesome Render Libraries
 
 ## Legenda

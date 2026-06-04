@@ -17,72 +17,72 @@ hero:
 
     - theme: alt
       text: Postagem
-      link: /postagens
+      link: /noticias
 
     - theme: alt
       text: Contribuir
-      link: /contribuir
+      link: https://github.com/etecvav26-3C-07/Portfolio-TCC
 
 features:
   - icon:
-           src: /public/icons/folder-code.svg
+      src: /icons/folder-code.svg
     title: Software
-    link: software.md
+    link: /software
     details: Links de aplicações gratuitas para vários campos da computação gráfica
   - icon:
       src: /icons/book-marked.svg     
     title: Glossário
-    link: glossario.md 
+    link: /glossario
     details: Uma coleção de termos relacionadas a área 
   - icon:
       src: /icons/graduation-cap.svg       
     title: Material Educativo
-    link: material-educativo.md 
+    link: /material-educativo
     details: Canais, repostorios e cursos diversos  
   - icon:
       src: /icons/library.svg 
     title: Bibliotecas
-    link: bibliotecas.md
+    link: /bibliotecas
     details: Bibliotecas para aplicar 3D, 2D ou renderização 
   - icon:
       src: /icons/lightbulb.svg 
     title: Conceitos
-    link: conceitos.md
-    details: Explicação de conceitos frequentes em vários setores da computação gráfica  
+    link: /conceitos
+    details: Explicação de conceitos frequentes em vários setores da computação gráfica.
   - icon:
       src: /icons/vulkan.svg
     title: Vulkan
-    link: vulkan.md
-    details: Introdução ao Vulkan, a API de renderização 3d sucessor do OpenGL.
+    link: /vulkan
+    details: Introdução ao Vulkan, a API de renderização 3D sucessor do OpenGL.
   - icon:
       src: /icons/opengl.svg
     title: OpenGL
-    link: opengl.md
+    link: /opengl
     details: Exploração da API de renderização mais famosa.
   - icon:
       src: /icons/web.svg   
     title: Web
-    link: web.md
-    details: Frameworks, projetos que ajudam na aplicação de 3d ou 2d na web
+    link: /web
+    details: Frameworks e projetos que ajudam na aplicação de 3D ou 2D na web.
   - icon:
       src: /icons/tablet-smartphone.svg   
-    title: Mobile
-    link: mobile.md
-    details: Aplicações Andriod e IOS que implementam a computação gráfica 
+    title: API Examples
+    link: /api-examples
+    details: Exemplos de uso das APIs de runtime do VitePress.
   - icon:
       src: /icons/blender.svg
     title: Blender
-    link: blender.md
-    details: Introdução a Referência na indústria de modelação e animação 3d 
+    link: /blender
+    details: Introdução e referência na indústria de modelação e animação 3D.
   - icon:
       src: /icons/film.svg   
-    title: Edição de Video 
-    link: edicao-de-video.md
-    details: Adentra as ferramentas e extensões usados no Adobe e Davinci na edição video com elementos 3d
+    title: Edição de Vídeo
+    link: /edicao-de-video
+    details: Adentra as ferramentas e extensões usadas no Adobe e DaVinci na edição de vídeo com elementos 3D.
   - icon:
       src: /icons/box.svg   
-    title: Impressão 3d e Modelagem
-    link: impressao-3d-e-modelagem.md
-    details: Lista de aplicações para a modelação de objetos reais e o processo de imprimi-lo
+    title: Impressão 3D e Modelagem
+    link: /impressao-3d-e-modelagem
+    details: Lista de aplicações para a modelação de objetos reais e o processo de impressão.
 
 

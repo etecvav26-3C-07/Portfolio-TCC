@@ -1,1 +1,0 @@
-import{c as e,M as t,h as a}from"./chunks/framework.MukIDqOt.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"opengl.md","filePath":"opengl.md"}'),o={name:"opengl.md"};function n(r,s,c,p,l,d){return t(),a("div")}const m=e(o,[["render",n]]);export{_ as __pageData,m as default};

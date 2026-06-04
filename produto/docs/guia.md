@@ -1,5 +1,7 @@
 ---
----
+title: Guia para iniciantes
+sidebar_label: Guia
+description: Introdução aos principais conceitos e ferramentas da computação gráfica.
 outline: deep
 ---
 

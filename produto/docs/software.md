@@ -1,3 +1,8 @@
+---
+title: Software de Computação Gráfica
+sidebar_label: Software
+description: Ferramentas e aplicações para modelagem 3D, animação, composição e renderização.
+---
 # 🎨 Awesome Software 3D
 
 ## Legenda

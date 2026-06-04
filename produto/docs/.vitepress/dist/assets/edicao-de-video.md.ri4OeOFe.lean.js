@@ -1,1 +1,0 @@
-import{c as e,M as t,h as a}from"./chunks/framework.MukIDqOt.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"edicao-de-video.md","filePath":"edicao-de-video.md"}'),o={name:"edicao-de-video.md"};function d(c,i,r,s,n,p){return t(),a("div")}const f=e(o,[["render",d]]);export{m as __pageData,f as default};

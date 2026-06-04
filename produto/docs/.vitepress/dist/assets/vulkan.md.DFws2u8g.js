@@ -1,1 +1,0 @@
-import{c as e,M as t,h as a}from"./chunks/framework.MukIDqOt.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"vulkan.md","filePath":"vulkan.md"}'),n={name:"vulkan.md"};function r(o,s,c,l,p,d){return t(),a("div")}const m=e(n,[["render",r]]);export{_ as __pageData,m as default};

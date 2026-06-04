@@ -1,55 +1,56 @@
 import { defineConfig } from 'vitepress'
 
-
-
-
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Render Index",
-  description: "Um site vitepress para indexação de contéudo",
+  title: 'Render Index',
+  description: 'Um site VitePress para indexação de contéudo sobre computação gráfica.',
 
   themeConfig: {
     logo: '/box.svg',
 
     nav: [
-      { text: 'Atualizações', link: '/atualizacoes' },
-      { text: 'Backups', link: '/backups' },
+      { text: 'Início', link: '/' },
+      { text: 'Guia', link: '/guia' },
       { text: 'Notícias', link: '/noticias' }
     ],
 
     sidebar: [
       {
-        text: 'Index',
+        text: 'Principal',
         items: [
+          { text: 'Início', link: '/' },
           { text: 'Guia para iniciantes', link: '/guia' },
-          { text: 'Postagens', link: '/postagens' },
-          { text: 'Contribuir', link: '/contribuir' }
+          { text: 'Notícias', link: '/noticias' },
+          { text: 'API Examples', link: '/api-examples' }
         ]
       },
       {
-        text: 'Index',
+        text: 'Aprendizado',
         items: [
-           { text: 'Software', link: '/sotfware.md' },
-          { text: 'Vulkan', link: '/vulkan.md' },
-          { text: 'OpenGL', link: '/opengl.md' },
-          { text: '🖥️Web', link: '/web.md' },
-          { text: '📱Mobile', link: '/mobile.md' },
-          { text: 'Blender', link: '/blender.md' },
-          { text: '🎥Edição de Vídeo', link: '/edicao-de-video.md' },
-          { text: '🖨️Impressão 3D e Modelagem', link: '/impressao-3d-e-modelagem.md' }
+          { text: 'Glossário', link: '/glossario' },
+          { text: 'Material Educativo', link: '/material-educativo' },
+          { text: 'Bibliotecas', link: '/bibliotecas' },
+          { text: 'Software', link: '/software' },
+          { text: 'Conceitos', link: '/conceitos' }
         ]
       },
       {
-        text: 'Ferramentas',
+        text: 'Ferramentas e Tecnologias',
         items: [
-          { text: 'Item 1', link: '/item-1' },
-          { text: 'Item 2', link: '/item-2' }
+          { text: 'OpenGL', link: '/opengl' },
+          { text: 'Vulkan', link: '/vulkan' },
+          { text: 'Web', link: '/web' },
+          { text: 'Blender', link: '/blender' },
+          { text: 'Edição de Vídeo', link: '/edicao-de-video' },
+          { text: 'Impressão 3D e Modelagem', link: '/impressao-3d-e-modelagem' }
         ]
       }
     ],
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/etecvav26-3C-07/Portfolio-TCC' }
-    ]
+    ],
+
+    lastUpdated: true
   }
 })

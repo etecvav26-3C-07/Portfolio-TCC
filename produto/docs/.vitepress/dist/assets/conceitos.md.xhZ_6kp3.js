@@ -1,1 +1,0 @@
-import{c as e,M as t,h as o}from"./chunks/framework.MukIDqOt.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"conceitos.md","filePath":"conceitos.md"}'),c={name:"conceitos.md"};function a(s,n,r,i,p,d){return t(),o("div")}const f=e(c,[["render",a]]);export{m as __pageData,f as default};

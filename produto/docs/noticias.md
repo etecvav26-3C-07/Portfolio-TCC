@@ -1,6 +1,9 @@
 ---
 title: Notícias
+sidebar_label: Notícias
+description: Notícias sobre Vulkan, OpenGL e Blender carregadas dinamicamente.
 ---
+
 
 <script setup>
 import { ref, onMounted } from 'vue'

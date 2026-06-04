@@ -1,3 +1,8 @@
+---
+title: Glossário de Computação Gráfica
+sidebar_label: Glossário
+description: Termos e conceitos essenciais de computação gráfica, modelagem e renderização.
+---
 # 🎨 Glossário de Computação Gráfica
 
 > Um glossáriOno estilo do FMHY/Piracy Glossary, foca*o nos conceitos mais importantes da Computação Gráfica, Renderização, Modelagem 3D, Engines de Jogos, OpenGL, Vulkan, DirectX, Blender, Unreal Engine e Graphics Programming.
