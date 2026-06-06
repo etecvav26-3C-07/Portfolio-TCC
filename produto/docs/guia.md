@@ -1,8 +1,4 @@
----
-title: Guia para iniciantes
-sidebar_label: Guia
-description: Introdução aos principais conceitos e ferramentas da computação gráfica.
-outline: deep
+
 ---
 
 <script setup>
@@ -83,84 +79,259 @@ Os emojis ajudam a distinguir o tipo de conteúdo e a facilitar a leitura:
 
 Para um ambiente de desenvolvimento organizado no Windows, prefira instaladores de pacotes que garantem atualizações e removem dependências automaticamente.
 
+### Instaladores principais
+
 - **Winget**: gerenciador de pacotes oficial da Microsoft.
 - **Chocolatey**: gerenciador de pacotes popular para ferramentas de desenvolvimento.
 
-Esses instaladores ajudam a instalar programas de forma limpa, sem precisar baixar arquivos manualmente.
+Esses instaladores ajudam a instalar programas de forma limpa, sem precisar buscar arquivos de instalação manualmente.
 
-### Como instalar programas no Windows com Winget
+### Usando Winget
 
-Abra o PowerShell ou o Prompt de Comando como administrador e execute:
-
-```powershell
-winget install --id Microsoft.VisualStudioCode -e
-winget install --id Git.Git -e
-winget install --id BlenderFoundation.Blender -e
-```
-
-### Como instalar programas no Windows com Chocolatey
-
-Abra o PowerShell como administrador e execute:
-
-```powershell
-Set-ExecutionPolicy Bypass -Scope Process -Force
-[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
-iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
-
-choco install -y vscode git blender
-```
-
-## Usando um instalador de pacotes para projetos web
-
-Instaladores de pacotes são essenciais para baixar bibliotecas, dependências e ferramentas de desenvolvimento.
-
-### Instalar o Node.js e npm
-
-No Windows, baixe o instalador em:
-
-```text
-https://nodejs.org/
-```
-
-Depois de instalar, verifique as versões:
+Winget é o gerenciador de pacotes nativo do Windows. Abre o PowerShell ou CMD e execute:
 
 ```bash
-node --version
-npm --version
+# Procurar um programa
+winget search nodejs
+
+# Instalar um programa
+winget install OpenJS.NodeJS
+
+# Listar programas instalados
+winget list
+
+# Atualizar um programa
+winget upgrade OpenJS.NodeJS
+
+# Desinstalar um programa
+winget uninstall OpenJS.NodeJS
 ```
 
-### Instalar pnpm
+### Usando Chocolatey
 
-Com npm instalado, execute:
+Chocolatey oferece um repositório amplo de programas. Instale o Chocolatey primeiro (como administrador):
 
 ```bash
-npm install -g pnpm
+# No PowerShell (como administrador)
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
 
-### Usar npm para instalar dependências
+Depois, use Chocolatey para instalar programas:
 
-No diretório do projeto:
+```bash
+# Procurar um programa
+choco search nodejs
+
+# Instalar um programa
+choco install nodejs
+
+# Listar programas instalados
+choco list
+
+# Atualizar um programa
+choco upgrade nodejs
+
+# Desinstalar um programa
+choco uninstall nodejs
+```
+
+### Exemplos de instalação de ferramentas comuns
+
+```bash
+# Node.js e npm
+winget install OpenJS.NodeJS
+# ou
+choco install nodejs
+
+# Git
+winget install Git.Git
+# ou
+choco install git
+
+# Visual Studio Code
+winget install Microsoft.VisualStudioCode
+# ou
+choco install vscode
+
+# Blender
+winget install BlenderFoundation.Blender
+# ou
+choco install blender
+
+# FFmpeg (para edição de vídeo)
+choco install ffmpeg
+```
+
+## Usando um instalador de pacotes
+
+Instaladores de pacotes são essenciais para instalar bibliotecas e ferramentas de forma rápida e consistente no seu projeto.
+
+### npm (Node Package Manager)
+
+npm é o gerenciador padrão do Node.js. Vem incluído ao instalar Node.js.
+
+```bash
+# Iniciar um novo projeto
+npm init -y
+
+# Instalar uma dependência de desenvolvimento
+npm install --save-dev vitepress
+
+# Instalar uma dependência de produção
+npm install three
+
+# Instalar uma versão específica
+npm install three@r128
+
+# Listar pacotes instalados
+npm list
+
+# Atualizar um pacote
+npm update three
+
+# Remover um pacote
+npm uninstall three
+```
+
+### Arquivo `package.json`
+
+Seu projeto tem um `package.json` que lista todas as dependências:
+
+```json
+{
+  "name": "meu-projeto",
+  "version": "1.0.0",
+  "description": "Projeto com VitePress e Three.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
+  },
+  "dependencies": {
+    "three": "^r128"
+  },
+  "devDependencies": {
+    "vitepress": "^1.0.0"
+  }
+}
+```
+
+Para instalar todos os pacotes listados:
 
 ```bash
 npm install
 ```
 
-### Usar pnpm para instalar dependências
+### pnpm (Performant npm)
 
-No diretório do projeto:
+pnpm é uma alternativa otimizada ao npm com uso eficiente de espaço e cache.
 
 ```bash
+# Instalar pnpm globalmente
+npm install -g pnpm
+
+# Iniciar um novo projeto
+pnpm init
+
+# Instalar uma dependência
+pnpm add three
+
+# Instalar uma dependência de desenvolvimento
+pnpm add -D vitepress
+
+# Instalar todas as dependências
+pnpm install
+
+# Listar pacotes
+pnpm list
+
+# Atualizar um pacote
+pnpm update three
+
+# Remover um pacote
+pnpm remove three
+```
+
+### Arquivo `pnpm-workspace.yaml`
+
+Para projetos monorepo, use `pnpm-workspace.yaml`:
+
+```yaml
+packages:
+  - 'docs'
+  - 'packages/*'
+```
+
+### Comparação: npm vs pnpm
+
+| Comando | npm | pnpm |
+|---------|-----|------|
+| Instalar dependência | `npm install three` | `pnpm add three` |
+| Instalar dev | `npm install --save-dev vitepress` | `pnpm add -D vitepress` |
+| Instalar tudo | `npm install` | `pnpm install` |
+| Atualizar pacote | `npm update three` | `pnpm update three` |
+| Remover pacote | `npm uninstall three` | `pnpm remove three` |
+
+Essas ferramentas facilitam a instalação de dependências para projetos web, bibliotecas 3D e documentação.
+
+## Roteiro prático de setup
+
+### 1. Instalar Node.js e npm/pnpm
+
+```bash
+# Windows - com Winget
+winget install OpenJS.NodeJS
+
+# Verificar versão
+node --version
+npm --version
+
+# Instalar pnpm (opcional)
+npm install -g pnpm
+```
+
+### 2. Clonar o repositório
+
+```bash
+git clone https://github.com/etecvav26-3C-07/Portfolio-TCC.git
+cd Portfolio-TCC/produto
+```
+
+### 3. Instalar dependências do projeto
+
+```bash
+# Com npm
+npm install
+
+# Ou com pnpm
 pnpm install
 ```
 
-### Instalar pacotes específicos com npm ou pnpm
+### 4. Iniciar o servidor de desenvolvimento
 
 ```bash
-npm install three vitepress
-pnpm add three vitepress
+# Com npm
+npm run docs:dev
+
+# Ou com pnpm
+pnpm docs:dev
 ```
 
-Essas ferramentas facilitam a instalação de dependências para projetos web, bibliotecas 3D e documentação.
+### 5. Acessar no navegador
+
+Abra `http://localhost:5173` no seu navegador.
+
+### 6. Compilar para produção
+
+```bash
+# Com npm
+npm run build
+
+# Ou com pnpm
+pnpm build
+```
+
 
 ## Próximos passos
 

@@ -66,9 +66,9 @@ features:
     details: Frameworks e projetos que ajudam na aplicação de 3D ou 2D na web.
   - icon:
       src: /icons/tablet-smartphone.svg   
-    title: API Examples
+    title: Mobile
     link: /api-examples
-    details: Exemplos de uso das APIs de runtime do VitePress.
+    details: Renderização 3D e gráficos otimizados para dispositivos móveis.
   - icon:
       src: /icons/blender.svg
     title: Blender
