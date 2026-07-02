@@ -188,3 +188,75 @@ Fonte: Elaborado pelos autores
 
 
 ---
+
+# Comparação entre os Diagramas
+
+| Diagrama de Caso de Uso | Diagrama de Classes |
+|--------------------------|---------------------|
+| Mostra as funcionalidades do sistema | Mostra a estrutura do sistema |
+| Focado no usuário | Focado na implementação |
+| Representa atores e casos de uso | Representa classes, atributos e métodos |
+| Utilizado no levantamento de requisitos | Utilizado no projeto do software |
+
+
+
+<p align="justify">O Diagrama de Caso de Uso é utilizado nas fases iniciais do desenvolvimento, durante o levantamento e análise dos requisitos.</p>
+
+<p align="justify">O Diagrama de Classes é utilizado durante o projeto do sistema, servindo como base para a programação.</p>
+
+---
+
+# Aplicação Prática
+
+## Biblioteca
+
+### Atores
+
+- Aluno
+- Bibliotecário
+- Administrador
+
+### Funcionalidades
+
+- Fazer login;
+- Pesquisar livros;
+- Emprestar livros;
+- Renovar empréstimos;
+- Devolver livros;
+- Cadastrar livros;
+- Atualizar cadastro;
+- Emitir relatórios.
+
+### Classes
+
+- Livro
+- Aluno
+- Bibliotecário
+- Empréstimo
+- Usuário
+- Autor
+- Categoria
+
+<p align="justify">Cada uma dessas classes possui atributos próprios e métodos responsáveis pelo funcionamento do sistema.</p>
+
+---
+
+# Conclusão
+
+<p align="justify">A UML é uma ferramenta extremamente importante para o desenvolvimento de software, pois permite organizar as ideias antes da programação, reduzindo erros e melhorando a comunicação entre todos os envolvidos no projeto. </p>
+
+> <p align="justify"><sub>Existem limites para a capacidade humana de compreender complexidades. Com a ajuda da modelagem, delimitamos o problema que estamos estudando, restringindo nosso foco a um único aspecto por vez. Em essência esse é o procedimento de “dividir-e-conquistar”, do qual Edsger Dijkstra falava há anos: ataque um problema difícil, dividindo-o em vários problemas menores que você pode solucionar. Além disso, com o auxílio da modelagem, somos capazes de ampliar o intelecto humano. Um modelo escolhido de maneira adequada permitirá a quem usa a modelagem trabalhar em níveis mais altos de abstração.</sub></p>
+
+<p align="justify">Durante esta pesquisa foi possível compreender que os Diagramas de Caso de Uso ajudam a identificar as funcionalidades e a interação dos usuários com o sistema, enquanto os Diagramas de Classes representam sua estrutura interna. Ambos trabalham de forma complementar, tornando o desenvolvimento mais organizado, eficiente e fácil de manter. O estudo também mostrou que a UML continua sendo uma das principais ferramentas utilizadas na Engenharia de Software.</p>
+
+---
+
+# Referências
+
+BOOCH, Grady; RUMBAUGH, James; JACOBSON, Ivar. *UML: Guia do Usuário*. 2. ed. Rio de Janeiro: Elsevier, 2012.
+
+OBJECT MANAGEMENT GROUP (OMG). _OMG Unified Modeling Language (OMG UML)_. Disponível em: [https://www.omg.org/spec/UML/](https://www.omg.org/spec/UML/). Acesso em: 30 jun. 2026.
+
+SPARX SYSTEMS. _Unified Modeling Language (UML)_. Disponível em: [https://sparxsystems.com/resources/tutorials/uml2/](https://sparxsystems.com/resources/tutorials/uml2/). Acesso em: 1 jul. 2026.
+
+VISUAL PARADIGM. _What is UML?_. Disponível em: [https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-uml/](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-uml/). Acesso em: 1 jul. 2026.
