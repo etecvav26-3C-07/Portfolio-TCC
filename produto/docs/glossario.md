@@ -3,13 +3,13 @@ title: Glossário de Computação Gráfica
 sidebar_label: Glossário
 description: Termos e conceitos essenciais de computação gráfica, modelagem e renderização.
 ---
-# 🎨 Glossário de Computação Gráfica
+# Glossário de Computação Gráfica
 
-> Um glossáriOno estilo do FMHY/Piracy Glossary, foca*o nos conceitos mais importantes da Computação Gráfica, Renderização, Modelagem 3D, Engines de Jogos, OpenGL, Vulkan, DirectX, Blender, Unreal Engine e Graphics Programming.
+> Um glossário focado nos conceitos mais importantes da Computação Gráfica, Renderização, Modelagem 3D, Engines de Jogos, OpenGL, Vulkan, DirectX, Blender, Unreal Engine e Graphics Programming.
 
 ---
 
-# ⭐ Conceitos Fundamentais
+# Conceitos Fundamentais
 
 | Termo | Descrição |
 |---------|---------|
@@ -25,7 +25,7 @@ description: Termos e conceitos essenciais de computação gráfica, modelagem e
 
 ---
 
-# ⭐ Espaços de Coordenadas
+# Espaços de Coordenadas
 
 | Termo | Descrição |
 |---------|---------|
@@ -39,7 +39,7 @@ description: Termos e conceitos essenciais de computação gráfica, modelagem e
 
 ---
 
-# ⭐ Geometria
+# Geometria
 
 | Termo | Descrição |
 |---------|---------|
@@ -56,7 +56,7 @@ description: Termos e conceitos essenciais de computação gráfica, modelagem e
 
 ---
 
-# ⭐ Matrizes e Vetores
+# Matrizes e Vetores
 
 | Termo | Descrição |
 |---------|---------|
@@ -70,7 +70,7 @@ description: Termos e conceitos essenciais de computação gráfica, modelagem e
 
 ---
 
-# ⭐ Transformações
+# Transformações
 
 | Termo | Descrição |
 |---------|---------|
@@ -83,7 +83,7 @@ description: Termos e conceitos essenciais de computação gráfica, modelagem e
 
 ---
 
-# ⭐ Texturas
+# Texturas
 
 | Termo | Descrição |
 |---------|---------|
@@ -100,7 +100,7 @@ description: Termos e conceitos essenciais de computação gráfica, modelagem e
 
 ---
 
-# ⭐ Filtros de Textura
+# Filtros de Textura
 
 | Termo | Descrição |
 |---------|---------|
@@ -112,7 +112,7 @@ description: Termos e conceitos essenciais de computação gráfica, modelagem e
 
 ---
 
-# ⭐ Iluminação
+# Iluminação
 
 | Termo | Descrição |
 |---------|---------|
@@ -130,7 +130,7 @@ description: Termos e conceitos essenciais de computação gráfica, modelagem e
 
 ---
 
-# ⭐ Materiais e PBR
+# Materiais e PBR
 
 | Termo | Descrição |
 |---------|---------|
@@ -148,7 +148,7 @@ description: Termos e conceitos essenciais de computação gráfica, modelagem e
 
 ---
 
-# ⭐ Shaders
+# Shaders
 
 | Termo | Descrição |
 |---------|---------|
@@ -162,7 +162,7 @@ description: Termos e conceitos essenciais de computação gráfica, modelagem e
 
 ---
 
-# ⭐ Técnicas de Renderização
+# Técnicas de Renderização
 
 | Termo | Descrição |
 |---------|---------|
@@ -178,7 +178,7 @@ description: Termos e conceitos essenciais de computação gráfica, modelagem e
 
 ---
 
-# ⭐ Otimizações
+# Otimizações
 
 | Termo | Descrição |
 |---------|---------|
@@ -195,7 +195,7 @@ description: Termos e conceitos essenciais de computação gráfica, modelagem e
 
 ---
 
-# ⭐ Buffers
+# Buffers
 
 | Termo | Descrição |
 |---------|---------|
@@ -211,7 +211,7 @@ description: Termos e conceitos essenciais de computação gráfica, modelagem e
 
 ---
 
-# ⭐ APIs Gráficas
+# APIs Gráficas
 
 | Termo | Descrição |
 |---------|---------|
@@ -224,7 +224,7 @@ description: Termos e conceitos essenciais de computação gráfica, modelagem e
 
 ---
 
-# ⭐ Pós-processamento
+# Pós-processamento
 
 | Termo | Descrição |
 |---------|---------|
@@ -239,7 +239,7 @@ description: Termos e conceitos essenciais de computação gráfica, modelagem e
 
 ---
 
-# ⭐ Anti-Aliasing
+# Anti-Aliasing
 
 | Termo | Descrição |
 |---------|---------|
@@ -252,7 +252,7 @@ description: Termos e conceitos essenciais de computação gráfica, modelagem e
 
 ---
 
-# ⭐ Arquivos e Formatos
+# Arquivos e Formatos
 
 | Termo | Descrição |
 |---------|---------|
@@ -266,7 +266,7 @@ description: Termos e conceitos essenciais de computação gráfica, modelagem e
 
 ---
 
-# ⭐ Termos Modernos
+# Termos Modernos
 
 | Termo | Descrição |
 |---------|---------|
