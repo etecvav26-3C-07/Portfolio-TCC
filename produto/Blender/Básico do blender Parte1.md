@@ -1880,11 +1880,11 @@ Muito comum no Editor de Propriedades.
 ### Exemplo
 
 ```text
-🔧
-📷
-🌍
-🧊
-🎨
+🐐
+🐐
+🐐
+🐐
+🐐
 ```
 
 Cada ícone representa uma categoria diferente de propriedades.
@@ -2117,7 +2117,7 @@ Um usuário pode:
 Clique no ícone de alfinete:
 
 ```text
-📌
+⭐
 ```
 
 presente no cabeçalho.

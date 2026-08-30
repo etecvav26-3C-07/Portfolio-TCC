@@ -5,6 +5,5 @@ export function createMesh(THREE) {
     roughness: 0.5,
     metalness: 0.2
   });
-  const mesh = new THREE.Mesh(geometry, material);
-  return mesh;
+  return new THREE.Mesh(geometry, material);
 }
