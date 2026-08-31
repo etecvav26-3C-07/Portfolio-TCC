@@ -1,10 +1,30 @@
 ---
 title: OpenGL
 sidebar_label: OpenGL
-description: Recursos, bibliotecas e materiais para aprender OpenGL.
+description: Recursos, bibliotecas e materiais para aprender OpenGL, com um exemplo ao vivo em WebGL.
 ---
 
+<script setup>
+import ThreePanel from "./.vitepress/components/ThreePanel.vue";
+import WebGLPanel from "./.vitepress/components/WebGLPanel.vue";
+</script>
+
 # OpenGL
+
+OpenGL é uma API de rasterização de baixo nível: você envia vértices, programa shaders GLSL e a GPU preenche triângulos na tela. No navegador, o equivalente direto é o **WebGL** (OpenGL ES). O cubo abaixo é desenhado com WebGL 2, sem Three.js — o mesmo tipo de pipeline que um programa desktop faria com GLFW + GLSL.
+
+<WebGLPanel
+  title="Exemplo WebGL 2"
+  subtitle="Cubo colorido com vertex shader, fragment shader, VBO e matriz MVP — o OpenGL da web."
+/>
+
+O painel seguinte mostra, em Three.js, o fluxo típico do pipeline: buffer de vértices, shader de vértice, rasterização e shader de fragmento.
+
+<ThreePanel
+  topic="opengl"
+  title="Pipeline OpenGL"
+  subtitle="Um triângulo percorre as etapas do pipeline gráfico."
+/>
 
 ## Links rápidos
 
@@ -13,6 +33,7 @@ description: Recursos, bibliotecas e materiais para aprender OpenGL.
 - [OpenGL Wiki](https://www.khronos.org/opengl/wiki/)
 - [GLFW](https://www.glfw.org/)
 - [GLM](https://github.com/g-truc/glm)
+- [WebGL Fundamentals](https://webglfundamentals.org/)
 
 ## Recursos
 

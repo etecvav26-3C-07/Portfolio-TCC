@@ -81,8 +81,8 @@ Para um ambiente de desenvolvimento organizado no Windows, prefira instaladores 
 
 ### Instaladores principais
 
-- **Winget**: gerenciador de pacotes oficial da Microsoft.
-- **Chocolatey**: gerenciador de pacotes popular para ferramentas de desenvolvimento.
+- **Winget**: gerenciador de pacotes oficial da Microsoft — / [Docs](https://docs.microsoft.com/windows/package-manager/winget/) / [GitHub](https://github.com/microsoft/winget-cli) / [Community](https://github.com/microsoft/winget-pkgs) / [YouTube](https://www.youtube.com/results?search_query=winget) / [Twitter](https://twitter.com/Microsoft)
+- **Chocolatey**: gerenciador de pacotes popular para ferramentas de desenvolvimento — / [Docs](https://docs.chocolatey.org/) / [GitHub](https://github.com/chocolatey/choco) / [Community](https://community.chocolatey.org/) / [YouTube](https://www.youtube.com/results?search_query=chocolatey) / [Twitter](https://twitter.com/chocolateynuget)
 
 Esses instaladores ajudam a instalar programas de forma limpa, sem precisar buscar arquivos de instalação manualmente.
 

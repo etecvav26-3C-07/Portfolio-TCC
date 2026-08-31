@@ -26,6 +26,8 @@ Renderização em dispositivos móveis enfrenta desafios únicos: telas pequenas
 
 <ThreePanel topic="render" title="Renderização" subtitle="Processo de geração de imagem em dispositivos móveis." />
 
+<ThreePanel topic="threejs" title="Cena compacta" subtitle="Menos pós-processo e geometria simples — padrão comum em mobile." />
+
 A renderização em mobile usa a mesma lógica que desktop, mas com otimizações de qualidade e performance.
 
 ## Tecnologias principais
