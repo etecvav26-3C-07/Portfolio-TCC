@@ -4,8 +4,27 @@ sidebar_label: Blender
 description: Introdução ao Blender para modelagem, animação e renderização.
 ---
 
+<script setup>
+import ThreePanel from "./.vitepress/components/ThreePanel.vue";
+</script>
+
 # Básico do Blender parte 1
-Aqui será abordado em maior parte a interface do Blender, serão mencionadas coisas óbvias (tipo como salvar) e coisas que na primeira leitura pode ser meio vago
+
+> O **Blender** é a suíte aberta e gratuita mais poderosa do mundo para criação 3D: engloba modelagem poligonal, escultura digital (*sculpting*), simulação física, animação de personagens (*rigging*), edição de vídeo e renderização fotorrealista (motores Eevee e Cycles).
+
+<ThreePanel
+  topic="modelagem"
+  title="Modelagem Poligonal no Blender"
+  subtitle="Vértices, arestas e faces estruturando uma malha tridimensional no Viewport 3D."
+/>
+
+Aqui será abordado em maior parte a interface do Blender, serão mencionadas coisas óbvias (tipo como salvar) e coisas que na primeira leitura pode ser meio vago.
+
+<ThreePanel
+  topic="render"
+  title="Motores de Renderização (Cycles / Eevee)"
+  subtitle="Sombreamento, luz e câmera gerando o quadro final a partir da cena."
+/>
 
 # Topbar do Blender
 A **Topbar** é a barra superior do Blender. Ela reúne os principais menus de gerenciamento do programa, arquivos, renderização, janelas e ajuda.

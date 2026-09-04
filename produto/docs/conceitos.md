@@ -39,6 +39,30 @@ const concepts = [
     text: "A GPU projeta triângulos no plano da tela e preenche os pixels cobertos por cada face. A grade lembra esse passo: o contínuo 3D vira uma imagem discreta. É o caminho rápido usado na maioria dos jogos e interfaces em tempo real."
   },
   {
+    id: "raytracing",
+    topic: "raytracing",
+    title: "Ray Tracing",
+    text: "Em vez de projetar triângulos, o Ray Tracing dispara raios ópticos a partir da câmera pelo espaço da cena. Ao colidirem com os objetos, esses raios rebatem e calculam reflexos fotorrealistas, refrações e sombras físicas precisas."
+  },
+  {
+    id: "shaders",
+    topic: "shaders",
+    title: "Shaders",
+    text: "Programas executados diretamente nos núcleos da GPU. O Vertex Shader deforma e calcula a posição de cada vértice no espaço, enquanto o Fragment Shader calcula a cor e brilho de cada pixel individual."
+  },
+  {
+    id: "textura",
+    topic: "textura",
+    title: "Mapeamento de Textura",
+    text: "Imagens 2D são aplicadas sobre superfícies 3D através de coordenadas normalizadas (U, V). A animação demonstra a projeção da malha UV e o deslocamento de amostragem na superfície do modelo."
+  },
+  {
+    id: "pbr",
+    topic: "pbr",
+    title: "Materiais PBR",
+    text: "Physically Based Rendering simula a resposta óptica de materiais reais. Ajustando propriedades como Metalicidade e Rugosidade (Roughness), o material reage à luz variando de fosco a um espelho perfeito."
+  },
+  {
     id: "render",
     topic: "render",
     title: "Renderização",
@@ -49,7 +73,7 @@ const concepts = [
 
 # Conceitos de Computação Gráfica
 
-Seis ideias que se repetem em modelagem, jogos, filmes e APIs como OpenGL ou Vulkan. Use as setas, os pontos, o teclado (`←` `→`) ou o gesto de arrastar para folhear. Cada slide traz um texto curto e uma animação Three.js do mesmo conceito.
+Dez ideias fundamentais que se repetem em modelagem, jogos, filmes e APIs como OpenGL, Vulkan e DirectX. Use as setas, os pontos, o teclado (`←` `→`) ou o gesto de arrastar para folhear. Cada slide traz um texto explicativo e uma animação interativa Three.js.
 
 <ConceptCarousel :concepts="concepts" />
 

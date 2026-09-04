@@ -60,6 +60,21 @@ features:
     link: /opengl
     details: Exploração da API de renderização mais famosa.
   - icon:
+      src: /icons/folder-code.svg
+    title: DirectX & Metal
+    link: /directx-metal
+    details: As APIs de baixo nível nativas de ponta para Windows/Xbox e Apple macOS/iOS.
+  - icon:
+      src: /icons/lightbulb.svg
+    title: Ray Tracing
+    link: /ray-tracing
+    details: Simulação física óptica de raios, reflexões, refrações e BVH em tempo real.
+  - icon:
+      src: /icons/folder-code.svg
+    title: Shaders
+    link: /shaders
+    details: Programação massiva nos núcleos da GPU com GLSL, HLSL, WGSL e SPIR-V.
+  - icon:
       src: /icons/web.svg   
     title: Web
     link: /web

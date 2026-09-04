@@ -40,6 +40,26 @@ A iluminação dá vida à cena. A luz define a cor, o brilho e as sombras do ob
 
 Rasterização é o processo de projetar triângulos e superfícies em pixels. Ela transforma a informação geométrica em uma imagem que pode ser exibida no monitor.
 
+### Ray Tracing
+<ThreePanel topic="raytracing" title="Ray Tracing" subtitle="Disparo de raios de luz virtuais com cálculo de rebatimentos e reflexões físicas." />
+
+Ray Tracing simula o caminho óptico real da luz. Em vez de projetar polígonos na tela, raios partem da câmera, colidem com a geometria e rebatem gerando reflexões, refrações e sombras precisas.
+
+### Shaders
+<ThreePanel topic="shaders" title="Shaders" subtitle="Programação direta nos núcleos da GPU: transformações de vértices e cálculo de cores por pixel." />
+
+Shaders são pequenos códigos em linguagens como GLSL, HLSL ou WGSL executados massivamente em paralelo na placa de vídeo para dar forma, movimento e texturas à cena.
+
+### Mapeamento de Texturas (UV)
+<ThreePanel topic="textura" title="Texturas e Coordenadas UV" subtitle="Amostragem de imagens 2D projetadas sobre superfícies poligonais 3D." />
+
+Texturização aplica mapas de imagem sobre modelos tridimensionais utilizando o sistema de coordenadas normalizado UV (eixos horizontais e verticais da imagem).
+
+### Materiais PBR
+<ThreePanel topic="pbr" title="Materiais PBR" subtitle="Simulação óptica fisicamente correta variando Rugosidade e Metalicidade." />
+
+PBR (Physically Based Rendering) unifica como superfícies respondem à iluminação, permitindo que o mesmo material pareça consistente sob qualquer condição de luz.
+
 ### Renderização
 <ThreePanel topic="render" title="Renderização" subtitle="Geração da imagem final a partir da cena." />
 
@@ -57,7 +77,8 @@ Renderização é a geração final da imagem visível. Ela integra geometria, l
 - **Transformações** posicionam e animam os objetos.
 - **Câmera** define o ponto de vista e a proporção do quadro.
 - **Iluminação** traz realismo e profundidade.
-- **Rasterização** prepara a imagem para o dispositivo final.
+- **Texturização & Shaders** dão identidade visual e propriedades aos materiais.
+- **Rasterização / Ray Tracing** calcula a visibilidade dos objetos na tela.
 - **Renderização** entrega a imagem final pronta para visualização.
 
 ## Index e lista Awesome

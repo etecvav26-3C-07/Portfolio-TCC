@@ -1,0 +1,1 @@
+function e(e){let t=new e.IcosahedronGeometry(1,1),n=new e.MeshStandardMaterial({color:9479342,roughness:.5,metalness:.2});return new e.Mesh(t,n)}export{e as createMesh};

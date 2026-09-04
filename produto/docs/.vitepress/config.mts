@@ -39,7 +39,10 @@ export default defineConfig({
         items: [
           { text: 'OpenGL', link: '/opengl' },
           { text: 'Vulkan', link: '/vulkan' },
+          { text: 'DirectX & Metal', link: '/directx-metal' },
           { text: 'Web', link: '/web' },
+          { text: 'Ray Tracing', link: '/ray-tracing' },
+          { text: 'Shaders', link: '/shaders' },
           { text: 'Blender', link: '/blender' },
           { text: 'Edição de Vídeo', link: '/edicao-de-video' },
           { text: 'Impressão 3D e Modelagem', link: '/impressao-3d-e-modelagem' }
