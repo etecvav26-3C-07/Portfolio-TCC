@@ -85,33 +85,135 @@ Babylon.js é uma engine completa (cena, câmera, materiais, loop de render). O 
 - [Babylon.js](https://www.babylonjs.com/) — / [Docs](https://doc.babylonjs.com/) / [Playground](https://playground.babylonjs.com/) / [GitHub](https://github.com/BabylonJS/Babylon.js)
 - [MDN WebGL](https://developer.mozilla.org/pt-BR/docs/Web/API/WebGL_API) — / [WebGL](https://developer.mozilla.org/pt-BR/docs/Web/API/WebGL_API) / [WebGL2](https://developer.mozilla.org/pt-BR/docs/Web/API/WebGL2_API) / [WebGPU](https://developer.mozilla.org/pt-BR/docs/Web/API/WebGPU_API)
 
-## Bibliotecas
+## Bibliotecas e Frameworks com Demos
 
-**3D Web Frameworks:**
-- [Three.js](https://threejs.org/) — / [Docs](https://threejs.org/docs/) / [Examples](https://threejs.org/examples/) / [GitHub](https://github.com/mrdoob/three.js) / [Tutorials](https://threejs.org/docs/#manual/en/introduction/Creating-a-scene) / [Community](https://threejs.org/) / [YouTube](https://www.youtube.com/c/ThreeJS) / [Twitter](https://twitter.com/threejs)
-- [Babylon.js](https://www.babylonjs.com/) — / [Docs](https://doc.babylonjs.com/) / [Playground](https://playground.babylonjs.com/) / [GitHub](https://github.com/BabylonJS/Babylon.js) / [Tutorials](https://doc.babylonjs.com/start/chapter1) / [Community](https://forum.babylonjs.com/) / [YouTube](https://www.youtube.com/c/BabylonJS) / [Twitter](https://twitter.com/babylonjs)
+### 🎮 3D Web Frameworks
+
+#### React Three Fiber (R3F)
+> Ecossistema declarativo que traz o Three.js para o paradigma de componentes e hooks do React (`@react-three/fiber`, `@react-three/drei`).
+
+<ThreePanel
+  topic="r3f"
+  title="React Three Fiber (R3F)"
+  subtitle="Nós reativos declarativos com física de molas (Spring) e grafo de estados em torno do núcleo React."
+/>
+
 - [React Three Fiber](https://docs.pmnd.rs/react-three-fiber) — / [Docs](https://docs.pmnd.rs/react-three-fiber) / [GitHub](https://github.com/pmndrs/react-three-fiber) / [Drei](https://github.com/pmndrs/drei) / [Tutorials](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction) / [Community](https://discord.gg/pmndrs) / [YouTube](https://www.youtube.com/c/pmndrs) / [Twitter](https://twitter.com/pmndrs)
+
+#### A-Frame (WebXR & VR)
+> Framework baseado em Entity-Component-System (ECS) para construção de experiências de Realidade Virtual e Aumentada no navegador.
+
+<ThreePanel
+  topic="aframe"
+  title="A-Frame (WebXR / Realidade Virtual)"
+  subtitle="Headset VR com controladores de mira laser em cena espacial imersiva em 360°."
+/>
+
 - [A-Frame](https://aframe.io/) — / [Docs](https://aframe.io/docs/) / [GitHub](https://github.com/aframevr/aframe) / [Examples](https://aframe.io/examples/) / [Community](https://aframe.io/community/) / [YouTube](https://www.youtube.com/c/aframevr) / [Twitter](https://twitter.com/aframevr)
+
+#### PlayCanvas
+> Engine de jogos WebGL/WebGPU completa na nuvem, com física rígida em tempo real, editor colaborativo e suporte mobile de alto desempenho.
+
+<ThreePanel
+  topic="playcanvas"
+  title="PlayCanvas (Web Game Engine)"
+  subtitle="Arena isométrica de jogo com simulação física de esfera, pickups de cristais e sombras dinâmicas."
+/>
+
 - [PlayCanvas](https://playcanvas.com/) — / [Docs](https://developer.playcanvas.com/) / [GitHub](https://github.com/playcanvas/engine) / [Editor](https://playcanvas.com/editor) / [Community](https://forum.playcanvas.com/) / [YouTube](https://www.youtube.com/c/PlayCanvas) / [Twitter](https://twitter.com/playcanvas)
+
+#### Mapbox GL JS
+> Renderizador de mapas geoespaciais vetoriais com extrusão 3D de edifícios urbanos, camadas de tráfego e visualização de terreno.
+
+<ThreePanel
+  topic="mapbox"
+  title="Mapbox GL JS (3D Geospatial)"
+  subtitle="Extrusão de malha urbana poligonal com pulso de geolocalização e malha viária em tempo real."
+/>
+
 - [Mapbox GL JS](https://docs.mapbox.com/mapbox-gl-js/) — / [Docs](https://docs.mapbox.com/mapbox-gl-js/) / [GitHub](https://github.com/mapbox/mapbox-gl-js) / [Examples](https://docs.mapbox.com/mapbox-gl-js/examples/) / [Community](https://www.mapbox.com/community/) / [YouTube](https://www.youtube.com/c/Mapbox) / [Twitter](https://twitter.com/mapbox)
 
-**2D Web Frameworks:**
+---
+
+### 🕹️ 2D Web Frameworks
+
+#### PixiJS
+> O motor de renderização 2D mais rápido da web, utilizando lote de sprites (*Sprite Batching*) com aceleração direta por hardware WebGL.
+
+<ThreePanel
+  topic="pixijs"
+  title="PixiJS (Sprite Batching 2D)"
+  subtitle="Mais de 100 sprites 2D agrupados e renderizados em lote em alta velocidade com colisões no canvas."
+/>
+
 - [PixiJS](https://pixijs.com/) — / [Docs](https://pixijs.io/docs/) / [GitHub](https://github.com/pixijs/pixi.js) / [Examples](https://pixijs.io/examples/) / [Community](https://discord.gg/pixijs) / [YouTube](https://www.youtube.com/c/PixiJS) / [Twitter](https://twitter.com/pixijs)
+
+#### Phaser
+> Framework completo para desenvolvimento de jogos 2D no navegador com gerenciador de física (Arcade/Matter), áudio, spritesheets e mapas de azulejos (Tilemaps).
+
+<ThreePanel
+  topic="phaser"
+  title="Phaser (2D Game Framework)"
+  subtitle="Mini-nível de plataforma com física de pulo, plataformas e moedas colecionáveis giratórias."
+/>
+
 - [Phaser](https://phaser.io/) — / [Docs](https://photonstorm.github.io/phaser3-docs/) / [GitHub](https://github.com/photonstorm/phaser) / [Examples](https://phaser.io/examples) / [Community](https://phaser.io/community) / [YouTube](https://www.youtube.com/c/Phaser) / [Twitter](https://twitter.com/photonstorm)
-- [MelonJS](https://melonjs.org/) — / [Docs](https://melonjs.org/docs/) / [GitHub](https://github.com/melonjs/melonJS) / [Examples](https://melonjs.org/examples/) / [Community](https://melonjs.org/community) / [YouTube](https://www.youtube.com/c/melonJS) / [Twitter](https://twitter.com/melonjs)
-- [Konva.js](https://konvajs.org/) — / [Docs](https://konvajs.org/docs) / [GitHub](https://github.com/konvajs/konva) / [Examples](https://konvajs.org/docs/sandbox/) / [Community](https://stackoverflow.com/questions/tagged/konva) / [YouTube](https://www.youtube.com/results?search_query=konva) / [Twitter](https://twitter.com/konvajs)
-- [Fabric.js](https://fabricjs.com/) — / [Docs](https://fabricjs.com/docs/) / [GitHub](https://github.com/fabricjs/fabric.js) / [Examples](https://fabricjs.com/kitchensink/) / [Community](https://stackoverflow.com/questions/tagged/fabricjs) / [YouTube](https://www.youtube.com/results?search_query=fabricjs) / [Twitter](https://twitter.com/fabricjs)
-- [Paper.js](https://paperjs.org/) — / [Docs](https://paperjs.org/) / [GitHub](https://github.com/paperjs/paper.js) / [Examples](https://paperscript.org/) / [Community](https://github.com/paperjs/paper.js) / [YouTube](https://www.youtube.com/results?search_query=paperjs) / [Twitter](https://twitter.com/paperjs)
-- [Two.js](https://two.js.org/) — / [Docs](https://two.js.org/) / [GitHub](https://github.com/jonobr1/two.js) / [Examples](https://two.js.org/examples/) / [Community](https://github.com/jonobr1/two.js) / [YouTube](https://www.youtube.com/results?search_query=twojs) / [Twitter](https://twitter.com/jonobr1)
+- [MelonJS](https://melonjs.org/) — / [Docs](https://melonjs.org/docs/) / [GitHub](https://github.com/melonjs/melonJS) / [Examples](https://melonjs.org/examples/)
+- [Konva.js](https://konvajs.org/) — / [Docs](https://konvajs.org/docs) / [GitHub](https://github.com/konvajs/konva) / [Examples](https://konvajs.org/docs/sandbox/)
+- [Fabric.js](https://fabricjs.com/) — / [Docs](https://fabricjs.com/docs/) / [GitHub](https://github.com/fabricjs/fabric.js) / [Examples](https://fabricjs.com/kitchensink/)
+- [Paper.js](https://paperjs.org/) — / [Docs](https://paperjs.org/) / [GitHub](https://github.com/paperjs/paper.js) / [Examples](https://paperscript.org/)
+- [Two.js](https://two.js.org/) — / [Docs](https://two.js.org/) / [GitHub](https://github.com/jonobr1/two.js) / [Examples](https://two.js.org/examples/)
+
+#### P5.js (Creative Coding)
+> Biblioteca voltada para arte generativa, design de interação e educação artística, inspirada na filosofia do Processing.
+
+<ThreePanel
+  topic="p5js"
+  title="P5.js (Creative Coding & Generative Art)"
+  subtitle="Curvas matemáticas de Lissajous tridimensionais geradas por código procedimental contínuo."
+/>
+
 - [P5.js](https://p5js.org/) — / [Docs](https://p5js.org/) / [GitHub](https://github.com/processing/p5.js) / [Examples](https://p5js.org/examples/) / [Community](https://p5js.org/community/) / [YouTube](https://www.youtube.com/c/p5js) / [Twitter](https://twitter.com/p5xjs)
 
-**Visualization Libraries:**
+---
+
+### 📊 Visualization Libraries (Data Viz)
+
+#### D3.js (Data-Driven Documents)
+> A biblioteca padrão da indústria para manipulação do DOM e geração de gráficos vetoriais impulsionados por dados, grafos de força e mapas.
+
+<ThreePanel
+  topic="d3"
+  title="D3.js (Force-Directed Graph 3D)"
+  subtitle="Grafo de forças tridimensional com atração, repulsão de nós e pulso métrico de dados dinâmicos."
+/>
+
 - [D3.js](https://d3js.org/) — / [Docs](https://github.com/d3/d3/wiki) / [GitHub](https://github.com/d3/d3) / [Examples](https://observablehq.com/@d3/gallery) / [Community](https://d3js.org/) / [YouTube](https://www.youtube.com/results?search_query=d3js) / [Twitter](https://twitter.com/d3js)
+
+#### Deck.gl (Uber Open Source)
+> Framework de visualização em grande escala construído sobre WebGL/WebGPU para análise espacial de milhões de pontos e dados geoespaciais em tempo real.
+
+<ThreePanel
+  topic="deckgl"
+  title="Deck.gl (HexagonLayer & ArcLayer 3D)"
+  subtitle="Camadas de densidade hexagonal 3D e arcos de fluxo de dados de alta escala acelerados por GPU."
+/>
+
 - [Deck.gl](https://deck.gl/) — / [Docs](https://deck.gl/) / [GitHub](https://github.com/visgl/deck.gl) / [Examples](https://deck.gl/examples) / [Community](https://github.com/visgl/deck.gl) / [YouTube](https://www.youtube.com/results?search_query=deckgl) / [Twitter](https://twitter.com/uber)
-- [Luma.gl](https://luma.gl/) — / [Docs](https://luma.gl/) / [GitHub](https://github.com/visgl/luma.gl) / [Examples](https://luma.gl/examples) / [Community](https://github.com/visgl/luma.gl) / [YouTube](https://www.youtube.com/results?search_query=lumagl) / [Twitter](https://twitter.com/uber)
-- [Vis.gl](https://vis.gl/) — / [Docs](https://vis.gl/) / [GitHub](https://github.com/visgl) / [Examples](https://vis.gl/examples) / [Community](https://github.com/visgl) / [YouTube](https://www.youtube.com/results?search_query=visgl) / [Twitter](https://twitter.com/uber)
-- [Plotly](https://plotly.com/) — / [Docs](https://plotly.com/) / [GitHub](https://github.com/plotly/plotly.js) / [Examples](https://plotly.com/) / [Community](https://community.plotly.com/) / [YouTube](https://www.youtube.com/c/Plotly) / [Twitter](https://twitter.com/plotly)
-- [Bokeh](https://bokeh.org/) — / [Docs](https://docs.bokeh.org/) / [GitHub](https://github.com/bokeh/bokeh) / [Examples](https://bokeh.org/) / [Community](https://discourse.bokeh.org/) / [YouTube](https://www.youtube.com/results?search_query=bokeh) / [Twitter](https://twitter.com/bokeh)
+- [Luma.gl](https://luma.gl/) — / [Docs](https://luma.gl/) / [GitHub](https://github.com/visgl/luma.gl) / [Examples](https://luma.gl/examples)
+- [Vis.gl](https://vis.gl/) — / [Docs](https://vis.gl/) / [GitHub](https://github.com/visgl) / [Examples](https://vis.gl/examples)
+- [Plotly](https://plotly.com/) — / [Docs](https://plotly.com/) / [GitHub](https://github.com/plotly/plotly.js) / [Examples](https://plotly.com/)
+- [Bokeh](https://bokeh.org/) — / [Docs](https://docs.bokeh.org/) / [GitHub](https://github.com/bokeh/bokeh) / [Examples](https://bokeh.org/)
+
+#### Chart.js
+> Biblioteca amigável e amplamente adotada para criação de painéis e dashboards gráficos modernos.
+
+<ThreePanel
+  topic="chartjs"
+  title="Chart.js (Dashboard & Gráficos 3D)"
+  subtitle="Barras métricas animadas com gráfico donut de distribuição percentual."
+/>
+
 - [Chart.js](https://www.chartjs.org/) — / [Docs](https://www.chartjs.org/docs/) / [GitHub](https://github.com/chartjs/Chart.js) / [Examples](https://www.chartjs.org/docs/latest/samples/) / [Community](https://www.chartjs.org/docs/latest/) / [YouTube](https://www.youtube.com/results?search_query=chartjs) / [Twitter](https://twitter.com/chartjs)
 
 ## Best picks

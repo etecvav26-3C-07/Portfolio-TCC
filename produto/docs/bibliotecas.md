@@ -14,8 +14,20 @@ Three.js, usada neste site nas visualizações, é uma biblioteca de rasterizaç
 
 <ThreePanel
   topic="threejs"
-  title="Three.js em ação"
+  title="Three.js em Ação"
   subtitle="Cena com geometria, materiais PBR, instâncias orbitando e partículas."
+/>
+
+<ThreePanel
+  topic="pipeline"
+  title="Pipeline Gráfico das Bibliotecas"
+  subtitle="Da CPU/VBO aos Shaders e Framebuffers: como os frameworks gerenciam o fluxo gráfico."
+/>
+
+<ThreePanel
+  topic="r3f"
+  title="Ecossistemas Declarativos Modernos (R3F)"
+  subtitle="Arquitetura de componentes reativos e controle de estado em tempo real no espaço 3D."
 />
 
 ## Rasterização em tempo real
