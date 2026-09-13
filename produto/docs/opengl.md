@@ -5,8 +5,12 @@ description: Guia completo sobre OpenGL, pipeline de rasterização, shaders GLS
 ---
 
 <script setup>
+import CanvasPanel from "./.vitepress/components/CanvasPanel.vue";
 import ThreePanel from "./.vitepress/components/ThreePanel.vue";
 import WebGLPanel from "./.vitepress/components/WebGLPanel.vue";
+import sketchOpenglPipeline from "./.vitepress/components/animations/canvas_opengl_pipeline.js";
+import sketchTexturas from "./.vitepress/components/animations/canvas_texturas.js";
+import sketchOpenglNormais from "./.vitepress/components/animations/canvas_opengl_normais.js";
 </script>
 
 # OpenGL
@@ -28,11 +32,17 @@ O painel abaixo executa WebGL 2 puro diretamente no canvas do navegador, sem nen
 />
 
 ### 2. O Pipeline Gráfico do OpenGL
-A animação abaixo ilustra um pacote geométrico (triângulo) percorrendo os quatro grandes estágios clássicos da renderização: carregamento de buffer (VBO), transformação geométrica (Vertex Shader), recorte e conversão em pixels (Rasterizador) e cálculo de cor (Fragment Shader).
+Abaixo, a representação tridimensional dos blocos do pipeline gráfico opera em paralelo com o diagrama didático 2D, ilustrando o trânsito de primitivas através de VBO, Vertex Shader, Rasterizador e Fragment Shader.
 
 <ThreePanel
   topic="opengl"
-  title="Estágios do Pipeline OpenGL"
+  title="Blocos do Pipeline OpenGL 3D"
+  subtitle="Fluxo descendente de dados poligonais através dos estágios de hardware da GPU."
+/>
+
+<CanvasPanel
+  :sketch="sketchOpenglPipeline"
+  title="Diagrama Didático 2D: Estágios do Pipeline"
   subtitle="VBO (Buffer) → Vertex Shader (VS) → Rasterização (Raster) → Fragment Shader (FS)."
 />
 
@@ -41,16 +51,28 @@ O OpenGL mapeia coordenadas bidimensionais $(U, V)$ normalizadas entre $0.0$ e $
 
 <ThreePanel
   topic="textura"
-  title="Mapeamento de Textura UV"
+  title="Superfície 3D com Mapeamento UV"
+  subtitle="Malha poligonal texturizada associada à folha de coordenadas planares UV."
+/>
+
+<CanvasPanel
+  :sketch="sketchTexturas"
+  title="Diagrama Didático 2D: Coordenadas UV [0, 1]"
   subtitle="Amostragem de textura com coordenadas UV dinâmicas aplicadas à geometria."
 />
 
 ### 4. Vetores Normais e Iluminação
-Para calcular luz difusa e especular (como no modelo de iluminação Phong/Blinn-Phong clássico do OpenGL), a GPU precisa dos vetores normais perpendiculares a cada vértice.
+Para calcular luz difusa e especular (como no modelo de iluminação Phong/Blinn-Phong clássico do OpenGL), a GPU precisa dos vetores normais perpendiculares a cada vértice. Gire a malha 3D para inspecionar os vetores normais no espaço e acompanhe a trigonometria no diagrama 2D.
 
 <ThreePanel
   topic="normais"
-  title="Vetores Normais de Superfície"
+  title="Vetores Normais 3D no Espaço"
+  subtitle="Icosaedro com vetores normais perpendiculares projetando-se de cada vértice da geometria."
+/>
+
+<CanvasPanel
+  :sketch="sketchOpenglNormais"
+  title="Diagrama Didático 2D: Cálculo de Normais de Superfície"
   subtitle="Setas direcionais indicando a normal de cada vértice utilizada no cálculo de iluminação por fragmento."
 />
 
@@ -177,9 +199,9 @@ int main() {
 
 ---
 
-## 🚀 MEGA LINK DUMP - OpenGL Ecosystem
+## ⚙️  MEGA LINK DUMP - OpenGL Ecosystem
 
-### 📖 Tutoriais, Cursos e Livros
+### ⚙️ Tutoriais, Cursos e Livros
 - [LearnOpenGL (Joey de Vries)](https://learnopengl.com/) — / [GitHub do Livro](https://github.com/JoeyDeVries/LearnOpenGL) / [Começando](https://learnopengl.com/Getting-started/Hello-Window) / [Iluminação](https://learnopengl.com/Lighting/Basic-Lighting) / [Model Loading](https://learnopengl.com/Model-Loading/Assimp) / [Advanced OpenGL](https://learnopengl.com/Advanced-OpenGL/Depth-testing) / [PBR](https://learnopengl.com/PBR/Theory)
 - [Open.GL (Alexander Overvoorde)](https://open.gl/) — introdução concisa e direta ao OpenGL moderno — / [Tutorial](https://open.gl/) / [Contextos](https://open.gl/context) / [Buffers](https://open.gl/drawing) / [Shaders](https://open.gl/shaders)
 - [OGLDev: Modern OpenGL Tutorials (Etay Meiri)](https://ogldev.org/) — dezenas de tutoriais cobrindo técnicas de AAA games — / [Website](https://ogldev.org/) / [Shadow Mapping](https://ogldev.org/www/tutorial24/tutorial24.html) / [Skeletal Animation](https://ogldev.org/www/tutorial38/tutorial38.html)
@@ -187,7 +209,7 @@ int main() {
 - [OpenGL SuperBible (7ª Edição)](https://www.openglsuperbible.com/) — / [Website Oficial](https://www.openglsuperbible.com/) / [Código Fonte GitHub](https://github.com/openglsuperbible/sb7code)
 - [Computer Graphics: Principles and Practice](https://cgpp.net/) — / [Website](https://cgpp.net/) / [Exemplos de Código](https://github.com/foolmoron/cgpp)
 
-### 🛠️ Bibliotecas Essenciais em C/C++
+### ⚙️ Bibliotecas Essenciais em C/C++
 - [GLFW](https://www.glfw.org/) — gerenciamento de janelas multiplataforma e contexto OpenGL — / [Download](https://www.glfw.org/download.html) / [Documentação](https://www.glfw.org/docs/latest/) / [GitHub](https://github.com/glfw/glfw)
 - [GLAD](https://glad.dav1d.de/) — gerador de carregadores de funções de extensões OpenGL e Vulkan — / [Gerador Web](https://glad.dav1d.de/) / [GitHub](https://github.com/Dav1dde/glad)
 - [GLEW](https://glew.sourceforge.net/) — The OpenGL Extension Wrangler Library (clássico) — / [Website](https://glew.sourceforge.net/) / [GitHub](https://github.com/nigels-com/glew)
@@ -196,12 +218,12 @@ int main() {
 - [Assimp (Open Asset Import Library)](https://www.assimp.org/) — importador universal de mais de 40 formatos 3D (FBX, OBJ, glTF, Collada) — / [Website](https://www.assimp.org/) / [GitHub](https://github.com/assimp/assimp)
 - [Dear ImGui](https://github.com/ocornut/imgui) — biblioteca GUI imediata para criação de interfaces de depuração em OpenGL — / [GitHub](https://github.com/ocornut/imgui) / [Demonstração WebAssembly](https://pthom.github.io/imgui_manual_online/manual/imgui_manual.html)
 
-### 💻 Ferramentas de Depuração e Inspeção
+### ⚙️ Ferramentas de Depuração e Inspeção
 - [RenderDoc](https://renderdoc.org/) — captura e análise quadro a quadro de chamadas de desenho, buffers e texturas — / [Website](https://renderdoc.org/) / [GitHub](https://github.com/baldurk/renderdoc)
 - [NVIDIA Nsight Graphics](https://developer.nvidia.com/nsight-graphics) — ferramenta de profiling avançado para GPUs NVIDIA — / [Portal](https://developer.nvidia.com/nsight-graphics)
 - [GLIntercept](https://github.com/dtrebilco/glintercept) — interceptador de chamadas OpenGL para depuração em tempo de execução — / [GitHub](https://github.com/dtrebilco/glintercept)
 
-### 🌐 Comunidades e Fóruns
+### ⚙️ Comunidades e Fóruns
 - [Fórum Oficial Khronos OpenGL](https://community.khronos.org/c/opengl/2) — discussões oficiais sobre especificações e bugs
 - [Reddit r/opengl](https://www.reddit.com/r/opengl/) — comunidade ativa de desenvolvedores compartilhando projetos e dúvidas
 - [Stack Overflow OpenGL Tag](https://stackoverflow.com/questions/tagged/opengl) — mais de 60.000 perguntas e respostas técnicas

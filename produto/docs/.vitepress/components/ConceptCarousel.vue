@@ -1,6 +1,18 @@
 <script setup>
 import { computed, onBeforeUnmount, onMounted, ref } from "vue";
 import ThreePanel from "./ThreePanel.vue";
+import CanvasPanel from "./CanvasPanel.vue";
+
+import sketchModelagem from "./animations/canvas_modelagem.js";
+import sketchTransformacoes from "./animations/canvas_transformacoes.js";
+import sketchCamera from "./animations/canvas_camera.js";
+import sketchIluminacao from "./animations/canvas_iluminacao.js";
+import sketchRasterizacao from "./animations/canvas_rasterizacao.js";
+import sketchRaytracing from "./animations/canvas_raytracing.js";
+import sketchShaders from "./animations/canvas_shaders.js";
+import sketchTextura from "./animations/canvas_texturas.js";
+import sketchPbr from "./animations/canvas_pbr.js";
+import sketchRender from "./animations/canvas_render.js";
 
 const props = defineProps({
   concepts: {
@@ -9,14 +21,29 @@ const props = defineProps({
   }
 });
 
+const sketchMap = {
+  modelagem: sketchModelagem,
+  transformacoes: sketchTransformacoes,
+  camera: sketchCamera,
+  luz: sketchIluminacao,
+  rasterizacao: sketchRasterizacao,
+  raytracing: sketchRaytracing,
+  shaders: sketchShaders,
+  textura: sketchTextura,
+  pbr: sketchPbr,
+  render: sketchRender
+};
+
 const index = ref(0);
 const root = ref(null);
+const viewMode = ref("3d"); // '3d' ou '2d'
 let pointerStartX = 0;
 let pointerDelta = 0;
 
 const total = computed(() => props.concepts.length);
 const current = computed(() => props.concepts[index.value] || {});
 const topic = computed(() => current.value.topic || current.value.id || "default");
+const currentSketch = computed(() => sketchMap[topic.value] || sketchModelagem);
 
 const goTo = (next) => {
   if (!total.value) return;
@@ -51,7 +78,16 @@ const onPointerUp = (event) => {
   else prev();
 };
 
-const isControlTarget = (event) => event.target?.closest?.("button");
+const isControlTarget = (event) => {
+  return !!(
+    event.target?.closest?.("button") ||
+    event.target?.closest?.(".visual") ||
+    event.target?.closest?.(".three-panel") ||
+    event.target?.closest?.(".canvas-frame") ||
+    event.target?.closest?.(".canvas-panel") ||
+    event.target?.closest?.(".mode-bar")
+  );
+};
 
 onMounted(() => {
   window.addEventListener("keydown", onKeydown);
@@ -79,12 +115,39 @@ onBeforeUnmount(() => {
         <p class="text">{{ current.text }}</p>
       </div>
       <div class="visual">
-        <ThreePanel
-          :topic="topic"
-          :title="current.title"
-          :show-header="false"
-          :playing="true"
-        />
+        <div class="mode-bar">
+          <button 
+            type="button" 
+            class="mode-btn" 
+            :class="{ active: viewMode === '3d' }" 
+            @click="viewMode = '3d'"
+          >
+            🌐 3D Interativo
+          </button>
+          <button 
+            type="button" 
+            class="mode-btn" 
+            :class="{ active: viewMode === '2d' }" 
+            @click="viewMode = '2d'"
+          >
+            📐 Diagrama Didático 2D
+          </button>
+        </div>
+        <div class="visual-content">
+          <ThreePanel
+            v-if="viewMode === '3d'"
+            :topic="topic"
+            :title="current.title"
+            :show-header="false"
+            :playing="true"
+          />
+          <CanvasPanel
+            v-else
+            :sketch="currentSketch"
+            :title="current.title"
+            :playing="true"
+          />
+        </div>
       </div>
     </article>
 
@@ -164,12 +227,52 @@ onBeforeUnmount(() => {
 
 .visual {
   min-height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mode-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.mode-btn {
+  padding: 5px 12px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  border-radius: 8px;
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  color: #94a3b8;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.mode-btn:hover {
+  color: #f8fafc;
+  border-color: rgba(56, 189, 248, 0.5);
+}
+
+.mode-btn.active {
+  background: rgba(56, 189, 248, 0.15);
+  border-color: #38bdf8;
+  color: #38bdf8;
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.25);
+}
+
+.visual-content {
+  flex: 1;
+  min-height: 280px;
 }
 
 .visual :deep(.three-panel),
+.visual :deep(.canvas-panel),
 .visual :deep(.canvas-frame) {
   height: 100%;
-  min-height: 300px;
+  min-height: 280px;
+  margin: 0;
 }
 
 .controls {

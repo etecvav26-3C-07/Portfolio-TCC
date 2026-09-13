@@ -81,7 +81,7 @@ Dez ideias fundamentais que se repetem em modelagem, jogos, filmes e APIs como O
 
 ## 🚀 MEGA LINK DUMP - Conceitos de Computação Gráfica
 
-### 📐 Fundamentos Matemáticos
+### ⚙️ Fundamentos Matemáticos
 
 **Álgebra Linear:**
 - [3Blue1Brown Essence of Linear Algebra](https://www.youtube.com/watch?v=fNk_zzaMoSs) — / [YouTube](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) / [Website](https://www.3blue1brown.com/topics/linear-algebra/) / [Twitter](https://twitter.com/3Blue1Brown) / [Patreon](https://www.patreon.com/3blue1brown)
@@ -104,7 +104,7 @@ Dez ideias fundamentais que se repetem em modelagem, jogos, filmes e APIs como O
 - [Khan Academy Calculus](https://www.khanacademy.org/math/calculus-1) — / [Course](https://www.khanacademy.org/math/calculus-1) / [Derivatives](https://www.khanacademy.org/math/calculus-1) / [Integrals](https://www.khanacademy.org/math/calculus-1) / [YouTube](https://www.youtube.com/c/khanacademy)
 - [MIT OpenCourseWare Calculus](https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/) — / [Course](https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/) / [Lectures](https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/video-lectures/) / [Assignments](https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/assignments/) / [Exams](https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/exams/)
 
-### 🎨 Pipeline de Renderização
+### ⚙️ ⚙️ Pipeline de Renderização
 
 **Rasterização:**
 - [Rasterization](https://www.khronos.org/opengl/wiki/Rasterization) — / [Docs](https://www.khronos.org/opengl/wiki/Rasterization) / [OpenGL](https://www.khronos.org/opengl/) / [Community](https://www.khronos.org/opengl/wiki/) / [GitHub](https://github.com/KhronosGroup/OpenGL-Registry)
@@ -127,7 +127,7 @@ Dez ideias fundamentais que se repetem em modelagem, jogos, filmes e APIs como O
 - [LearnOpenGL PBR](https://learnopengl.com/PBR) — / [Tutorial](https://learnopengl.com/PBR) / [Code](https://learnopengl.com/PBR) / [Examples](https://learnopengl.com/PBR) / [Community](https://learnopengl.com/)
 - [Marmoset PBR Guide](https://marmoset.co/posts/basic-theory-of-physically-based-rendering/) — / [Article](https://marmoset.co/posts/basic-theory-of-physically-based-rendering/) / [Tutorial](https://marmoset.co/posts/) / [Examples](https://marmoset.co/posts/) / [Community](https://marmoset.co/)
 
-### 🌊 Shaders e Materiais
+### ⚙️ Shaders e Materiais
 
 **Shading Languages:**
 - [GLSL](https://www.khronos.org/opengl/wiki/OpenGL_Shading_Language) — / [Reference](https://www.khronos.org/registry/OpenGL/specs/gl/GLSLangSpec.4.60.pdf) / [OpenGL](https://www.khronos.org/opengl/wiki/) / [Community](https://www.khronos.org/opengl/wiki/) / [GitHub](https://github.com/KhronosGroup/GLSL)
@@ -144,7 +144,7 @@ Dez ideias fundamentais que se repetem em modelagem, jogos, filmes e APIs como O
 - [Vertex Shader Art](https://www.vertexshaderart.com/) — / [Gallery](https://www.vertexshaderart.com/gallery) / [Examples](https://www.vertexshaderart.com/) / [Community](https://www.vertexshaderart.com/) / [GitHub](https://github.com/)
 - [Pixel Shader Art](https://www.pixelshaderart.com/) — / [Gallery](https://www.pixelshaderart.com/examples) / [Examples](https://www.pixelshaderart.com/examples) / [Community](https://www.pixelshaderart.com/) / [GitHub](https://github.com/)
 
-### 🧮 Geometria e Topologia
+### ⚙️ Geometria e Topologia
 
 **Mesh Topology:**
 - [Mesh Topology](https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh_topology.html) — / [Docs](https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh_topology.html) / [Blender](https://www.blender.org/) / [Tutorial](https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh_topology.html) / [Community](https://blender.stackexchange.com/)
@@ -160,7 +160,7 @@ Dez ideias fundamentais que se repetem em modelagem, jogos, filmes e APIs como O
 - [Sculpting](https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/) — / [Docs](https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/) / [Blender](https://www.blender.org/) / [Tutorial](https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/) / [Community](https://blender.stackexchange.com/)
 - [Retopology](https://docs.blender.org/manual/en/latest/modeling/meshes/editing/retopology.html) — / [Docs](https://docs.blender.org/manual/en/latest/modeling/meshes/editing/retopology.html) / [Blender](https://www.blender.org/) / [Tutorial](https://docs.blender.org/manual/en/latest/modeling/meshes/editing/retopology.html) / [Community](https://blender.stackexchange.com/)
 
-### 💡 Iluminação e Sombreamento
+### ⚙️ Iluminação e Sombreamento
 
 **Lighting Models:**
 - [Phong Shading](https://en.wikipedia.org/wiki/Phong_shading) — / [Wikipedia](https://en.wikipedia.org/wiki/Phong_shading) / [Algorithm](https://en.wikipedia.org/wiki/Phong_shading) / [Code](https://github.com/) / [Community](https://en.wikipedia.org/wiki/Phong_shading)
@@ -176,7 +176,7 @@ Dez ideias fundamentais que se repetem em modelagem, jogos, filmes e APIs como O
 - [Bloom](https://en.wikipedia.org/wiki/Bloom_(shader_effect)) — / [Wikipedia](https://en.wikipedia.org/wiki/Bloom_(shader_effect)) / [Algorithm](https://en.wikipedia.org/wiki/Bloom_(shader_effect)) / [Code](https://github.com/) / [Community](https://en.wikipedia.org/wiki/Bloom_(shader_effect))
 - [Tone Mapping](https://en.wikipedia.org/wiki/Tone_mapping) — / [Wikipedia](https://en.wikipedia.org/wiki/Tone_mapping) / [Algorithm](https://en.wikipedia.org/wiki/Tone_mapping) / [Code](https://github.com/) / [Community](https://en.wikipedia.org/wiki/Tone_mapping)
 
-### 🎬 Animação e Rigging
+### ⚙️ Animação e Rigging
 
 **Animation Principles:**
 - [12 Principles of Animation](https://en.wikipedia.org/wiki/12_basic_principles_of_animation) — / [Wikipedia](https://en.wikipedia.org/wiki/12_basic_principles_of_animation) / [Article](https://en.wikipedia.org/wiki/12_basic_principles_of_animation) / [Community](https://en.wikipedia.org/wiki/12_basic_principles_of_animation) / [YouTube](https://www.youtube.com/results?search_query=12+principles+of+animation)
@@ -191,7 +191,7 @@ Dez ideias fundamentais que se repetem em modelagem, jogos, filmes e APIs como O
 - [Advanced Skeleton](https://www.advancedskeleton.com/) — / [Website](https://www.advancedskeleton.com/) / [Rigging](https://www.advancedskeleton.com/) / [Auto Rig](https://www.advancedskeleton.com/) / [YouTube](https://www.youtube.com/results?search_query=advanced+skeleton)
 - [Mixamo](https://www.mixamo.com/) — / [Auto Rigger](https://www.mixamo.com/) / [Animations](https://www.mixamo.com/user) / [Docs](https://www.mixamo.com/) / [Community](https://forums.autodesk.com/t5/maya/ct-p/90)
 
-### 🌊 Física e Simulação
+### ⚙️ Física e Simulação
 
 **Physics Engines:**
 - [Bullet](https://pybullet.org/) — / [GitHub](https://github.com/bulletphysics/bullet3) / [Docs](https://docs.google.com/document/d/1K8g7B1VNBZJW7B0e9sRJgqBfJvB8LQZ/edit) / [Examples](https://pybullet.org/) / [Community](https://pybullet.org/)
@@ -207,7 +207,7 @@ Dez ideias fundamentais que se repetem em modelagem, jogos, filmes e APIs como O
 - [Particle Systems](https://en.wikipedia.org/wiki/Particle_system) — / [Wikipedia](https://en.wikipedia.org/wiki/Particle_system) / [Article](https://en.wikipedia.org/wiki/Particle_system) / [Community](https://en.wikipedia.org/wiki/Particle_system) / [YouTube](https://www.youtube.com/results?search_query=particle+systems)
 - [Soft Body Physics](https://en.wikipedia.org/wiki/Soft_body_dynamics) — / [Wikipedia](https://en.wikipedia.org/wiki/Soft_body_dynamics) / [Article](https://en.wikipedia.org/wiki/Soft_body_dynamics) / [Community](https://en.wikipedia.org/wiki/Soft_body_dynamics) / [YouTube](https://www.youtube.com/results?search_query=soft+body+physics)
 
-### 📐 Projeções e Transformações
+### ⚙️ Projeções e Transformações
 
 **Projections:**
 - [Perspective Projection](https://en.wikipedia.org/wiki/3D_projection) — / [Wikipedia](https://en.wikipedia.org/wiki/3D_projection) / [Article](https://en.wikipedia.org/wiki/3D_projection) / [Community](https://en.wikipedia.org/wiki/3D_projection) / [YouTube](https://www.youtube.com/results?search_query=perspective+projection)
@@ -223,7 +223,7 @@ Dez ideias fundamentais que se repetem em modelagem, jogos, filmes e APIs como O
 - [Scaling](https://en.wikipedia.org/wiki/Scaling_(geometry)) — / [Wikipedia](https://en.wikipedia.org/wiki/Scaling_(geometry)) / [Article](https://en.wikipedia.org/wiki/Scaling_(geometry)) / [Community](https://en.wikipedia.org/wiki/Scaling_(geometry)) / [YouTube](https://www.youtube.com/results?search_query=scaling+matrix)
 - [Quaternion](https://en.wikipedia.org/wiki/Quaternion) — / [Wikipedia](https://en.wikipedia.org/wiki/Quaternion) / [Article](https://en.wikipedia.org/wiki/Quaternion) / [Community](https://en.wikipedia.org/wiki/Quaternion) / [YouTube](https://www.youtube.com/results?search_query=quaternion)
 
-### 🎨 Compressão e Otimização
+### ⚙️ ⚙️ Compressão e Otimização
 
 **Texture Compression:**
 - [Texture Compression](https://www.khronos.org/opengl/wiki/Texture_Compression) — / [Docs](https://www.khronos.org/opengl/wiki/Texture_Compression) / [OpenGL](https://www.khronos.org/opengl/) / [Community](https://www.khronos.org/opengl/wiki/) / [GitHub](https://github.com/KhronosGroup/OpenGL-Registry)
@@ -238,7 +238,7 @@ Dez ideias fundamentais que se repetem em modelagem, jogos, filmes e APIs como O
 - [glTF Compression](https://www.khronos.org/gltf/) — / [Spec](https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html) / [Draco](https://google.github.io/draco/) / [Meshopt](https://github.com/zeux/meshoptimizer) / [Community](https://www.khronos.org/gltf/)
 - [Basis Universal](https://github.com/BinomialLLC/basis_universal) — / [GitHub](https://github.com/BinomialLLC/basis_universal) / [Docs](https://github.com/BinomialLLC/basis_universal) / [Examples](https://github.com/BinomialLLC/basis_universal) / [Community](https://github.com/BinomialLLC/basis_universal)
 
-### 🌍 Renderização de Terrenos
+### ⚙️ ⚙️ Renderização de Terrenos
 
 **Terrain Generation:**
 - [Procedural Terrain](https://en.wikipedia.org/wiki/Procedural_generation) — / [Wikipedia](https://en.wikipedia.org/wiki/Procedural_generation) / [Article](https://en.wikipedia.org/wiki/Procedural_generation) / [Community](https://en.wikipedia.org/wiki/Procedural_generation) / [YouTube](https://www.youtube.com/results?search_query=procedural+terrain)
@@ -253,7 +253,7 @@ Dez ideias fundamentais que se repetem em modelagem, jogos, filmes e APIs como O
 - [World Machine](https://www.world-machine.com/) — / [Download](https://www.world-machine.com/download/) / [Docs](https://www.world-machine.com/documentation/) / [Learn](https://www.world-machine.com/learn/) / [Community](https://www.world-machine.com/forum/) / [YouTube](https://www.youtube.com/c/WorldMachine) / [Twitter](https://twitter.com/WorldMachine)
 - [SpeedTree](https://store.speedtree.com/) — / [Download](https://store.speedtree.com/) / [Docs](https://docs.speedtree.com/) / [Learn](https://docs.speedtree.com/) / [Community](https://forum.speedtree.com/) / [YouTube](https://www.youtube.com/c/SpeedTree) / [Twitter](https://twitter.com/SpeedTree)
 
-### 📊 Performance e Otimização
+### ⚙️ ⚙️ Performance e Otimização
 
 **Optimization Techniques:**
 - [Culling](https://en.wikipedia.org/wiki/Hidden_surface_determination) — / [Wikipedia](https://en.wikipedia.org/wiki/Hidden_surface_determination) / [Article](https://en.wikipedia.org/wiki/Hidden_surface_determination) / [Community](https://en.wikipedia.org/wiki/Hidden_surface_determination) / [YouTube](https://www.youtube.com/results?search_query=culling)

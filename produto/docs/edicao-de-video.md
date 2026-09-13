@@ -73,9 +73,9 @@ description: Ferramentas e recursos para edição de vídeo, cor e pós-produç�
 
 ---
 
-## 🚀 MEGA LINK DUMP - Edição de Vídeo & Pós-Produção
+## ⚙️  MEGA LINK DUMP - Edição de Vídeo & Pós-Produção
 
-### 🎬 Softwares Profissionais
+### ⚙️ Softwares Profissionais
 
 **Professional Video Editing:**
 - [DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve/) — / [Free](https://www.blackmagicdesign.com/products/davinciresolve/) / [Studio](https://www.blackmagicdesign.com/products/davinciresolvestudio) / [Docs](https://documents.blackmagicdesign.com/) / [Learn](https://www.blackmagicdesign.com/products/davinciresolve/training) / [Community](https://forum.blackmagicdesign.com/) / [YouTube](https://www.youtube.com/c/BlackmagicDesignOfficial) / [Twitter](https://twitter.com/BlackmagicDesign)
@@ -90,7 +90,7 @@ description: Ferramentas e recursos para edição de vídeo, cor e pós-produç�
 - [Fusion](https://www.blackmagicdesign.com/products/fusion/) — / [Free](https://www.blackmagicdesign.com/products/fusion/) / [Studio](https://www.blackmagicdesign.com/products/fusion-studio) / [Docs](https://documents.blackmagicdesign.com/) / [Learn](https://www.blackmagicdesign.com/products/fusion/training) / [Community](https://forum.blackmagicdesign.com/) / [YouTube](https://www.youtube.com/c/BlackmagicDesignOfficial) / [Twitter](https://twitter.com/BlackmagicDesign)
 - [Blender Compositing](https://www.blender.org/) — / [Download](https://www.blender.org/download/) / [Docs](https://docs.blender.org/manual/en/latest/compositing/) / [Learn](https://www.blender.org/support/tutorials/) / [Community](https://blender.stackexchange.com/) / [GitHub](https://github.com/blender/blender) / [YouTube](https://www.youtube.com/c/BlenderFoundation) / [Twitter](https://twitter.com/blender_org)
 
-### 🆓 Open Source Video Editors
+### ⚙️ Open Source Video Editors
 
 **Desktop Editors:**
 - [Kdenlive](https://kdenlive.org/) — / [Download](https://kdenlive.org/download/) / [Docs](https://docs.kdenlive.org/) / [Learn](https://kdenlive.org/documentation/) / [Forum](https://forum.kde.org/) / [GitHub](https://github.com/KDE/kdenlive) / [YouTube](https://www.youtube.com/c/Kdenlive) / [Twitter](https://twitter.com/kdenlive)
@@ -105,7 +105,7 @@ description: Ferramentas e recursos para edição de vídeo, cor e pós-produç�
 - [Simple Video Cutter](https://simplevideocutter.com/) — / [Download](https://simplevideocutter.com/) / [Docs](https://simplevideocutter.com/) / [GitHub](https://github.com/eoyilmaz/simplevideocutter) / [YouTube](https://www.youtube.com/results?search_query=simple+video+cutter) / [Twitter](https://twitter.com/eoyilmaz)
 - [Video Thumbnails Maker](https://www.videohelp.com/software/video-thumbnails-maker) — / [Download](https://www.videohelp.com/software/video-thumbnails-maker) / [Docs](https://www.videohelp.com/software/video-thumbnails-maker) / [GitHub](https://github.com/) / [YouTube](https://www.youtube.com/results?search_query=video+thumbnails) / [Twitter](https://twitter.com/)
 
-### 📱 Mobile Video Editors
+### ⚙️ Mobile Video Editors
 
 **iOS:**
 - [LumaFusion](https://luma-touch.com/) — / [App Store](https://apps.apple.com/app/lumafusion/id1062022008) / [Pro](https://luma-touch.com/lumafusion/) / [Docs](https://luma-touch.com/support/) / [Learn](https://luma-touch.com/learn/) / [YouTube](https://www.youtube.com/c/LumaTouch) / [Twitter](https://twitter.com/LumaTouch)
@@ -120,7 +120,7 @@ description: Ferramentas e recursos para edição de vídeo, cor e pós-produç�
 - [InShot](https://inshot.app/) — / [iOS](https://apps.apple.com/app/inshot-video-editor/id979870250) / [Android](https://play.google.com/store/apps/details?id=com.cameraclip.editvideo) / [Pro](https://inshot.app/pro) / [Tutorials](https://inshot.app/tutorials) / [YouTube](https://www.youtube.com/c/InShotApp) / [Twitter](https://twitter.com/InShotApp)
 - [VLLO](https://vllo.io/) — / [iOS](https://apps.apple.com/app/vllo-video-editor/id1145508542) / [Android](https://play.google.com/store/apps/details?id=com.vimotion.vimotion) / [Pro](https://vllo.io/pricing) / [Tutorials](https://vllo.io/tutorials) / [YouTube](https://www.youtube.com/c/VLLO) / [Twitter](https://twitter.com/VLLO)
 
-### 🔧 Tools & Utilities
+### ⚙️ ⚙️ Tools & Utilities
 
 **Video Processing:**
 - [FFmpeg](https://www.ffmpeg.org/) — / [Download](https://ffmpeg.org/download.html) / [Docs](https://ffmpeg.org/documentation.html) / [Wiki](https://trac.ffmpeg.org/wiki) / [Examples](https://ffmpeg.org/examples.html) / [Community](https://ffmpeg.org/) / [GitHub](https://github.com/FFmpeg/FFmpeg) / [YouTube](https://www.youtube.com/results?search_query=ffmpeg)
@@ -134,7 +134,7 @@ description: Ferramentas e recursos para edição de vídeo, cor e pós-produç�
 - [Aegisub](https://www.aegisub.org/) — / [Download](https://www.aegisub.org/downloads) / [Docs](https://www.aegisub.org/docs/) / [GitHub](https://github.com/Aegisub/Aegisub) / [Community](https://forum.aegisub.org/) / [YouTube](https://www.youtube.com/results?search_query=aegisub) / [Twitter](https://twitter.com/aegisub)
 - [Subtitle Workshop](https://www.urusoft.net/) — / [Download](https://www.urusoft.net/download.php) / [Docs](https://www.urusoft.net/) / [Community](https://www.urusoft.net/) / [YouTube](https://www.youtube.com/results?search_query=subtitle+workshop) / [Twitter](https://twitter.com/urusoft)
 
-### 🎨 Effects & Plugins
+### ⚙️ ⚙️ Effects & Plugins
 
 **OpenFX Plugins:**
 - [OpenFX](https://opentfx.org/) — / [Docs](https://opentfx.org/) / [GitHub](https://github.com/ofxa/openfx) / [Community](https://opentfx.org/) / [YouTube](https://www.youtube.com/results?search_query=openfx) / [Twitter](https://twitter.com/openfx)
@@ -142,7 +142,7 @@ description: Ferramentas e recursos para edição de vídeo, cor e pós-produç�
 - [VST Plugins](https://www.vst4you.com/) — / [Download](https://www.vst4you.com/) / [Docs](https://www.vst4you.com/) / [Community](https://www.vst4you.com/) / [YouTube](https://www.youtube.com/results?search_query=vst) / [Twitter](https://twitter.com/vst4you)
 - [LUTs](https://luts.io/) — / [Free](https://luts.io/) / [Premium](https://luts.io/) / [Docs](https://luts.io/) / [Community](https://luts.io/) / [YouTube](https://www.youtube.com/results?search_query=luts) / [Twitter](https://twitter.com/luts)
 
-### 🎵 Audio & Music
+### ⚙️ Audio & Music
 
 **Stock Music:**
 - [Artlist](https://artlist.io/) — / [Music](https://artlist.io/) / [SFX](https://artlist.io/) / [Voiceover](https://artlist.io/) / [Learn](https://artlist.io/) / [YouTube](https://www.youtube.com/c/artlist) / [Twitter](https://twitter.com/artlist)
@@ -157,7 +157,7 @@ description: Ferramentas e recursos para edição de vídeo, cor e pós-produç�
 - [REAPER](https://www.reaper.fm/) — / [Trial](https://www.reaper.fm/) / [Buy](https://www.reaper.fm/) / [Docs](https://www.reaper.fm/) / [Community](https://forum.cockos.com/) / [YouTube](https://www.youtube.com/c/REAPER) / [Twitter](https://twitter.com/reaper)
 - [LMMS](https://lmms.io/) — / [Download](https://lmms.io/download/) / [Docs](https://lmms.io/documentation.php) / [GitHub](https://github.com/LMMS/lmms) / [Community](https://lmms.io/) / [YouTube](https://www.youtube.com/c/LMMS) / [Twitter](https://twitter.com/lmms)
 
-### 📚 Learning Resources
+### ⚙️ ⚙️ Learning Resources
 
 **Tutorials:**
 - [Film Riot](https://www.youtube.com/c/FilmRiot) — / [YouTube](https://www.youtube.com/c/FilmRiot) / [Website](https://www.youtube.com/c/FilmRiot) / [Twitter](https://twitter.com/filmriot) / [Patreon](https://www.patreon.com/filmriot)
@@ -172,7 +172,7 @@ description: Ferramentas e recursos para edição de vídeo, cor e pós-produç�
 - [edX Video](https://www.edx.org/learn/computer-graphics) — / [Free](https://www.edx.org/course) / [Paid](https://www.edx.org/course) / [YouTube](https://www.edx.org/)
 - [LinkedIn Learning](https://www.linkedin.com/learning/topics/computer-graphics) — / [Free](https://www.linkedin.com/learning/topics/computer-graphics) / [Paid](https://www.linkedin.com/learning/topics/computer-graphics) / [YouTube](https://www.linkedin.com/learning/)
 
-### 🌍 Community & Forums
+### ⚙️ ⚙️ Community & Forums
 
 **Video Forums:**
 - [Reddit r/videoediting](https://www.reddit.com/r/videoediting/) — / [New](https://www.reddit.com/r/videoediting/new/) / [Hot](https://www.reddit.com/r/videoediting/hot/) / [Top](https://www.reddit.com/r/videoediting/top/)

@@ -85,9 +85,9 @@ description: Modelagem, slicers e ferramentas para impressão 3D.
 
 ---
 
-## 🚀 MEGA LINK DUMP - Impressão 3D & Modelagem
+## ⚙️  MEGA LINK DUMP - Impressão 3D & Modelagem
 
-### 🖨️ Slicers
+### ⚙️ ️ Slicers
 
 **Professional Slicers:**
 - [PrusaSlicer](https://www.prusa3d.com/page/prusaslicer_424/) — / [Download](https://www.prusa3d.com/page/prusaslicer_424/) / [Docs](https://help.prusa3d.com/) / [Community](https://forum.prusa3d.com/) / [GitHub](https://github.com/prusa3d/PrusaSlicer) / [YouTube](https://www.youtube.com/c/PrusaResearch) / [Twitter](https://twitter.com/Prusa3D)
@@ -103,7 +103,7 @@ description: Modelagem, slicers e ferramentas para impressão 3D.
 - [MatterControl](https://www.mattercontrol.com/) — / [Download](https://www.mattercontrol.com/) / [Docs](https://www.mattercontrol.com/) / [Community](https://forum.mattercontrol.com/) / [GitHub](https://github.com/MatterHack/MatterControl) / [YouTube](https://www.youtube.com/results?search_query=mattercontrol) / [Twitter](https://twitter.com/matterhack)
 - [Repetier Host](https://www.repetier.com/) — / [Download](https://www.repetier.com/) / [Docs](https://www.repetier.com/) / [Community](https://www.repetier.com/) / [GitHub](https://github.com/repetier/Repetier-Host) / [YouTube](https://www.youtube.com/results?search_query=repetier) / [Twitter](https://twitter.com/repetier)
 
-### 🎨 Modelagem 3D
+### ⚙️ ⚙️ Modelagem 3D
 
 **Professional Software:**
 - [Blender](https://www.blender.org/) — / [Download](https://www.blender.org/download/) / [Docs](https://docs.blender.org/manual/en/latest/) / [Tutorials](https://www.blender.org/support/tutorials/) / [Marketplace](https://blendermarket.com/) / [Open Source](https://www.blender.org/about/) / [Community](https://www.blender.org/community/) / [Contribute](https://fund.blender.org/) / [Donate](https://www.blender.org/about/donate/) / [Source](https://github.com/blender/blender) / [Forum](https://blenderartists.org/) / [StackExchange](https://blender.stackexchange.com/) / [Reddit](https://www.reddit.com/r/blender/) / [Discord](https://discord.com/invite/blender) / [YouTube](https://www.youtube.com/c/BlenderFoundation) / [Twitter](https://twitter.com/blender_org) / [Facebook](https://www.facebook.com/blender) / [Instagram](https://www.instagram.com/blender3d/)
@@ -125,7 +125,7 @@ description: Modelagem, slicers e ferramentas para impressão 3D.
 - [Shapr3D](https://www.shapr3d.com/) — / [Free](https://www.shapr3d.com/pricing) / [Pro](https://www.shapr3d.com/pricing) / [Business](https://www.shapr3d.com/pricing) / [Enterprise](https://www.shapr3d.com/pricing) / [Learn](https://www.shapr3d.com/learn) / [Community](https://forum.shapr3d.com/) / [YouTube](https://www.youtube.com/c/Shapr3D) / [Twitter](https://twitter.com/Shapr3D)
 - [Fusion 360](https://www.autodesk.com/products/fusion-360) — / [Free](https://www.autodesk.com/products/fusion-360/personal) / [Startup](https://www.autodesk.com/products/fusion-360/startups) / [Commercial](https://www.autodesk.com/products/fusion-360/compare) / [Docs](https://help.autodesk.com/view/fusion360/ENU/) / [Learn](https://www.autodesk.com/products/fusion-360/learn-support) / [Community](https://forums.autodesk.com/t5/fusion-360/ct-p/115) / [YouTube](https://www.youtube.com/c/AutodeskFusion360) / [Twitter](https://twitter.com/autodesk)
 
-### 📐 Engineering CAD
+### ⚙️ Engineering CAD
 
 **Professional CAD:**
 - [SolidWorks](https://www.solidworks.com/) — / [Trial](https://www.solidworks.com/sw/support/customerportal.htm) / [Student](https://www.solidworks.com/sw/support/academic-programs.htm) / [Docs](https://help.solidworks.com/) / [Community](https://community.solidworks.com/) / [YouTube](https://www.youtube.com/c/SolidWorks) / [Twitter](https://twitter.com/SolidWorks)
@@ -142,7 +142,7 @@ description: Modelagem, slicers e ferramentas para impressão 3D.
 - [CADQuery](https://cadquery.readthedocs.io/) — / [Docs](https://cadquery.readthedocs.io/) / [GitHub](https://github.com/CadQuery/cadquery) / [Examples](https://cadquery.readthedocs.io/en/latest/examples.html)
 - [build123d](https://build123d.readthedocs.io/) — / [Docs](https://build123d.readthedocs.io/) / [GitHub](https://github.com/build123d/build123d) / [Examples](https://build123d.readthedocs.io/en/latest/examples.html)
 
-### 🧪 Formatos e Especificações
+### ⚙️ Formatos e Especificações
 
 **3D File Formats:**
 - [OBJ](https://en.wikipedia.org/wiki/Wavefront_.obj_file) — / [Wikipedia](https://en.wikipedia.org/wiki/Wavefront_.obj_file) / [Spec](https://en.wikipedia.org/wiki/Wavefront_.obj_file) / [Community](https://en.wikipedia.org/wiki/Wavefront_.obj_file) / [GitHub](https://github.com/)
@@ -157,7 +157,7 @@ description: Modelagem, slicers e ferramentas para impressão 3D.
 - [CNC G-code](https://www.cnccookbook.com/) — / [Docs](https://www.cnccookbook.com/) / [Examples](https://www.cnccookbook.com/) / [Community](https://www.cnccookbook.com/) / [YouTube](https://www.youtube.com/results?search_query=gcode) / [Twitter](https://twitter.com/cnccookbook)
 - [3D Printing G-code](https://reprap.org/wiki/G-code) — / [Wiki](https://reprap.org/wiki/G-code) / [Docs](https://reprap.org/wiki/G-code) / [Community](https://reprap.org/wiki/G-code) / [GitHub](https://github.com/reprap)
 
-### 🎯 Modelagem para Impressão
+### ⚙️ Modelagem para Impressão
 
 **Print-Specific:**
 - [Tinkercad](https://www.tinkercad.com/) — / [Free](https://www.tinkercad.com/) / [Learn](https://www.tinkercad.com/learn) / [Gallery](https://www.tinkercad.com/gallery) / [YouTube](https://www.youtube.com/c/Tinkercad) / [Twitter](https://twitter.com/tinkercad)
@@ -166,7 +166,7 @@ description: Modelagem, slicers e ferramentas para impressão 3D.
 - [Blender 3D Print](https://www.blender.org/) — / [Download](https://www.blender.org/download/) / [Docs](https://docs.blender.org/manual/en/latest/modeling/meshes/) / [Learn](https://www.blender.org/support/tutorials/) / [Community](https://blender.stackexchange.com/) / [GitHub](https://github.com/blender/blender) / [YouTube](https://www.youtube.com/c/BlenderFoundation) / [Twitter](https://twitter.com/blender_org)
 - [SketchUp](https://www.sketchup.com/) — / [Free](https://www.sketchup.com/plans-and-pricing/sketchup-for-web) / [Pro](https://www.sketchup.com/plans-and-pricing/sketchup-pro) / [3D Warehouse](https://3dwarehouse.sketchup.com/) / [Extension Warehouse](https://extensions.sketchup.com/) / [Forum](https://forums.sketchup.com/) / [YouTube](https://www.youtube.com/c/Sketchup) / [Twitter](https://twitter.com/sketchup)
 
-### 📚 Learning Resources
+### ⚙️ ⚙️ Learning Resources
 
 **Tutorials:**
 - [Print Your Mind 3D](https://www.youtube.com/c/PrintYourMind3D) — / [YouTube](https://www.youtube.com/c/PrintYourMind3D) / [Website](https://www.youtube.com/c/PrintYourMind3D) / [Twitter](https://twitter.com/PrintYourMind3D) / [Patreon](https://www.patreon.com/PrintYourMind3D)
@@ -181,7 +181,7 @@ description: Modelagem, slicers e ferramentas para impressão 3D.
 - [edX 3D Printing](https://www.edx.org/learn/computer-graphics) — / [Free](https://www.edx.org/course) / [Paid](https://www.edx.org/course) / [YouTube](https://www.edx.org/)
 - [LinkedIn Learning](https://www.linkedin.com/learning/topics/computer-graphics) — / [Free](https://www.linkedin.com/learning/topics/computer-graphics) / [Paid](https://www.linkedin.com/learning/topics/computer-graphics) / [YouTube](https://www.linkedin.com/learning/)
 
-### 🌍 Community & Forums
+### ⚙️ ⚙️ Community & Forums
 
 **3D Printing Forums:**
 - [Reddit r/3Dprinting](https://www.reddit.com/r/3Dprinting/) — / [New](https://www.reddit.com/r/3Dprinting/new/) / [Hot](https://www.reddit.com/r/3Dprinting/hot/) / [Top](https://www.reddit.com/r/3Dprinting/top/)

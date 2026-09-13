@@ -5,10 +5,23 @@ description: Gráficos na web com WebGL, WebGPU, Three.js e Babylon.js — demos
 ---
 
 <script setup>
+import CanvasPanel from "./.vitepress/components/CanvasPanel.vue";
 import ThreePanel from "./.vitepress/components/ThreePanel.vue";
 import WebGLPanel from "./.vitepress/components/WebGLPanel.vue";
 import WebGPUPanel from "./.vitepress/components/WebGPUPanel.vue";
 import BabylonPanel from "./.vitepress/components/BabylonPanel.vue";
+import sketchWebgpuPipeline from "./.vitepress/components/animations/canvas_webgpu_pipeline.js";
+import sketchThreejsScene from "./.vitepress/components/animations/canvas_threejs_scene.js";
+import sketchR3f from "./.vitepress/components/animations/canvas_r3f.js";
+import sketchAframe from "./.vitepress/components/animations/canvas_aframe.js";
+import sketchPlaycanvas from "./.vitepress/components/animations/canvas_playcanvas.js";
+import sketchMapbox from "./.vitepress/components/animations/canvas_mapbox.js";
+import sketchPixijs from "./.vitepress/components/animations/canvas_pixijs.js";
+import sketchPhaser from "./.vitepress/components/animations/canvas_phaser.js";
+import sketchP5js from "./.vitepress/components/animations/canvas_p5js.js";
+import sketchD3Graph from "./.vitepress/components/animations/canvas_d3_graph.js";
+import sketchDeckgl from "./.vitepress/components/animations/canvas_deckgl.js";
+import sketchChartjs from "./.vitepress/components/animations/canvas_chartjs.js";
 </script>
 
 # Web
@@ -36,10 +49,10 @@ WebGPU é a API moderna (filas, pipelines, WGSL). Mais próxima do Vulkan/D3D12/
   subtitle="Device, render pipeline e command encoder. Se o cubo não aparecer, o navegador ainda não expõe navigator.gpu."
 />
 
-<ThreePanel
-  topic="webgpu"
-  title="Compute e instancing"
-  subtitle="Centenas de instâncias orbitando um núcleo — o tipo de carga que o WebGPU trata bem."
+<CanvasPanel
+  :sketch="sketchWebgpuPipeline"
+  title="WebGPU: Pipeline e Arquitetura"
+  subtitle="Ponto de entrada navigator.gpu, adapter, device lógico, command encoder e submissão na queue."
 />
 
 - [WebGPU Fundamentals](https://webgpufundamentals.org/) — guia moderno
@@ -48,12 +61,18 @@ WebGPU é a API moderna (filas, pipelines, WGSL). Mais próxima do Vulkan/D3D12/
 
 ## Three.js
 
-Three.js é a biblioteca 3D mais usada na web. A cena abaixo mistura knot, satélites e partículas.
+Three.js é a biblioteca 3D mais usada na web. A cena abaixo combina o canvas tridimensional interativo (com nó central, satélites em órbita, wireframe comutável e campo de estrelas) com o diagrama didático 2D da árvore Scenegraph.
 
 <ThreePanel
   topic="threejs"
-  title="Cena Three.js"
-  subtitle="Torus knot, órbitas e nuvem de pontos com MeshStandardMaterial."
+  title="Cena Three.js Interativa em Tempo Real"
+  subtitle="Torus knot com satélites poliédricos em órbita, rotação com inércia e wireframe dinâmico."
+/>
+
+<CanvasPanel
+  :sketch="sketchThreejsScene"
+  title="Diagrama Didático 2D: Scenegraph e Hierarquia"
+  subtitle="Hierarquia em árvore contendo Camera, DirectionalLight e Mesh (composta por Geometry e Material)."
 />
 
 - [Three.js](https://threejs.org/) — biblioteca principal para 3D web
@@ -87,15 +106,21 @@ Babylon.js é uma engine completa (cena, câmera, materiais, loop de render). O 
 
 ## Bibliotecas e Frameworks com Demos
 
-### 🎮 3D Web Frameworks
+### ⚙️ 3D Web Frameworks
 
 #### React Three Fiber (R3F)
 > Ecossistema declarativo que traz o Three.js para o paradigma de componentes e hooks do React (`@react-three/fiber`, `@react-three/drei`).
 
 <ThreePanel
   topic="r3f"
-  title="React Three Fiber (R3F)"
-  subtitle="Nós reativos declarativos com física de molas (Spring) e grafo de estados em torno do núcleo React."
+  title="Átomo Declarativo R3F 3D"
+  subtitle="Grafo de componentes reativos conectando hooks de estado ao runtime Three.js."
+/>
+
+<CanvasPanel
+  :sketch="sketchR3f"
+  title="Diagrama Didático 2D: Reconciliação JSX do R3F"
+  subtitle="Nós reativos declarativos via JSX reconciliados diretamente para instâncias Three.js."
 />
 
 - [React Three Fiber](https://docs.pmnd.rs/react-three-fiber) — / [Docs](https://docs.pmnd.rs/react-three-fiber) / [GitHub](https://github.com/pmndrs/react-three-fiber) / [Drei](https://github.com/pmndrs/drei) / [Tutorials](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction) / [Community](https://discord.gg/pmndrs) / [YouTube](https://www.youtube.com/c/pmndrs) / [Twitter](https://twitter.com/pmndrs)
@@ -103,10 +128,10 @@ Babylon.js é uma engine completa (cena, câmera, materiais, loop de render). O 
 #### A-Frame (WebXR & VR)
 > Framework baseado em Entity-Component-System (ECS) para construção de experiências de Realidade Virtual e Aumentada no navegador.
 
-<ThreePanel
-  topic="aframe"
+<CanvasPanel
+  :sketch="sketchAframe"
   title="A-Frame (WebXR / Realidade Virtual)"
-  subtitle="Headset VR com controladores de mira laser em cena espacial imersiva em 360°."
+  subtitle="Arquitetura desacoplada de Entidades, Componentes e Sistemas (ECS) para experiências espaciais."
 />
 
 - [A-Frame](https://aframe.io/) — / [Docs](https://aframe.io/docs/) / [GitHub](https://github.com/aframevr/aframe) / [Examples](https://aframe.io/examples/) / [Community](https://aframe.io/community/) / [YouTube](https://www.youtube.com/c/aframevr) / [Twitter](https://twitter.com/aframevr)
@@ -114,10 +139,10 @@ Babylon.js é uma engine completa (cena, câmera, materiais, loop de render). O 
 #### PlayCanvas
 > Engine de jogos WebGL/WebGPU completa na nuvem, com física rígida em tempo real, editor colaborativo e suporte mobile de alto desempenho.
 
-<ThreePanel
-  topic="playcanvas"
+<CanvasPanel
+  :sketch="sketchPlaycanvas"
   title="PlayCanvas (Web Game Engine)"
-  subtitle="Arena isométrica de jogo com simulação física de esfera, pickups de cristais e sombras dinâmicas."
+  subtitle="Loop de jogo contínuo: Entrada → Simulação Física (Ammo.js) → Renderizador WebGL/WebGPU."
 />
 
 - [PlayCanvas](https://playcanvas.com/) — / [Docs](https://developer.playcanvas.com/) / [GitHub](https://github.com/playcanvas/engine) / [Editor](https://playcanvas.com/editor) / [Community](https://forum.playcanvas.com/) / [YouTube](https://www.youtube.com/c/PlayCanvas) / [Twitter](https://twitter.com/playcanvas)
@@ -125,25 +150,25 @@ Babylon.js é uma engine completa (cena, câmera, materiais, loop de render). O 
 #### Mapbox GL JS
 > Renderizador de mapas geoespaciais vetoriais com extrusão 3D de edifícios urbanos, camadas de tráfego e visualização de terreno.
 
-<ThreePanel
-  topic="mapbox"
+<CanvasPanel
+  :sketch="sketchMapbox"
   title="Mapbox GL JS (3D Geospatial)"
-  subtitle="Extrusão de malha urbana poligonal com pulso de geolocalização e malha viária em tempo real."
+  subtitle="Particionamento de dados geoespaciais em quadtrees e projeção Web Mercator."
 />
 
 - [Mapbox GL JS](https://docs.mapbox.com/mapbox-gl-js/) — / [Docs](https://docs.mapbox.com/mapbox-gl-js/) / [GitHub](https://github.com/mapbox/mapbox-gl-js) / [Examples](https://docs.mapbox.com/mapbox-gl-js/examples/) / [Community](https://www.mapbox.com/community/) / [YouTube](https://www.youtube.com/c/Mapbox) / [Twitter](https://twitter.com/mapbox)
 
 ---
 
-### 🕹️ 2D Web Frameworks
+### ⚙️ 2D Web Frameworks
 
 #### PixiJS
 > O motor de renderização 2D mais rápido da web, utilizando lote de sprites (*Sprite Batching*) com aceleração direta por hardware WebGL.
 
-<ThreePanel
-  topic="pixijs"
+<CanvasPanel
+  :sketch="sketchPixijs"
   title="PixiJS (Sprite Batching 2D)"
-  subtitle="Mais de 100 sprites 2D agrupados e renderizados em lote em alta velocidade com colisões no canvas."
+  subtitle="Mais de 100 sprites agrupados na mesma textura e renderizados em 1 única Draw Call."
 />
 
 - [PixiJS](https://pixijs.com/) — / [Docs](https://pixijs.io/docs/) / [GitHub](https://github.com/pixijs/pixi.js) / [Examples](https://pixijs.io/examples/) / [Community](https://discord.gg/pixijs) / [YouTube](https://www.youtube.com/c/PixiJS) / [Twitter](https://twitter.com/pixijs)
@@ -151,10 +176,10 @@ Babylon.js é uma engine completa (cena, câmera, materiais, loop de render). O 
 #### Phaser
 > Framework completo para desenvolvimento de jogos 2D no navegador com gerenciador de física (Arcade/Matter), áudio, spritesheets e mapas de azulejos (Tilemaps).
 
-<ThreePanel
-  topic="phaser"
+<CanvasPanel
+  :sketch="sketchPhaser"
   title="Phaser (2D Game Framework)"
-  subtitle="Mini-nível de plataforma com física de pulo, plataformas e moedas colecionáveis giratórias."
+  subtitle="Física Arcade 2D com vetores de gravidade e teste de colisão por AABB."
 />
 
 - [Phaser](https://phaser.io/) — / [Docs](https://photonstorm.github.io/phaser3-docs/) / [GitHub](https://github.com/photonstorm/phaser) / [Examples](https://phaser.io/examples) / [Community](https://phaser.io/community) / [YouTube](https://www.youtube.com/c/Phaser) / [Twitter](https://twitter.com/photonstorm)
@@ -167,25 +192,25 @@ Babylon.js é uma engine completa (cena, câmera, materiais, loop de render). O 
 #### P5.js (Creative Coding)
 > Biblioteca voltada para arte generativa, design de interação e educação artística, inspirada na filosofia do Processing.
 
-<ThreePanel
-  topic="p5js"
+<CanvasPanel
+  :sketch="sketchP5js"
   title="P5.js (Creative Coding & Generative Art)"
-  subtitle="Curvas matemáticas de Lissajous tridimensionais geradas por código procedimental contínuo."
+  subtitle="Curvas matemáticas paramétricas de Lissajous geradas no ciclo setup() e draw()."
 />
 
 - [P5.js](https://p5js.org/) — / [Docs](https://p5js.org/) / [GitHub](https://github.com/processing/p5.js) / [Examples](https://p5js.org/examples/) / [Community](https://p5js.org/community/) / [YouTube](https://www.youtube.com/c/p5js) / [Twitter](https://twitter.com/p5xjs)
 
 ---
 
-### 📊 Visualization Libraries (Data Viz)
+### ⚙️ Visualization Libraries (Data Viz)
 
 #### D3.js (Data-Driven Documents)
 > A biblioteca padrão da indústria para manipulação do DOM e geração de gráficos vetoriais impulsionados por dados, grafos de força e mapas.
 
-<ThreePanel
-  topic="d3"
+<CanvasPanel
+  :sketch="sketchD3Graph"
   title="D3.js (Force-Directed Graph 3D)"
-  subtitle="Grafo de forças tridimensional com atração, repulsão de nós e pulso métrico de dados dinâmicos."
+  subtitle="Equilíbrio dinâmico entre atração de elos e repulsão de cargas em simulação física."
 />
 
 - [D3.js](https://d3js.org/) — / [Docs](https://github.com/d3/d3/wiki) / [GitHub](https://github.com/d3/d3) / [Examples](https://observablehq.com/@d3/gallery) / [Community](https://d3js.org/) / [YouTube](https://www.youtube.com/results?search_query=d3js) / [Twitter](https://twitter.com/d3js)
@@ -193,10 +218,10 @@ Babylon.js é uma engine completa (cena, câmera, materiais, loop de render). O 
 #### Deck.gl (Uber Open Source)
 > Framework de visualização em grande escala construído sobre WebGL/WebGPU para análise espacial de milhões de pontos e dados geoespaciais em tempo real.
 
-<ThreePanel
-  topic="deckgl"
+<CanvasPanel
+  :sketch="sketchDeckgl"
   title="Deck.gl (HexagonLayer & ArcLayer 3D)"
-  subtitle="Camadas de densidade hexagonal 3D e arcos de fluxo de dados de alta escala acelerados por GPU."
+  subtitle="Camadas de agregação hexagonal e arcos de fluxo de dados acelerados por GPU."
 />
 
 - [Deck.gl](https://deck.gl/) — / [Docs](https://deck.gl/) / [GitHub](https://github.com/visgl/deck.gl) / [Examples](https://deck.gl/examples) / [Community](https://github.com/visgl/deck.gl) / [YouTube](https://www.youtube.com/results?search_query=deckgl) / [Twitter](https://twitter.com/uber)
@@ -208,10 +233,10 @@ Babylon.js é uma engine completa (cena, câmera, materiais, loop de render). O 
 #### Chart.js
 > Biblioteca amigável e amplamente adotada para criação de painéis e dashboards gráficos modernos.
 
-<ThreePanel
-  topic="chartjs"
-  title="Chart.js (Dashboard & Gráficos 3D)"
-  subtitle="Barras métricas animadas com gráfico donut de distribuição percentual."
+<CanvasPanel
+  :sketch="sketchChartjs"
+  title="Chart.js (Dashboard & Gráficos 2D)"
+  subtitle="Barras métricas animadas com interpolação contínua em Canvas 2D."
 />
 
 - [Chart.js](https://www.chartjs.org/) — / [Docs](https://www.chartjs.org/docs/) / [GitHub](https://github.com/chartjs/Chart.js) / [Examples](https://www.chartjs.org/docs/latest/samples/) / [Community](https://www.chartjs.org/docs/latest/) / [YouTube](https://www.youtube.com/results?search_query=chartjs) / [Twitter](https://twitter.com/chartjs)
@@ -225,9 +250,9 @@ Babylon.js é uma engine completa (cena, câmera, materiais, loop de render). O 
 
 ---
 
-## 🚀 MEGA LINK DUMP - Web Graphics & 3D
+## ⚙️  MEGA LINK DUMP - Web Graphics & 3D
 
-### 🌐 WebGL & WebGPU
+### ⚙️ WebGL & WebGPU
 
 **WebGL Resources:**
 - [WebGL Fundamentals](https://webglfundamentals.org/) — / [WebGL](https://webglfundamentals.org/webgl/lessons/webgl-fundamentals.html) / [WebGL2](https://webgl2fundamentals.org/) / [GitHub](https://github.com/gpupublish/webglfundamentals-website) / [Tutorials](https://webglfundamentals.org/webgl/lessons/)
@@ -243,7 +268,7 @@ Babylon.js é uma engine completa (cena, câmera, materiais, loop de render). O 
 - [WebGPU Samples](https://github.com/google/webgpu-samples) — / [GitHub](https://github.com/google/webgpu-samples) / [Live](https://google.github.io/webgpu-samples/) / [Docs](https://github.com/google/webgpu-samples) / [Contributing](https://github.com/google/webgpu-samples)
 - [WebGPU GitHub](https://github.com/gpuweb/gpuweb) — / [GitHub](https://github.com/gpuweb/gpuweb) / [Design](https://github.com/gpuweb/gpuweb/blob/main/design/) / [Explainer](https://github.com/gpuweb/gpuweb/blob/main/explainer.md) / [Community](https://github.com/gpuweb/gpuweb)
 
-### 🎨 Three.js Ecosystem
+### ⚙️ Three.js Ecosystem
 
 **Core Three.js:**
 - [Three.js](https://threejs.org/) — / [Docs](https://threejs.org/docs/) / [Examples](https://threejs.org/examples/) / [GitHub](https://github.com/mrdoob/three.js) / [Tutorials](https://threejs.org/docs/#manual/en/introduction/Creating-a-scene) / [Community](https://threejs.org/) / [YouTube](https://www.youtube.com/c/ThreeJS) / [Twitter](https://twitter.com/threejs)
@@ -265,7 +290,7 @@ Babylon.js é uma engine completa (cena, câmera, materiais, loop de render). O 
 - [STLLoader](https://threejs.org/examples/#webgl_loader_stl) — / [Example](https://threejs.org/examples/#webgl_loader_stl) / [Docs](https://threejs.org/docs/#examples/en/loaders/STLLoader) / [Format](https://en.wikipedia.org/wiki/STL_(file_format)) / [Community](https://en.wikipedia.org/wiki/STL_(file_format))
 - [ColladaLoader](https://threejs.org/examples/#webgl_loader_collada) — / [Example](https://threejs.org/examples/#webgl_loader_collada) / [Docs](https://threejs.org/docs/#examples/en/loaders/ColladaLoader) / [Format](https://en.wikipedia.org/wiki/COLLADA) / [Community](https://en.wikipedia.org/wiki/COLLADA)
 
-### 🏗️ Babylon.js Ecosystem
+### ⚙️ Babylon.js Ecosystem
 
 **Core Babylon.js:**
 - [Babylon.js](https://www.babylonjs.com/) — / [Docs](https://doc.babylonjs.com/) / [Playground](https://playground.babylonjs.com/) / [GitHub](https://github.com/BabylonJS/Babylon.js) / [Tutorials](https://doc.babylonjs.com/start/chapter1) / [Community](https://forum.babylonjs.com/) / [YouTube](https://www.youtube.com/c/BabylonJS) / [Twitter](https://twitter.com/babylonjs)
@@ -279,7 +304,7 @@ Babylon.js é uma engine completa (cena, câmera, materiais, loop de render). O 
 - [Babylon PostProcess](https://doc.babylonjs.com/features/featuresDeepDive/postProcesses) — / [Docs](https://doc.babylonjs.com/features/featuresDeepDive/postProcesses) / [Pipeline](https://doc.babylonjs.com/features/featuresDeepDive/postProcesses/usePostProcessRenderPipeline) / [Community](https://forum.babylonjs.com/)
 - [Babylon Inspector](https://doc.babylonjs.com/features/featuresDeepDive/debugLayer) — / [Docs](https://doc.babylonjs.com/features/featuresDeepDive/debugLayer) / [Debug Layer](https://doc.babylonjs.com/features/featuresDeepDive/debugLayer) / [Community](https://forum.babylonjs.com/)
 
-### 🎮 VR/AR Web
+### ⚙️ VR/AR Web
 
 **VR Frameworks:**
 - [A-Frame](https://aframe.io/) — / [Docs](https://aframe.io/docs/) / [GitHub](https://github.com/aframevr/aframe) / [Examples](https://aframe.io/examples/) / [Community](https://aframe.io/community/) / [YouTube](https://www.youtube.com/c/aframevr) / [Twitter](https://twitter.com/aframevr)
@@ -293,7 +318,7 @@ Babylon.js é uma engine completa (cena, câmera, materiais, loop de render). O 
 - [8th Wall](https://www.8thwall.com/) — / [Docs](https://www.8thwall.com/docs) / [SDK](https://www.8thwall.com/) / [Examples](https://www.8thwall.com/examples) / [Community](https://www.8thwall.com/community) / [YouTube](https://www.youtube.com/c/8thWall) / [Twitter](https://twitter.com/8thWall)
 - [Zappar](https://www.zappar.com/) — / [Docs](https://docs.zappar.com/) / [SDK](https://www.zappar.com/) / [Examples](https://www.zappar.com/examples) / [Community](https://www.zappar.com/community) / [YouTube](https://www.youtube.com/c/Zappar) / [Twitter](https://twitter.com/zappar)
 
-### 📊 Visualization & Data
+### ⚙️ Visualization & Data
 
 **Data Visualization:**
 - [D3.js](https://d3js.org/) — / [Docs](https://github.com/d3/d3/wiki) / [GitHub](https://github.com/d3/d3) / [Examples](https://observablehq.com/@d3/gallery) / [Community](https://d3js.org/) / [YouTube](https://www.youtube.com/results?search_query=d3js) / [Twitter](https://twitter.com/d3js)
@@ -310,7 +335,7 @@ Babylon.js é uma engine completa (cena, câmera, materiais, loop de render). O 
 - [Cesium.js](https://cesium.com/) — / [Docs](https://cesium.com/) / [GitHub](https://github.com/CesiumGS/cesium) / [Examples](https://cesium.com/) / [Community](https://community.cesium.com/) / [YouTube](https://www.youtube.com/c/CesiumGS) / [Twitter](https://twitter.com/CesiumGS)
 - [OpenLayers](https://openlayers.org/) — / [Docs](https://openlayers.org/) / [GitHub](https://github.com/openlayers/openlayers) / [Examples](https://openlayers.org/en/latest/examples/) / [Community](https://openlayers.org/) / [YouTube](https://www.youtube.com/results?search_query=openlayers) / [Twitter](https://twitter.com/openlayers)
 
-### 🎨 Creative Coding
+### ⚙️ Creative Coding
 
 **Creative Libraries:**
 - [p5.js](https://p5js.org/) — / [Docs](https://p5js.org/) / [GitHub](https://github.com/processing/p5.js) / [Examples](https://p5js.org/examples/) / [Community](https://p5js.org/community/) / [YouTube](https://www.youtube.com/c/p5js) / [Twitter](https://twitter.com/p5xjs)
@@ -319,7 +344,7 @@ Babylon.js é uma engine completa (cena, câmera, materiais, loop de render). O 
 - [Cinder](https://libcinder.org/) — / [Docs](https://libcinder.org/) / [GitHub](https://github.com/cinder/Cinder) / [Examples](https://libcinder.org/) / [Community](https://libcinder.org/) / [YouTube](https://www.youtube.com/results?search_query=cinder) / [Twitter](https://twitter.com/libcinder)
 - [TouchDesigner](https://derivative.ca/) — / [Docs](https://docs.derivative.ca/) / [GitHub](https://github.com/derivative) / [Examples](https://docs.derivative.ca/) / [Community](https://forum.derivative.ca/) / [YouTube](https://www.youtube.com/results?search_query=touchdesigner) / [Twitter](https://twitter.com/derivative)
 
-### 🔧 Development Tools
+### ⚙️ Development Tools
 
 **WebGL/WebGPU Tools:**
 - [WebGL Report](https://webglreport.com/) — / [WebGL](https://webglreport.com/) / [WebGL2](https://webglreport.com/?v=2) / [WebGPU](https://webglreport.com/?v=webgpu) / [Community](https://webglreport.com/)
@@ -333,7 +358,7 @@ Babylon.js é uma engine completa (cena, câmera, materiais, loop de render). O 
 - [Safari Web Inspector](https://developer.apple.com/safari/tools/) — / [Performance](https://developer.apple.com/safari/tools/) / [WebGL](https://developer.apple.com/safari/tools/) / [Memory](https://developer.apple.com/safari/tools/) / [Community](https://developer.apple.com/safari/tools/)
 - [Edge DevTools](https://docs.microsoft.com/microsoft-edge/devtools-guide) — / [Performance](https://docs.microsoft.com/microsoft-edge/devtools-guide/performance) / [WebGL](https://docs.microsoft.com/microsoft-edge/devtools-guide/console) / [Memory](https://docs.microsoft.com/microsoft-edge/devtools-guide/memory) / [Community](https://docs.microsoft.com/microsoft-edge/devtools-guide)
 
-### 📚 Learning Resources
+### ⚙️ Learning Resources
 
 **WebGL Courses:**
 - [WebGL Fundamentals](https://webglfundamentals.org/) — / [Docs](https://webglfundamentals.org/) / [GitHub](https://github.com/gpupublish/webglfundamentals-website) / [Tutorials](https://webglfundamentals.org/webgl/lessons/) / [Community](https://webglfundamentals.org/)
@@ -354,7 +379,7 @@ Babylon.js é uma engine completa (cena, câmera, materiais, loop de render). O 
 - [Babylon.js Tutorials](https://doc.babylonjs.com/start/chapter1) — / [Docs](https://doc.babylonjs.com/start/chapter1) / [GitHub](https://github.com/BabylonJS/Babylon.js) / [Examples](https://doc.babylonjs.com/examples/) / [Community](https://forum.babylonjs.com/)
 - [Babylon.js GitHub](https://github.com/BabylonJS/Babylon.js) — / [GitHub](https://github.com/BabylonJS/Babylon.js) / [Contributing](https://github.com/BabylonJS/Babylon.js) / [Issues](https://github.com/BabylonJS/Babylon.js/issues) / [Community](https://github.com/BabylonJS/Babylon.js)
 
-### 🌍 Community & Forums
+### ⚙️ Community & Forums
 
 **WebGL Community:**
 - [Reddit r/webgl](https://www.reddit.com/r/webgl/) — / [New](https://www.reddit.com/r/webgl/new/) / [Hot](https://www.reddit.com/r/webgl/hot/) / [Top](https://www.reddit.com/r/webgl/top/)

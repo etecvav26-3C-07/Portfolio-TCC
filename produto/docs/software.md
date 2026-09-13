@@ -207,9 +207,9 @@ description: Ferramentas e aplicações para modelagem 3D, animação, composiç
 
 ---
 
-## 🚀 MEGA LINK DUMP - Software de Computação Gráfica
+## ⚙️  MEGA LINK DUMP - Software de Computação Gráfica
 
-### 🎨 Modelagem 3D & Escultura
+### ⚙️ ⚙️ Modelagem 3D & Escultura
 
 **Professional Suite:**
 - [Autodesk Maya](https://www.autodesk.com/products/maya) — / [Free Trial](https://www.autodesk.com/products/maya/free-trial) / [Student](https://www.autodesk.com/education/edu-software/overview?sorting=software&products=Maya) / [Docs](https://help.autodesk.com/view/MAYAUL/2023/ENU/) / [Community](https://forums.autodesk.com/t5/maya/ct-p/90) / [YouTube](https://www.youtube.com/c/AutodeskMaya) / [Twitter](https://twitter.com/maya)
@@ -230,7 +230,7 @@ description: Ferramentas e aplicações para modelagem 3D, animação, composiç
 - [Forger](https://maxon.net/en/forger) — / [iOS](https://apps.apple.com/app/forger/id1058962655) / [Pro](https://maxon.net/en/forger/pricing) / [Docs](https://maxon.net/en/forger/documentation) / [Learn](https://maxon.net/en/forger/tutorials) / [YouTube](https://www.youtube.com/c/Maxon3D) / [Twitter](https://twitter.com/maxon3d)
 - [uMake](https://www.umake.xyz/) — / [iOS](https://apps.apple.com/app/umake-3d-cad-modeling/id1064359738) / [Pro](https://www.umake.xyz/pricing) / [Tutorials](https://www.umake.xyz/tutorials) / [YouTube](https://www.youtube.com/c/UMakeApp) / [Twitter](https://twitter.com/UMakeApp)
 
-### 🏗️ CAD & Engenharia
+### ⚙️ ⚙️ CAD & Engenharia
 
 **Professional CAD:**
 - [SolidWorks](https://www.solidworks.com/) — / [Trial](https://www.solidworks.com/sw/support/customerportal.htm) / [Student](https://www.solidworks.com/sw/support/academic-programs.htm) / [Docs](https://help.solidworks.com/) / [Community](https://community.solidworks.com/) / [YouTube](https://www.youtube.com/c/SolidWorks) / [Twitter](https://twitter.com/SolidWorks)
@@ -251,7 +251,7 @@ description: Ferramentas e aplicações para modelagem 3D, animação, composiç
 - [Shapr3D](https://www.shapr3d.com/) — / [Free](https://www.shapr3d.com/pricing) / [Pro](https://www.shapr3d.com/pricing) / [Business](https://www.shapr3d.com/pricing) / [Enterprise](https://www.shapr3d.com/pricing) / [Learn](https://www.shapr3d.com/learn) / [Community](https://forum.shapr3d.com/) / [YouTube](https://www.youtube.com/c/Shapr3D) / [Twitter](https://twitter.com/Shapr3D)
 - [Fusion 360](https://www.autodesk.com/products/fusion-360) — / [Free](https://www.autodesk.com/products/fusion-360/personal) / [Startup](https://www.autodesk.com/products/fusion-360/startups) / [Commercial](https://www.autodesk.com/products/fusion-360/compare) / [Docs](https://help.autodesk.com/view/fusion360/ENU/) / [Learn](https://www.autodesk.com/products/fusion-360/learn-support) / [Community](https://forums.autodesk.com/t5/fusion-360/ct-p/115) / [YouTube](https://www.youtube.com/c/AutodeskFusion360) / [Twitter](https://twitter.com/autodesk)
 
-### 🎬 Vídeo & Composição
+### ⚙️ Vídeo & Composição
 
 **Professional Video:**
 - [DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve/) — / [Free](https://www.blackmagicdesign.com/products/davinciresolve/) / [Studio](https://www.blackmagicdesign.com/products/davinciresolvestudio) / [Docs](https://documents.blackmagicdesign.com/) / [Learn](https://www.blackmagicdesign.com/products/davinciresolve/training) / [Community](https://forum.blackmagicdesign.com/) / [YouTube](https://www.youtube.com/c/BlackmagicDesignOfficial) / [Twitter](https://twitter.com/BlackmagicDesign)
@@ -270,7 +270,7 @@ description: Ferramentas e aplicações para modelagem 3D, animação, composiç
 - [InShot](https://inshot.app/) — / [iOS](https://apps.apple.com/app/inshot-video-editor/id979870250) / [Android](https://play.google.com/store/apps/details?id=com.cameraclip.editvideo) / [Pro](https://inshot.app/pro) / [Tutorials](https://inshot.app/tutorials) / [YouTube](https://www.youtube.com/c/InShotVideoEditor) / [Twitter](https://twitter.com/InShotApp)
 - [VLLO](https://vllo.io/) — / [iOS](https://apps.apple.com/app/vllo-video-editor/id1145508542) / [Android](https://play.google.com/store/apps/details?id=com.vimos.vimotion) / [Pro](https://vllo.io/pricing) / [Tutorials](https://vllo.io/tutorials) / [YouTube](https://www.youtube.com/c/VLLO) / [Twitter](https://twitter.com/VLLO)
 
-### 🖨️ Impressão 3D
+### ⚙️ ️ Impressão 3D
 
 **Slicers:**
 - [PrusaSlicer](https://www.prusa3d.com/page/prusaslicer_424/) — / [Download](https://www.prusa3d.com/page/prusaslicer_424/) / [Docs](https://help.prusa3d.com/) / [Community](https://forum.prusa3d.com/) / [GitHub](https://github.com/prusa3d/PrusaSlicer) / [YouTube](https://www.youtube.com/c/PrusaResearch) / [Twitter](https://twitter.com/Prusa3D)
@@ -285,7 +285,7 @@ description: Ferramentas e aplicações para modelagem 3D, animação, composiç
 - [FreeCAD](https://www.freecad.org/) — / [Download](https://www.freecad.org/downloads.php) / [Docs](https://wiki.freecad.org/) / [Learn](https://wiki.freecad.org/Online_Help_Start) / [Forum](https://forum.freecad.org/) / [GitHub](https://github.com/FreeCAD/FreeCAD) / [YouTube](https://www.youtube.com/c/FreeCADOfficial) / [Twitter](https://twitter.com/FreeCAD)
 - [Blender](https://www.blender.org/) — / [Download](https://www.blender.org/download/) / [Docs](https://docs.blender.org/manual/en/latest/) / [Tutorials](https://www.blender.org/support/tutorials/) / [Marketplace](https://blendermarket.com/) / [Open Source](https://www.blender.org/about/) / [Community](https://www.blender.org/community/) / [Contribute](https://fund.blender.org/) / [Donate](https://www.blender.org/about/donate/) / [Source](https://github.com/blender/blender) / [Forum](https://blenderartists.org/) / [StackExchange](https://blender.stackexchange.com/) / [Reddit](https://www.reddit.com/r/blender/) / [Discord](https://discord.com/invite/blender) / [YouTube](https://www.youtube.com/c/BlenderFoundation) / [Twitter](https://twitter.com/blender_org) / [Facebook](https://www.facebook.com/blender) / [Instagram](https://www.instagram.com/blender3d/)
 
-### 🎮 Game Engines
+### ⚙️ ⚙️ Game Engines
 
 **Commercial:**
 - [Unreal Engine](https://www.unrealengine.com/) — / [Free](https://www.unrealengine.com/en-US/unreal-engine/) / [Epic](https://www.unrealengine.com/en-US/epic-games) / [Docs](https://docs.unrealengine.com/) / [Learn](https://www.unrealengine.com/en-US/learn) / [Marketplace](https://www.unrealengine.com/marketplace) / [Community](https://forums.unrealengine.com/) / [GitHub](https://github.com/EpicGames/UnrealEngine) / [YouTube](https://www.youtube.com/c/UnrealEngine) / [Twitter](https://twitter.com/unrealengine)
@@ -299,7 +299,7 @@ description: Ferramentas e aplicações para modelagem 3D, animação, composiç
 - [Flax Engine](https://flaxengine.com/) — / [Download](https://flaxengine.com/download) / [Docs](https://docs.flaxengine.com/) / [Learn](https://flaxengine.com/learn) / [Community](https://forum.flaxengine.com/) / [GitHub](https://github.com/FlaxEngine/FlaxEngine) / [YouTube](https://www.youtube.com/c/FlaxEngine) / [Twitter](https://twitter.com/FlaxEngine)
 - [Armory3D](https://armory3d.org/) — / [Download](https://armory3d.org/) / [Docs](https://armory3d.org/manual/) / [Learn](https://armory3d.org/learn) / [Community](https://armory3d.org/community) / [GitHub](https://github.com/armory3d/armory) / [YouTube](https://www.youtube.com/c/Armory3D) / [Twitter](https://twitter.com/armory3d)
 
-### 🎨 Renderização
+### ⚙️ ⚙️ Renderização
 
 **Commercial:**
 - [V-Ray](https://www.chaos.com/vray) — / [Trial](https://www.chaos.com/vray-trial) / [Buy](https://www.chaos.com/vray-buy) / [Docs](https://docs.chaos.com/) / [Learn](https://www.chaos.com/vray-learn) / [Community](https://forums.chaos.com/) / [YouTube](https://www.youtube.com/c/ChaosGroup) / [Twitter](https://twitter.com/ChaosGroup)
@@ -313,7 +313,7 @@ description: Ferramentas e aplicações para modelagem 3D, animação, composiç
 - [Appleseed](https://appleseedhq.net/) — / [Download](https://appleseedhq.net/download) / [Docs](https://appleseedhq.net/docs) / [Learn](https://appleseedhq.net/tutorials) / [Community](https://appleseedhq.net/forum) / [GitHub](https://github.com/appleseedhq/appleseed) / [YouTube](https://www.youtube.com/c/AppleseedHQ) / [Twitter](https://twitter.com/appleseedhq)
 - [Mitsuba](https://mitsuba-renderer.org/) — / [Download](https://mitsuba-renderer.org/download) / [Docs](https://mitsuba-renderer.org/docs) / [Learn](https://mitsuba-renderer.org/tutorials) / [Community](https://mitsuba-renderer.org/forum) / [GitHub](https://github.com/mitsuba-renderer/mitsuba3) / [YouTube](https://www.youtube.com/c/MitsubaRenderer) / [Twitter](https://twitter.com/MitsubaRender)
 
-### 📱 Mobile Graphics
+### ⚙️ Mobile Graphics
 
 **Mobile Engines:**
 - [Unity Mobile](https://unity.com/mobile) — / [iOS](https://unity.com/unity/mobile/ios) / [Android](https://unity.com/unity/mobile/android) / [Docs](https://docs.unity3d.com/) / [Learn](https://learn.unity.com/) / [Asset Store](https://assetstore.unity.com/) / [Community](https://forum.unity.com/) / [GitHub](https://github.com/Unity-Technologies/Unity) / [YouTube](https://www.youtube.com/c/Unity) / [Twitter](https://twitter.com/unity3d)
@@ -327,7 +327,7 @@ description: Ferramentas e aplicações para modelagem 3D, animação, composiç
 - [Metal iOS](https://developer.apple.com/metal/) — / [iOS](https://developer.apple.com/documentation/metal) / [Docs](https://developer.apple.com/documentation/metal) / [Samples](https://developer.apple.com/metal/sample-code/) / [Community](https://developer.apple.com/forums/)
 - [Direct3D Mobile](https://docs.microsoft.com/windows/win32/direct3d12) — / [UWP](https://docs.microsoft.com/windows/uwp/) / [Xbox](https://docs.microsoft.com/windows/win32/direct3d12) / [Docs](https://docs.microsoft.com/windows/win32/direct3d12) / [Community](https://docs.microsoft.com/community/)
 
-### 🌐 Web Graphics
+### ⚙️ ⚙️ Web Graphics
 
 **WebGL Libraries:**
 - [Three.js](https://threejs.org/) — / [Docs](https://threejs.org/docs/) / [Examples](https://threejs.org/examples/) / [GitHub](https://github.com/mrdoob/three.js) / [Tutorials](https://threejs.org/docs/#manual/en/introduction/Creating-a-scene) / [Community](https://threejs.org/) / [YouTube](https://www.youtube.com/c/ThreeJS) / [Twitter](https://twitter.com/threejs)
@@ -342,7 +342,7 @@ description: Ferramentas e aplicações para modelagem 3D, animação, composiç
 - [Konva.js](https://konvajs.org/) — / [Docs](https://konvajs.org/docs) / [GitHub](https://github.com/konvajs/konva) / [Examples](https://konvajs.org/docs/sandbox/) / [Community](https://stackoverflow.com/questions/tagged/konva) / [YouTube](https://www.youtube.com/results?search_query=konva) / [Twitter](https://twitter.com/konvajs)
 - [Fabric.js](https://fabricjs.com/) — / [Docs](https://fabricjs.com/docs/) / [GitHub](https://github.com/fabricjs/fabric.js) / [Examples](https://fabricjs.com/kitchensink/) / [Community](https://stackoverflow.com/questions/tagged/fabricjs) / [YouTube](https://www.youtube.com/results?search_query=fabricjs) / [Twitter](https://twitter.com/fabricjs)
 
-### 🔧 Tools & Utilities
+### ⚙️ ⚙️ Tools & Utilities
 
 **Texture Tools:**
 - [Compressonator](https://gpuopen.com/compressonator/) — / [GitHub](https://github.com/GPUOpen-Tools/compressonator) / [Download](https://gpuopen.com/compressonator/) / [Docs](https://gpuopen.com/compressonator/) / [Community](https://gpuopen.com/community/) / [YouTube](https://www.youtube.com/c/GPUOpen) / [Twitter](https://twitter.com/GPUOpen)

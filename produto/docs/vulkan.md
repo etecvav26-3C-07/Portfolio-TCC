@@ -5,8 +5,12 @@ description: Guia completo sobre a API Vulkan da Khronos, arquitetura explícita
 ---
 
 <script setup>
+import CanvasPanel from "./.vitepress/components/CanvasPanel.vue";
 import ThreePanel from "./.vitepress/components/ThreePanel.vue";
 import WebGPUPanel from "./.vitepress/components/WebGPUPanel.vue";
+import sketchVulkanCmdbuf from "./.vitepress/components/animations/canvas_vulkan_cmdbuf.js";
+import sketchVulkanPso from "./.vitepress/components/animations/canvas_vulkan_pso.js";
+import sketchVulkanCompute from "./.vitepress/components/animations/canvas_vulkan_compute.js";
 </script>
 
 # Vulkan
@@ -20,30 +24,42 @@ Diferente do OpenGL, onde o driver da placa de vídeo precisava adivinhar inten�
 ## Demonstrações Interativas
 
 ### 1. Filas de Comandos Assíncronas e Paralelismo
-O Vulkan divide o trabalho em filas independentes (Graphics, Compute e Transfer). A animação abaixo ilustra três vias (*lanes*) de comandos sendo despachadas em paralelo a partir de múltiplas threads da CPU para a GPU.
+O Vulkan divide o trabalho em filas independentes (Graphics, Compute e Transfer). A visualização 3D abaixo demonstra a chegada de draw calls gravadas em paralelo por múltiplas threads da CPU, enquanto o diagrama 2D expõe a lógica interna de submissão.
 
 <ThreePanel
   topic="vulkan"
-  title="Filas e Command Buffers Paralelos"
-  subtitle="Blocos de comandos enviados em ritmos diferentes através de instancing até a GPU."
+  title="Submissão Paralela de Command Buffers 3D"
+  subtitle="Lanes independentes com instâncias de comandos convergindo na fila assíncrona da GPU."
+/>
+
+<CanvasPanel
+  :sketch="sketchVulkanCmdbuf"
+  title="Diagrama Didático 2D: Filas e Command Buffers"
+  subtitle="Threads da CPU gravando buffers em paralelo (Graphics, Compute, Transfer) para submissão imediata."
 />
 
 ### 2. Pipeline State Objects (PSO) Pré-compilados
 No Vulkan, nada de compilar shaders ou mudar estados no meio da renderização. Todo o pipeline (shaders, blend modes, depth testing, rasterizer) é compilado antecipadamente como um objeto imutável.
 
-<ThreePanel
-  topic="pipeline"
-  title="Fluxo de Execução de Pipeline"
+<CanvasPanel
+  :sketch="sketchVulkanPso"
+  title="Diagrama Didático 2D: Pipeline State Object (PSO)"
   subtitle="Passes de renderização ordenados e orquestrados sem custo de validação em tempo de execução."
 />
 
 ### 3. Computação Geral e Sistemas de Partículas (GPGPU)
-Com suporte de primeira classe a **Compute Shaders**, o Vulkan processa milhões de partículas ou simulações físicas pesadas sem tocar na CPU.
+Com suporte de primeira classe a **Compute Shaders**, o Vulkan processa milhões de partículas ou simulações físicas pesadas sem tocar na CPU. Interaja com a simulação 3D abaixo e confira a malha de despacho 2D.
 
 <ThreePanel
   topic="particulas"
-  title="Compute e Simulação de Partículas"
-  subtitle="Vorticidade e cinemática calculadas em paralelo na GPU."
+  title="Simulação de Partículas GPU 3D"
+  subtitle="Centenas de partículas com cinemática e blending aditivo executados diretamente na placa de vídeo."
+/>
+
+<CanvasPanel
+  :sketch="sketchVulkanCompute"
+  title="Diagrama Didático 2D: Despacho Compute e Grade de Partículas"
+  subtitle="Vorticidade e cinemática calculadas em paralelo com chamadas vkCmdDispatch."
 />
 
 ### 4. WebGPU: O Vulkan do Navegador
@@ -137,9 +153,9 @@ int main() {
 
 ---
 
-## 🚀 MEGA LINK DUMP - Vulkan Ecosystem
+## ⚙️  MEGA LINK DUMP - Vulkan Ecosystem
 
-### 📖 Tutoriais, Livros e Guias Completos
+### ⚙️ Tutoriais, Livros e Guias Completos
 - [Vulkan Tutorial](https://vulkan-tutorial.com/) — / [GitHub](https://github.com/Overv/VulkanTutorial) / [Setup do Ambiente](https://vulkan-tutorial.com/Development_environment) / [Pipeline Gráfico](https://vulkan-tutorial.com/Drawing_a_triangle/Graphics_pipeline_basics) / [Swapchain e Buffers](https://vulkan-tutorial.com/Drawing_a_triangle/Presentation) / [Compute Shaders](https://vulkan-tutorial.com/Compute_Shader)
 - [VkGuide.dev](https://vkguide.dev/) — tutorial focado em Vulkan 1.3 moderno sem boilerplate desnecessário — / [Website](https://vkguide.dev/) / [GitHub](https://github.com/vblanco20-1/vulkan-guide) / [Capítulo: Desenho Rápido](https://vkguide.dev/docs/new_chapter_1/)
 - [Khronos Vulkan Guide](https://github.com/KhronosGroup/Vulkan-Guide) — guia oficial mantido pelo comitê do Vulkan — / [GitHub](https://github.com/KhronosGroup/Vulkan-Guide) / [Capítulos](https://github.com/KhronosGroup/Vulkan-Guide/tree/main/chapters)
@@ -147,7 +163,7 @@ int main() {
 - [Sascha Willems Vulkan Examples](https://github.com/SaschaWillems/Vulkan) — a maior coleção de exemplos práticos em C++ do mundo (Ray Tracing, Tessellation, PBR, Compute) — / [GitHub](https://github.com/SaschaWillems/Vulkan) / [Website](https://saschawillems.de/)
 - [Vulkan Programming Guide (The Red Book)](https://www.amazon.com/Vulkan-Programming-Guide-Official-Guide/dp/0134464540) — guia clássico com a arquitetura interna detalhada
 
-### 🛠️ Bibliotecas de Suporte e SDKs
+### ⚙️ Bibliotecas de Suporte e SDKs
 - [LunarG Vulkan SDK](https://vulkan.lunarg.com/) — inclui as Validation Layers, compilador glslang e SPIRV-Tools — / [Download](https://vulkan.lunarg.com/sdk/home) / [Documentação](https://vulkan.lunarg.com/doc/sdk/latest/windows/documentation.html)
 - [Vulkan-Hpp](https://github.com/KhronosGroup/Vulkan-Hpp) — bindings C++ modernos com tipagem estática, enums com classes e suporte a exceptions — / [GitHub](https://github.com/KhronosGroup/Vulkan-Hpp)
 - [Vulkan Memory Allocator (VMA - AMD)](https://github.com/GPUOpen-LibrariesAndSDKs/VulkanMemoryAllocator) — biblioteca padrão da indústria para alocação inteligente de VRAM sem fragmentação — / [GitHub](https://github.com/GPUOpen-LibrariesAndSDKs/VulkanMemoryAllocator) / [Documentação](https://gpuopen-librariesandsdks.github.io/VulkanMemoryAllocator/html/)
@@ -155,12 +171,12 @@ int main() {
 - [MoltenVK](https://github.com/KhronosGroup/MoltenVK) — camada de compatibilidade oficial que converte chamadas Vulkan para Apple Metal no macOS e iOS — / [GitHub](https://github.com/KhronosGroup/MoltenVK)
 - [SPIRV-Tools](https://github.com/KhronosGroup/SPIRV-Tools) — montador, desmontador e otimizador de shaders binários SPIR-V — / [GitHub](https://github.com/KhronosGroup/SPIRV-Tools)
 
-### 🔬 Ferramentas de Inspeção e Otimização
+### ⚙️ Ferramentas de Inspeção e Otimização
 - [RenderDoc](https://renderdoc.org/) — depuração visual completa de passes Vulkan, inspect de memória e command buffers — / [Website](https://renderdoc.org/) / [GitHub](https://github.com/baldurk/renderdoc)
 - [NVIDIA Nsight Systems & Graphics](https://developer.nvidia.com/nsight-tools) — análise profunda de gargalos de CPU/GPU e sincronização — / [Portal](https://developer.nvidia.com/nsight-tools)
 - [Radeon GPU Profiler (RGP - AMD)](https://gpuopen.com/rgp/) — profiler de baixo nível para GPUs AMD Radeon — / [Website](https://gpuopen.com/rgp/) / [GitHub](https://github.com/GPUOpen-Tools/Radeon-GPU-Profiler)
 
-### 👥 Comunidades e Fóruns
+### ⚙️ Comunidades e Fóruns
 - [Fórum Khronos Vulkan](https://community.khronos.org/c/vulkan/30) — discussões técnicas oficiais
 - [Reddit r/vulkan](https://www.reddit.com/r/vulkan/) — notícias, projetos autorais e dúvidas
 - [Vulkan Discord](https://discord.gg/vulkan) — canal com engenheiros da Khronos, NVIDIA, AMD e desenvolvedores de engines

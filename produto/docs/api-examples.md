@@ -5,7 +5,10 @@ description: Renderização 3D e gráficos em dispositivos móveis, tecnologias 
 ---
 
 <script setup>
+import CanvasPanel from "./.vitepress/components/CanvasPanel.vue";
 import ThreePanel from "./.vitepress/components/ThreePanel.vue";
+import sketchRender from "./.vitepress/components/animations/canvas_render.js";
+import sketchThreejsScene from "./.vitepress/components/animations/canvas_threejs_scene.js";
 </script>
 
 # Renderização Mobile
@@ -22,11 +25,23 @@ Renderização em dispositivos móveis enfrenta desafios únicos: telas pequenas
 - **Resoluções variadas**: suporte para diferentes tamanhos de tela.
 - **Touch**: interações por toque em vez de mouse/teclado.
 
-## Visualização: renderização padrão
+## Visualização: renderização e cenas móveis
 
-<ThreePanel topic="render" title="Renderização" subtitle="Processo de geração de imagem em dispositivos móveis." />
+<ThreePanel
+  topic="render"
+  title="Cena 3D com Iluminação Otimizada"
+  subtitle="Composição de baixo consumo de fill-rate ideal para GPUs móveis integradas."
+/>
 
-<ThreePanel topic="threejs" title="Cena compacta" subtitle="Menos pós-processo e geometria simples — padrão comum em mobile." />
+<CanvasPanel :sketch="sketchRender" title="Diagrama Didático 2D: Pipeline de Renderização Mobile" subtitle="Processo enxuto de geração de imagem em dispositivos móveis." />
+
+<ThreePanel
+  topic="threejs"
+  title="Cena Tridimensional Compacta"
+  subtitle="Geometria poligonal leve e sombras simplificadas para evitar superaquecimento térmico."
+/>
+
+<CanvasPanel :sketch="sketchThreejsScene" title="Diagrama Didático 2D: Scenegraph Compacto" subtitle="Menos pós-processo e geometria simples — padrão comum em mobile." />
 
 A renderização em mobile usa a mesma lógica que desktop, mas com otimizações de qualidade e performance.
 

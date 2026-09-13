@@ -5,28 +5,56 @@ description: Bibliotecas e motores gráficos para renderização em tempo real, 
 ---
 
 <script setup>
+import CanvasPanel from "./.vitepress/components/CanvasPanel.vue";
 import ThreePanel from "./.vitepress/components/ThreePanel.vue";
+import sketchThreejsScene from "./.vitepress/components/animations/canvas_threejs_scene.js";
+import sketchOpenglPipeline from "./.vitepress/components/animations/canvas_opengl_pipeline.js";
+import sketchR3f from "./.vitepress/components/animations/canvas_r3f.js";
 </script>
 
 # Bibliotecas
 
 Three.js, usada neste site nas visualizações, é uma biblioteca de rasterização em tempo real no navegador. A cena abaixo é o mesmo tipo de objeto que engines como OGRE ou bgfx montam no desktop.
 
+### 1. Three.js: Visualização e Scenegraph
+
 <ThreePanel
   topic="threejs"
-  title="Three.js em Ação"
-  subtitle="Cena com geometria, materiais PBR, instâncias orbitando e partículas."
+  title="Cena Three.js Interativa em Tempo Real"
+  subtitle="Torus knot com satélites poliédricos orbitais e campo de partículas estelares."
 />
+
+<CanvasPanel
+  :sketch="sketchThreejsScene"
+  title="Diagrama Didático 2D: Scenegraph"
+  subtitle="Hierarquia Scenegraph com câmeras, luzes e malhas poligonais."
+/>
+
+### 2. Pipeline e Fluxo de Execução
 
 <ThreePanel
   topic="pipeline"
-  title="Pipeline Gráfico das Bibliotecas"
+  title="Pipeline Gráfico de Hardware 3D"
+  subtitle="Nós de processamento de hardware transitando primitivas até a composição do framebuffer."
+/>
+
+<CanvasPanel
+  :sketch="sketchOpenglPipeline"
+  title="Diagrama Didático 2D: Pipeline Gráfico das Bibliotecas"
   subtitle="Da CPU/VBO aos Shaders e Framebuffers: como os frameworks gerenciam o fluxo gráfico."
 />
 
+### 3. Frameworks Reativos
+
 <ThreePanel
   topic="r3f"
-  title="Ecossistemas Declarativos Modernos (R3F)"
+  title="Átomo Declarativo R3F 3D"
+  subtitle="Grafo de componentes reativos conectando hooks de estado ao runtime Three.js."
+/>
+
+<CanvasPanel
+  :sketch="sketchR3f"
+  title="Diagrama Didático 2D: Ecossistemas Declarativos Modernos (R3F)"
   subtitle="Arquitetura de componentes reativos e controle de estado em tempo real no espaço 3D."
 />
 
@@ -200,9 +228,9 @@ Three.js, usada neste site nas visualizações, é uma biblioteca de rasterizaç
 
 ---
 
-## 🚀 MEGA LINK DUMP - Computação Gráfica & Renderização
+## ⚙️  MEGA LINK DUMP - Computação Gráfica & Renderização
 
-### 📚 Bibliotecas e Frameworks Web
+### ⚙️ ⚙️ Bibliotecas e Frameworks Web
 
 **Three.js Ecosystem:**
 - [Three.js](https://threejs.org/) — / [Docs](https://threejs.org/docs/) / [Examples](https://threejs.org/examples/) / [GitHub](https://github.com/mrdoob/three.js)
@@ -240,7 +268,7 @@ Three.js, usada neste site nas visualizações, é uma biblioteca de rasterizaç
 - [Draco](https://google.github.io/draco/) — / [GitHub](https://github.com/google/draco) / [Basis Universal](https://github.com/BinomialLLC/basis_universal)
 - [KTX2](https://www.khronos.org/ktx/) — / [Spec](https://registry.khronos.org/KTX/specs/2.0/ktxspec2.0.html) / [Tools](https://github.com/KhronosGroup/KTX-Software)
 
-### 🎮 Game Engines & Frameworks
+### ⚙️ ⚙️ Game Engines & Frameworks
 
 **Commercial Engines:**
 - [Unreal Engine](https://www.unrealengine.com/) — / [Docs](https://docs.unrealengine.com/) / [Marketplace](https://www.unrealengine.com/marketplace) / [GitHub](https://github.com/EpicGames/UnrealEngine)
@@ -265,7 +293,7 @@ Three.js, usada neste site nas visualizações, é uma biblioteca de rasterizaç
 - [Phaser](https://phaser.io/) — / [Docs](https://photonstorm.github.io/phaser3-docs/) / [GitHub](https://github.com/photonstorm/phaser)
 - [PixiJS](https://pixijs.com/) — / [Docs](https://pixijs.io/docs/) / [GitHub](https://github.com/pixijs/pixi.js)
 
-### 🖥️ Desktop/Graphics APIs
+### ⚙️ ⚙️ Desktop/Graphics APIs
 
 **OpenGL:**
 - [OpenGL](https://www.opengl.org/) — / [Registry](https://www.opengl.org/registry/) / [Wiki](https://www.khronos.org/opengl/wiki/Main_Page)
@@ -295,7 +323,7 @@ Three.js, usada neste site nas visualizações, é uma biblioteca de rasterizaç
 - [Metal](https://developer.apple.com/metal/) — / [Docs](https://developer.apple.com/documentation/metal) / [Shading Language](https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf)
 - [Metal Samples](https://developer.apple.com/metal/sample-code/) — / [GPU](https://developer.apple.com/metal/GPU-Family2-Guide.pdf)
 
-### 🧮 Matemática e Física
+### ⚙️ Matemática e Física
 
 **Math Libraries:**
 - [GLM](https://github.com/g-truc/glm) — / [Docs](https://github.com/g-truc/glm/blob/manual.md)
@@ -322,7 +350,7 @@ Three.js, usada neste site nas visualizações, é uma biblioteca de rasterizaç
 - [Oimo.js](https://github.com/lo-th/Oimo.js) — / [GitHub](https://github.com/lo-th/Oimo.js)
 - [Matter.js](https://github.com/liabru/matter-js) — / [Docs](https://brm.io/matter-js/)
 
-### 🎨 Renderização e Shaders
+### ⚙️ ⚙️ Renderização e Shaders
 
 **Shading Languages:**
 - [GLSL](https://www.khronos.org/opengl/wiki/OpenGL_Shading_Language) — / [Reference](https://www.khronos.org/registry/OpenGL/specs/gl/GLSLangSpec.4.60.pdf)
@@ -342,7 +370,7 @@ Three.js, usada neste site nas visualizações, é uma biblioteca de rasterizaç
 - [Shader Park](https://shaderpark.com/) — / [Docs](https://shaderpark.com/docs)
 - [ShaderFrog](https://shaderfrog.com/) — / [Editor](https://shaderfrog.com/app)
 
-### 📊 Modelagem e Assets
+### ⚙️ ⚙️ Modelagem e Assets
 
 **3D Models:**
 - [Sketchfab](https://sketchfab.com/) — / [Free](https://sketchfab.com/models?features=downloadable&sort_by=-likeCount) / [Models](https://sketchfab.com/models)
@@ -374,7 +402,7 @@ Three.js, usada neste site nas visualizações, é uma biblioteca de rasterizaç
 - [ArmorPaint](https://armorpaint.org/) — / [GitHub](https://github.com/armory3d/armorpaint)
 - [AmbientCG](https://ambientcg.com/) — / [Materials](https://ambientcg.com/materials)
 
-### 🎬 Animação e Rigging
+### ⚙️ Animação e Rigging
 
 **Animation Tools:**
 - [Mixamo](https://www.mixamo.com/) — / [Auto Rigger](https://www.mixamo.com/) / [Animations](https://www.mixamo.com/user)
@@ -388,7 +416,7 @@ Three.js, usada neste site nas visualizações, é uma biblioteca de rasterizaç
 - [Maya Rigging](https://www.autodesk.com/products/maya) — / [HumanIK](https://help.autodesk.com/view/MAYAUL/2022/ENU/?guid=GUID-6A4E2753-A684-44F5-8558-CC3465F5C719)
 - [Advanced Skeleton](https://www.advancedskeleton.com/) — / [Rigging](https://www.advancedskeleton.com/) / [Auto Rig](https://www.advancedskeleton.com/)
 
-### 🌐 Web Graphics
+### ⚙️ ⚙️ Web Graphics
 
 **WebGL Libraries:**
 - [Twgl.js](https://twgljs.org/) — / [GitHub](https://github.com/greggman/twgl.js)
@@ -404,7 +432,7 @@ Three.js, usada neste site nas visualizações, é uma biblioteca de rasterizaç
 - [Luma.gl](https://luma.gl/) — / [GitHub](https://github.com/visgl/luma.gl)
 - [React VR](https://facebook.github.io/react-vr/) — / [GitHub](https://github.com/facebook/react-vr)
 
-### 🔧 Tools e Utilities
+### ⚙️ ⚙️ Tools e Utilities
 
 **Texture Tools:**
 - [Compressonator](https://gpuopen.com/compressonator/) — / [GitHub](https://github.com/GPUOpen-Tools/compressonator)
@@ -426,7 +454,7 @@ Three.js, usada neste site nas visualizações, é uma biblioteca de rasterizaç
 - [Handplane Baker](https://renderhjs.net/) — / [Tools](https://renderhjs.net/tools/baker/)
 - [Texture Baking](https://www.polycount.com/) — / [Tutorials](https://www.polycount.com/)
 
-### 📖 Learning Resources
+### ⚙️ ⚙️ Learning Resources
 
 **Courses:**
 - [Udemy Computer Graphics](https://www.udemy.com/topic/computer-graphics/) — / [3D](https://www.udemy.com/topic/3d-modeling/) / [Game Dev](https://www.udemy.com/topic/game-development/)
@@ -443,7 +471,7 @@ Three.js, usada neste site nas visualizações, é uma biblioteca de rasterizaç
 - [Morgan Kaufmann Graphics](https://www.elsevier.com/books-and-journals/books-and-book-series/morgan-kaufmann) — / [Series](https://www.elsevier.com/books-and-journals/books-and-book-series)
 - [Springer Graphics](https://link.springer.com/search?query=computer+graphics) — / [EBooks](https://link.springer.com/search?query=computer+graphics&facet-content-type=%22Book%22)
 
-### 🏢 Industry Resources
+### ⚙️ Industry Resources
 
 **Standards Bodies:**
 - [Khronos Group](https://www.khronos.org/) — / [OpenGL](https://www.khronos.org/opengl/) / [Vulkan](https://www.khronos.org/vulkan/) / [WebGL](https://www.khronos.org/webgl/)
@@ -460,7 +488,7 @@ Three.js, usada neste site nas visualizações, é uma biblioteca de rasterizaç
 - [Adobe Research](https://www.adobe.com/research.html) — / [Graphics](https://www.adobe.com/research/areas/graphics.html) / [Imaging](https://www.adobe.com/research/areas/imaging.html)
 - [Disney Research](https://www.disneyresearch.com/) — / [Graphics](https://www.disneyresearch.com/publication) / [Animation](https://www.disneyresearch.com/publication)
 
-### 🎯 Specialized Topics
+### ⚙️ Specialized Topics
 
 **Ray Tracing:**
 - [Ray Tracing in One Weekend](https://raytracing.github.io/) — / [Book](https://raytracing.github.io/books/RayTracingInOneWeekend.html) / [Code](https://github.com/RayTracing/raytracing.github.io)
@@ -483,7 +511,7 @@ Three.js, usada neste site nas visualizações, é uma biblioteca de rasterizaç
 - [ARCore](https://developers.google.com/ar) — / [Android](https://developers.google.com/ar) / [Unity](https://developers.google.com/ar/unity)
 - [ARKit](https://developer.apple.com/augmented-reality/) — / [iOS](https://developer.apple.com/augmented-reality/arkit/) / [RealityKit](https://developer.apple.com/documentation/realitykit)
 
-### 🔍 Search & Discovery
+### ⚙️ Search & Discovery
 
 **Search Engines:**
 - [Google Scholar](https://scholar.google.com/) — / [Graphics](https://scholar.google.com/scholar?q=computer+graphics)
@@ -500,7 +528,7 @@ Three.js, usada neste site nas visualizações, é uma biblioteca de rasterizaç
 - [Blender Artists](https://blenderartists.org/) — / [Forum](https://blenderartists.org/forum/) / [Resources](https://blenderartists.org/resources/)
 - [CGSociety](https://forums.cgsociety.org/) — / [Gallery](https://forums.cgsociety.org/) / [Jobs](https://forums.cgsociety.org/forumdisplay.php?f=231)
 
-### 📰 News & Updates
+### ⚙️ News & Updates
 
 **News Sites:**
 - [Gamasutra](https://www.gamasutra.com/) — / [News](https://www.gamasutra.com/news/) / [Blogs](https://www.gamasutra.com/blogs/)
@@ -517,7 +545,7 @@ Three.js, usada neste site nas visualizações, é uma biblioteca de rasterizaç
 - [Google Graphics](https://research.google/pubs/ComputerGraphics37.html) — / [Publications](https://research.google/pubs/ComputerGraphics37.html)
 - [Three.js Blog](https://threejs.org/) — / [News](https://threejs.org/) / [Releases](https://threejs.org/)
 
-### 🛠️ Development Tools
+### ⚙️ ⚙️ Development Tools
 
 **IDEs & Editors:**
 - [Visual Studio](https://visualstudio.microsoft.com/) — / [Code](https://code.visualstudio.com/) / [Community](https://visualstudio.microsoft.com/vs/community/)
@@ -540,7 +568,7 @@ Three.js, usada neste site nas visualizações, é uma biblioteca de rasterizaç
 - [Bazel](https://bazel.build/) — / [Docs](https://bazel.build/concepts) / [GitHub](https://github.com/bazelbuild/bazel)
 - [Make](https://www.gnu.org/software/make/) — / [Docs](https://www.gnu.org/software/make/manual/) / [Tutorial](https://www.gnu.org/software/make/manual/)
 
-### 🎓 Academic Resources
+### ⚙️ Academic Resources
 
 **Universities:**
 - [MIT Computer Graphics](https://groups.csail.mit.edu/graphics/) — / [Courses](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/) / [Research](https://groups.csail.mit.edu/graphics/)
@@ -556,7 +584,7 @@ Three.js, usada neste site nas visualizações, é uma biblioteca de rasterizaç
 - [Udacity Graphics](https://www.udacity.com/course/computer-graphics--cs291) — / [Free](https://www.udacity.com/course) / [Paid](https://www.udacity.com/course)
 - [Khan Academy Linear Algebra](https://www.khanacademy.org/math/linear-algebra) — / [Matrices](https://www.khanacademy.org/math/linear-algebra/matrix-transformations) / [Vectors](https://www.khanacademy.org/math/linear-algebra/vectors-and-spaces)
 
-### 📱 Mobile Graphics
+### ⚙️ Mobile Graphics
 
 **Mobile APIs:**
 - [OpenGL ES](https://www.khronos.org/opengles/) — / [Specs](https://www.khronos.org/opengles/specs/) / [Reference](https://www.khronos.org/opengles/sdk/tools/Reference-Manual/)
@@ -570,7 +598,7 @@ Three.js, usada neste site nas visualizações, é uma biblioteca de rasterizaç
 - [Godot Mobile](https://docs.godotengine.org/3.x/tutorials/export/exporting_for_android.html) — / [Android](https://docs.godotengine.org/3.x/tutorials/export/exporting_for_android.html) / [iOS](https://docs.godotengine.org/3.x/tutorials/export/exporting_for_ios.html)
 - [Cocos2d-x Mobile](https://www.cocos2d-x.org/) — / [iOS](https://www.cocos2d-x.org/docs/sdk/en/edit-cocos2d-x.html) / [Android](https://www.cocos2d-x.org/docs/sdk/en/edit-cocos2d-x.html)
 
-### 🌍 Localization & I18n
+### ⚙️ ⚙️ Localization & I18n
 
 **International Resources:**
 - [LearnOpenGL 简体中文](https://learnopengl-cn.github.io/) — / [GitHub](https://github.com/LearnOpenGL-CN/LearnOpenGL-CN)
@@ -579,7 +607,7 @@ Three.js, usada neste site nas visualizações, é uma biblioteca de rasterizaç
 - [Three.js 中文](https://threejs.org.cn/) — / [Docs](https://threejs.org.cn/docs/) / [Examples](https://threejs.org.cn/examples/)
 - [Blender 中文](https://docs.blender.org.cn/) — / [Docs](https://docs.blender.org.cn/manual/) / [Tutorials](https://docs.blender.org.cn/tutorials/)
 
-### 🔒 Security & Optimization
+### ⚙️ Security & Optimization
 
 **Security:**
 - [Vulkan Security](https://github.com/KhronosGroup/Vulkan-Guide/blob/main/chapters/security_best_practices.adoc) — / [Best Practices](https://github.com/KhronosGroup/Vulkan-Guide/blob/main/chapters/security_best_practices.adoc)

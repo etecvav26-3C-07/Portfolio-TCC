@@ -5,24 +5,45 @@ description: Introdução ao Blender para modelagem, animação e renderização
 ---
 
 <script setup>
+import CanvasPanel from "./.vitepress/components/CanvasPanel.vue";
 import ThreePanel from "./.vitepress/components/ThreePanel.vue";
+import sketchModelagem from "./.vitepress/components/animations/canvas_modelagem.js";
+import sketchRender from "./.vitepress/components/animations/canvas_render.js";
 </script>
 
 # Básico do Blender parte 1
 
 > O **Blender** é a suíte aberta e gratuita mais poderosa do mundo para criação 3D: engloba modelagem poligonal, escultura digital (*sculpting*), simulação física, animação de personagens (*rigging*), edição de vídeo e renderização fotorrealista (motores Eevee e Cycles).
 
+## Modelagem e Topologia
+
+Explore abaixo o modelo tridimensional navegável com alternância de wireframe ao lado da decomposição do ciclo de vértices, arestas e faces.
+
 <ThreePanel
   topic="modelagem"
-  title="Modelagem Poligonal no Blender"
+  title="Viewport 3D Interativo: Malha Poligonal"
+  subtitle="Gire com o mouse para inspecionar a topologia tridimensional. Alterne para wireframe no botão de malha."
+/>
+
+<CanvasPanel
+  :sketch="sketchModelagem"
+  title="Diagrama Didático 2D: Ciclo de Construção de Malhas"
   subtitle="Vértices, arestas e faces estruturando uma malha tridimensional no Viewport 3D."
 />
 
 Aqui será abordado em maior parte a interface do Blender, serão mencionadas coisas óbvias (tipo como salvar) e coisas que na primeira leitura pode ser meio vago.
 
+## Renderização e Síntese de Imagem
+
 <ThreePanel
   topic="render"
-  title="Motores de Renderização (Cycles / Eevee)"
+  title="Composição 3D de Cena Renderizada"
+  subtitle="Geometria central, luzes chave e secundária em órbita e volume de captura da câmera virtual."
+/>
+
+<CanvasPanel
+  :sketch="sketchRender"
+  title="Diagrama Didático 2D: Motores de Renderização (Cycles / Eevee)"
   subtitle="Sombreamento, luz e câmera gerando o quadro final a partir da cena."
 />
 

@@ -9,9 +9,9 @@ description: Termos e conceitos essenciais de computação gráfica, modelagem e
 
 ---
 
-## 🚀 MEGA LINK DUMP - Recursos por Categoria de Glossário
+## ⚙️  MEGA LINK DUMP - Recursos por Categoria de Glossário
 
-### 📐 Fundamentos Matemáticos
+### ⚙️ Fundamentos Matemáticos
 
 **Recursos para os termos:**
 - Vetor, Matriz, Quaternion, Homogeneous Coordinates, NDC, Transformações
@@ -24,7 +24,7 @@ description: Termos e conceitos essenciais de computação gráfica, modelagem e
 - [Khan Academy Linear Algebra](https://www.khanacademy.org/math/linear-algebra) — / [Course](https://www.khanacademy.org/math/linear-algebra) / [Matrices](https://www.khanacademy.org/math/linear-algebra/matrix-transformations) / [Vectors](https://www.khanacademy.org/math/linear-algebra/vectors-and-spaces) / [YouTube](https://www.youtube.com/c/khanacademy)
 - [MIT OpenCourseWare Linear Algebra](https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/) — / [Course](https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/) / [Lectures](https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/video-lectures/) / [Assignments](https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/assignments/) / [Exams](https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/exams/)
 
-### 🎨 Pipeline de Renderização
+### ⚙️ ⚙️ Pipeline de Renderização
 
 **Recursos para os termos:**
 - Rasterização, Renderização, Pipeline Gráfico, Frame, FPS, Latência, Tempo de Frame
@@ -37,7 +37,7 @@ description: Termos e conceitos essenciais de computação gráfica, modelagem e
 - [Intel Embree](https://www.embree.org/) — / [Website](https://www.embree.org/) / [GitHub](https://github.com/embree/embree) / [Docs](https://www.embree.org/documentation.html) / [Examples](https://www.embree.org/examples.html)
 - [LearnOpenGL Pipeline](https://learnopengl.com/) — / [Docs](https://learnopengl.com/) / [GitHub](https://github.com/JoeyDeVries/LearnOpenGL) / [Tutorials](https://learnopengl.com/) / [Community](https://learnopengl.com/)
 
-### 🌊 Shaders e Materiais
+### ⚙️ Shaders e Materiais
 
 **Recursos para os termos:**
 - Shader, Vertex Shader, Fragment Shader, PBR, Albedo, Roughness, Metallic, Normal Map, BRDF
@@ -52,7 +52,7 @@ description: Termos e conceitos essenciais de computação gráfica, modelagem e
 - [Shader Park](https://shaderpark.com/) — / [Docs](https://shaderpark.com/docs) / [GitHub](https://github.com/) / [Examples](https://shaderpark.com/) / [Community](https://shaderpark.com/)
 - [GLSL Reference](https://registry.khronos.org/OpenGL/specs/gl/) — / [Spec](https://registry.khronos.org/OpenGL/specs/gl/GLSLangSpec.4.60.pdf) / [Docs](https://registry.khronos.org/OpenGL/specs/gl/) / [Community](https://www.khronos.org/OpenGL/specs/gl/)
 
-### 🧮 Geometria e Topologia
+### ⚙️ Geometria e Topologia
 
 **Recursos para os termos:**
 - Vértice, Aresta, Face, Triângulo, Polygon Mesh, Primitive, Wireframe, Tessellation, Point Cloud, Voxel
@@ -65,7 +65,7 @@ description: Termos e conceitos essenciais de computação gráfica, modelagem e
 - [Polygon Mesh Processing](https://en.wikipedia.org/wiki/Mesh_compression) — / [Wikipedia](https://en.wikipedia.org/wiki/Mesh_compression) / [Article](https://en.wikipedia.org/wiki/Mesh_compression) / [Community](https://en.wikipedia.org/wiki/Mesh_compression) / [YouTube](https://www.youtube.com/results?search_query=mesh+compression)
 - [Draco Compression](https://google.github.io/draco/) — / [GitHub](https://github.com/google/draco) / [Docs](https://google.github.io/draco/) / [Examples](https://google.github.io/draco/) / [Community](https://github.com/google/draco)
 
-### 💡 Iluminação e Sombreamento
+### ⚙️ Iluminação e Sombreamento
 
 **Recursos para os termos:**
 - Lighting, Ambient Light, Diffuse Lighting, Specular Lighting, Global Illumination, Shadow Mapping, HDR, Fresnel
@@ -79,7 +79,7 @@ description: Termos e conceitos essenciais de computação gráfica, modelagem e
 - [Global Illumination](https://en.wikipedia.org/wiki/Global_illumination) — / [Wikipedia](https://en.wikipedia.org/wiki/Global_illumination) / [Article](https://en.wikipedia.org/wiki/Global_illumination) / [Community](https://en.wikipedia.org/wiki/Global_illumination) / [YouTube](https://www.youtube.com/results?search_query=global+illumination)
 - [Ambient Occlusion](https://en.wikipedia.org/wiki/Ambient_occlusion) — / [Wikipedia](https://en.wikipedia.org/wiki/Ambient_occlusion) / [Article](https://en.wikipedia.org/wiki/Ambient_occlusion) / [Community](https://en.wikipedia.org/wiki/Ambient_occlusion) / [YouTube](https://www.youtube.com/results?search_query=ambient+occlusion)
 
-### 🎬 Animação e Rigging
+### ⚙️ Animação e Rigging
 
 **Recursos para os termos:**
 - Keyframing, Interpolation, Spline Animation, Motion Graphs, Rigging, Armature, Skinning
@@ -94,7 +94,7 @@ description: Termos e conceitos essenciais de computação gráfica, modelagem e
 - [Advanced Skeleton](https://www.advancedskeleton.com/) — / [Website](https://www.advancedskeleton.com/) / [Rigging](https://www.advancedskeleton.com/) / [Auto Rig](https://www.advancedskeleton.com/) / [YouTube](https://www.youtube.com/results?search_query=advanced+skeleton)
 - [Mixamo](https://www.mixamo.com/) — / [Auto Rigger](https://www.mixamo.com/) / [Animations](https://www.mixamo.com/user) / [Docs](https://www.mixamo.com/) / [Community](https://forums.autodesk.com/t5/maya/ct-p/90)
 
-### 🌊 Física e Simulação
+### ⚙️ Física e Simulação
 
 **Recursos para os termos:**
 - Physics Engine, Bullet, Box2D, PhysX, Havok, Jolt, Fluid Simulation, Cloth Simulation, Hair Simulation
@@ -110,7 +110,7 @@ description: Termos e conceitos essenciais de computação gráfica, modelagem e
 - [Particle Systems](https://en.wikipedia.org/wiki/Particle_system) — / [Wikipedia](https://en.wikipedia.org/wiki/Particle_system) / [Article](https://en.wikipedia.org/wiki/Particle_system) / [Community](https://en.wikipedia.org/wiki/Particle_system) / [YouTube](https://www.youtube.com/results?search_query=particle+systems)
 - [Soft Body Physics](https://en.wikipedia.org/wiki/Soft_body_dynamics) — / [Wikipedia](https://en.wikipedia.org/wiki/Soft_body_dynamics) / [Article](https://en.wikipedia.org/wiki/Soft_body_dynamics) / [Community](https://en.wikipedia.org/wiki/Soft_body_dynamics) / [YouTube](https://www.youtube.com/results?search_query=soft+body+physics)
 
-### 📐 Projeções e Transformações
+### ⚙️ Projeções e Transformações
 
 **Recursos para os termos:**
 - Perspective Projection, Orthographic Projection, Camera Transform, View Matrix, Projection Matrix, Translation, Rotation, Scaling, Quaternion
@@ -123,7 +123,7 @@ description: Termos e conceitos essenciais de computação gráfica, modelagem e
 - [3D Projections](https://en.wikipedia.org/wiki/3D_projection) — / [Wikipedia](https://en.wikipedia.org/wiki/3D_projection) / [Article](https://en.wikipedia.org/wiki/3D_projection) / [Community](https://en.wikipedia.org/wiki/3D_projection) / [YouTube](https://www.youtube.com/results?search_query=3d+projection)
 - [Camera Transform](https://en.wikipedia.org/wiki/Camera_matrix) — / [Wikipedia](https://en.wikipedia.org/wiki/Camera_matrix) / [Article](https://en.wikipedia.org/wiki/Camera_matrix) / [Community](https://en.wikipedia.org/wiki/Camera_matrix) / [YouTube](https://www.youtube.com/results?search_query=camera+transform)
 
-### 🎨 Compressão e Otimização
+### ⚙️ ⚙️ Compressão e Otimização
 
 **Recursos para os termos:**
 - Texture Compression, BCn Compression, ETC Compression, ASTC Compression, KTX2 Compression, Mesh Compression, Draco Compression
@@ -137,7 +137,7 @@ description: Termos e conceitos essenciais de computação gráfica, modelagem e
 - [glTF Compression](https://www.khronos.org/gltf/) — / [Spec](https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html) / [Draco](https://google.github.io/draco/) / [Meshopt](https://github.com/zeux/meshoptimizer) / [Community](https://www.khronos.org/gltf/)
 - [Basis Universal](https://github.com/BinomialLLC/basis_universal) — / [GitHub](https://github.com/BinomialLLC/basis_universal) / [Docs](https://github.com/BinomialLLC/basis_universal) / [Examples](https://github.com/BinomialLLC/basis_universal) / [Community](https://github.com/BinomialLLC/basis_universal)
 
-### 🎬 Pós-processamento
+### ⚙️ Pós-processamento
 
 **Recursos para os termos:**
 - Post Processing, Bloom, Tone Mapping, Motion Blur, Depth of Field, FXAA, SSAO, Color Grading, Anti-Aliasing
@@ -152,7 +152,7 @@ description: Termos e conceitos essenciais de computação gráfica, modelagem e
 - [Color Grading](https://en.wikipedia.org/wiki/Color_grading) — / [Wikipedia](https://en.wikipedia.org/wiki/Color_grading) / [Article](https://en.wikipedia.org/wiki/Color_grading) / [Community](https://en.wikipedia.org/wiki/Color_grading) / [YouTube](https://www.youtube.com/results?search_query=color+grading)
 - [Anti-Aliasing](https://en.wikipedia.org/wiki/Anti-aliasing) — / [Wikipedia](https://en.wikipedia.org/wiki/Anti-aliasing) / [Article](https://en.wikipedia.org/wiki/Anti-aliasing) / [Community](https://en.wikipedia.org/wiki/Anti-aliasing) / [YouTube](https://www.youtube.com/results?search_query=anti-aliasing)
 
-### 📊 Performance e Otimização
+### ⚙️ ⚙️ Performance e Otimização
 
 **Recursos para os termos:**
 - Culling, Frustum Culling, Backface Culling, Occlusion Culling, LOD, Instancing, Batch Rendering, Draw Call, State Change, Baking
@@ -167,7 +167,7 @@ description: Termos e conceitos essenciais de computação gráfica, modelagem e
 - [State Change](https://en.wikipedia.org/wiki/State_change) — / [Wikipedia](https://en.wikipedia.org/wiki/State_change) / [Article](https://en.wikipedia.org/wiki/State_change) / [Community](https://en.wikipedia.org/wiki/State_change) / [YouTube](https://www.youtube.com/results?search_query=state+change)
 - [Baking](https://en.wikipedia.org/wiki/Precomputation) — / [Wikipedia](https://en.wikipedia.org/wiki/Precomputation) / [Article](https://en.wikipedia.org/wiki/Precomputation) / [Community](https://en.wikipedia.org/wiki/Precomputation) / [YouTube](https://www.youtube.com/results?search_query=baking)
 
-### 🔧 Buffers
+### ⚙️ ⚙️ Buffers
 
 **Recursos para os termos:**
 - Framebuffer, Color Buffer, Depth Buffer, Z Buffer, Stencil Buffer, Vertex Buffer, Index Buffer, Command Buffer, G-Buffer
@@ -179,7 +179,7 @@ description: Termos e conceitos essenciais de computação gráfica, modelagem e
 - [Index Buffer](https://www.khronos.org/opengl/wiki/Index_Buffer) — / [Docs](https://www.khronos.org/opengl/wiki/Index_Buffer) / [OpenGL](https://www.khronos.org/opengl/) / [Community](https://www.khronos.org/opengl/wiki/) / [GitHub](https://github.com/KhronosGroup/OpenGL-Registry)
 - [G-Buffer](https://en.wikipedia.org/wiki/Geometry_buffer) — / [Wikipedia](https://en.wikipedia.org/wiki/Geometry_buffer) / [Article](https://en.wikipedia.org/wiki/Geometry_buffer) / [Community](https://en.wikipedia.org/wiki/Geometry_buffer) / [YouTube](https://www.youtube.com/results?search_query=g+buffer)
 
-### 🌍 APIs Gráficas
+### ⚙️ ⚙️ APIs Gráficas
 
 **Recursos para os termos:**
 - OpenGL, Vulkan, Direct3D, Metal, WebGL, WebGPU
@@ -191,7 +191,7 @@ description: Termos e conceitos essenciais de computação gráfica, modelagem e
 - [WebGL](https://www.khronos.org/webgl/) — / [Spec](https://www.khronos.org/registry/webgl/specs/latest/2.0/) / [Extensions](https://www.khronos.org/webgl/wiki/Getting_WebGL_Extensions) / [Community](https://www.khronos.org/webgl/) / [GitHub](https://github.com/KhronosGroup/WebGL)
 - [WebGPU](https://www.w3.org/TR/webgpu/) — / [Spec](https://www.w3.org/TR/webgpu/) / [WGSL](https://www.w3.org/TR/WGSL/) / [Explainer](https://github.com/gpuweb/gpuweb/blob/main/explainer.md) / [Community](https://www.w3.org/community/groups/wgpu/)
 
-### 🎨 Arquivos e Formatos
+### ⚙️ ⚙️ Arquivos e Formatos
 
 **Recursos para os termos:**
 - OBJ, FBX, glTF, STL, PNG, JPEG, EXR
@@ -204,7 +204,7 @@ description: Termos e conceitos essenciais de computação gráfica, modelagem e
 - [JPEG](https://en.wikipedia.org/wiki/JPEG) — / [Wikipedia](https://en.wikipedia.org/wiki/JPEG) / [Spec](https://www.w3.org/TR/jpeg) / [Community](https://www.w3.org/TR/jpeg) / [GitHub](https://github.com/)
 - [EXR](https://en.wikipedia.org/wiki/OpenEXR) — / [Wikipedia](https://en.wikipedia.org/wiki/OpenEXR) / [Spec](https://openexr.com/) / [Community](https://openexr.com/) / [GitHub](https://github.com/Academos/OpenEXR)
 
-### 🎯 Termos Modernos
+### ⚙️ Termos Modernos
 
 **Recursos para os termos:**
 - VR, AR, XR, Mesh Shader, Nanite, Lumen, MegaTexture, Sparse Texture, Unified Memory

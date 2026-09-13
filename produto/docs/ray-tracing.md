@@ -5,7 +5,9 @@ description: Fundamentos de Ray Tracing, Path Tracing, aceleração BVH e aceler
 ---
 
 <script setup>
+import CanvasPanel from "./.vitepress/components/CanvasPanel.vue";
 import ThreePanel from "./.vitepress/components/ThreePanel.vue";
+import sketchRaytracing from "./.vitepress/components/animations/canvas_raytracing.js";
 </script>
 
 # Ray Tracing
@@ -16,12 +18,18 @@ Enquanto a **rasterização** tradicional (utilizada em jogos clássicos) projet
 
 ## Demonstração Interativa
 
-O painel abaixo simula o disparo de raios primários a partir do ponto de vista do observador, o cálculo de intersecção com uma esfera reflectiva e o rebatimento dos raios secundários pelo espaço.
+Abaixo, explore o traçado de raios sob duas perspectivas complementares: o modelo tridimensional interativo (com reflexão sobre esferas espelhadas e raios rebatidos) e o diagrama didático 2D (com a estrutura de aceleração BVH e cálculo vetorial).
 
 <ThreePanel
   topic="raytracing"
-  title="Intersecção e Rebatimento de Raios"
-  subtitle="Raios de luz virtuais atingem a geometria e produzem reflexões físicas calculadas pela normal da superfície."
+  title="Visualização 3D de Ray Tracing"
+  subtitle="Esferas reflexivas com emissor direcional disparando feixes de luz que rebatem fisicamente no ambiente."
+/>
+
+<CanvasPanel
+  :sketch="sketchRaytracing"
+  title="Diagrama Didático 2D: Traçado de Raios e Aceleração BVH"
+  subtitle="Raios primários disparados pelo pixel grid, teste de caixas delimitadoras AABB e raios secundários de sombra."
 />
 
 ---
@@ -57,9 +65,9 @@ Testar cada raio contra milhões de triângulos tornaria o processo inviável. A
 
 ---
 
-## 🚀 MEGA LINK DUMP - Ray Tracing & Rendering
+## ⚙️  MEGA LINK DUMP - Ray Tracing & Rendering
 
-### 📚 Livros e Tutoriais Gratuitos
+### ⚙️ Livros e Tutoriais Gratuitos
 - [Ray Tracing in One Weekend](https://raytracing.github.io/) — / [GitHub](https://github.com/RayTracing/raytracing.github.io) / [PDF](https://raytracing.github.io/books/RayTracingInOneWeekend.html) / [Online Book](https://raytracing.github.io/) / [C++ Code](https://github.com/RayTracing/raytracing.github.io/releases)
 - [Ray Tracing: The Next Week](https://raytracing.github.io/books/RayTracingTheNextWeek.html) — BVH, texturas, perlin noise e volumes — / [Livro](https://raytracing.github.io/books/RayTracingTheNextWeek.html) / [GitHub](https://github.com/RayTracing/raytracing.github.io)
 - [Ray Tracing: The Rest of Your Life](https://raytracing.github.io/books/RayTracingTheRestOfYourLife.html) — Monte Carlo, PDF e importância amostral — / [Livro](https://raytracing.github.io/books/RayTracingTheRestOfYourLife.html)
@@ -76,14 +84,14 @@ Testar cada raio contra milhões de triângulos tornaria o processo inviável. A
 - [Appleseed](https://appleseedhq.net/) — renderizador baseado em física para animação e VFX — / [Website](https://appleseedhq.net/) / [GitHub](https://github.com/appleseedhq/appleseed)
 - [Tungsten](https://github.com/tunabrain/tungsten) — renderizador de alta performance em C++11 — / [GitHub](https://github.com/tunabrain/tungsten)
 
-### ⚡ APIs e Aceleração de Hardware em Tempo Real
+### ⚙️ APIs e Aceleração de Hardware em Tempo Real
 - [NVIDIA RTX & DXR Tutorials](https://developer.nvidia.com/rtx/ray-tracing) — / [Guia Oficial](https://developer.nvidia.com/rtx/ray-tracing) / [Tutorial DXR](https://developer.nvidia.com/rtx/raytracing/dxr/DX12-Raytracing-tutorial-Part-1) / [GitHub Samples](https://github.com/NVIDIA-RTX/RayTracingBaseWalkthrough)
 - [Vulkan Ray Tracing Tutorial](https://nvpro-samples.github.io/vk_raytracing_tutorial_KHR/) — / [Tutorial Oficial](https://nvpro-samples.github.io/vk_raytracing_tutorial_KHR/) / [GitHub](https://github.com/nvpro-samples/vk_raytracing_tutorial_KHR)
 - [Intel Embree](https://www.embree.org/) — kernels otimizados para SSE, AVX, AVX-512 e ARM NEON — / [Website](https://www.embree.org/) / [GitHub](https://github.com/embree/embree) / [Documentação](https://www.embree.org/documentation.html)
 - [Intel Open Image Denoise (OIDN)](https://www.openimagedenoise.org/) — biblioteca de IA para desruído de traçado de raios — / [Website](https://www.openimagedenoise.org/) / [GitHub](https://github.com/OpenImageDenoise/oidn)
 - [NVIDIA OptiX SDK](https://developer.nvidia.com/optix) — framework para construção de ray tracers em GPU — / [Website](https://developer.nvidia.com/optix) / [Guia de Programação](https://raytracing-docs.nvidia.com/optix8/guide/index.html)
 
-### 🔬 Papers e Recursos Avançados
+### ⚙️ Papers e Recursos Avançados
 - [NVIDIA Ray Tracing Gems I & II (PDFs Gratuitos)](https://developer.nvidia.com/ray-tracing-gems) — / [RT Gems 1](https://www.realtimerendering.com/raytracinggems/rtg/index.html) / [RT Gems 2](https://www.realtimerendering.com/raytracinggems/rtg2/index.html) / [Código Fonte GitHub](https://github.com/Apress/ray-tracing-gems)
 - [Kajiya 1986 - The Rendering Equation](https://www.cs.cmu.edu/afs/cs/academic/class/15462-s15/www/lec_slides/kajiya86.pdf) — o paper seminal de iluminação global
 - [Whitted 1980 - An Improved Illumination Model for Shaded Display](https://dl.acm.org/doi/10.1145/358876.358882) — introdução ao ray tracing recursivo

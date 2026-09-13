@@ -5,7 +5,10 @@ description: O que são Shaders, linguagens (GLSL, HLSL, WGSL, MSL), pipelines p
 ---
 
 <script setup>
+import CanvasPanel from "./.vitepress/components/CanvasPanel.vue";
 import ThreePanel from "./.vitepress/components/ThreePanel.vue";
+import sketchShaders from "./.vitepress/components/animations/canvas_shaders.js";
+import sketchPbr from "./.vitepress/components/animations/canvas_pbr.js";
 </script>
 
 # Shaders e Programação Gráfica
@@ -17,21 +20,33 @@ Antes dos anos 2000, as placas de vídeo possuíam pipelines de função fixa (*
 ## Demonstrações Interativas
 
 ### 1. Vertex & Fragment Shader em Tempo Real
-O painel abaixo demonstra um shader procedimental onde os vértices são deslocados por funções trigonométricas no tempo, enquanto o fragment shader gera um gradiente dinâmico com interpolação de cores.
+Abaixo combinamos a visualização tridimensional interativa (com deformação de vértices e cálculo de cor em tempo real na GPU) com o diagrama didático 2D do trânsito de dados através do pipeline gráfico.
 
 <ThreePanel
   topic="shaders"
-  title="Shader Procedural Dinâmico"
-  subtitle="Deformação senoidal de malha (Vertex Shader) e mapeamento cromático contínuo (Fragment Shader)."
+  title="Visualização 3D de Shaders na GPU"
+  subtitle="Deformação senoidal contínua de vértices (Vertex Shader) e coloração dinâmica por fragmento."
+/>
+
+<CanvasPanel
+  :sketch="sketchShaders"
+  title="Diagrama Didático 2D: Fluxo do Pipeline Programável"
+  subtitle="Vértices de Entrada → Vertex Shader → Rasterizador → Fragment Shader → Pixels na Tela."
 />
 
 ### 2. Shaders de Materiais PBR (Physically Based Rendering)
-Shaders modernos calculam interações da luz com propriedades físicas reais da matéria (como rugosidade e metalicidade).
+Shaders modernos calculam interações da luz com propriedades físicas reais da matéria (como rugosidade e metalicidade). Interaja com a matriz de esferas 3D abaixo e compare com o modelo esquemático microfacetário.
 
 <ThreePanel
   topic="pbr"
-  title="Matriz de Materiais PBR"
-  subtitle="Variação de Roughness (eixo vertical) e Metalness (eixo horizontal) sob luz pontual em movimento."
+  title="Matriz 3D de Esferas PBR"
+  subtitle="Superfícies dielétricas e metálicas sob luz pontual móvel revelando reflexão difusa vs especular."
+/>
+
+<CanvasPanel
+  :sketch="sketchPbr"
+  title="Diagrama Didático 2D: Parâmetros PBR"
+  subtitle="Variação controlada de Roughness (eixo vertical) e Metalness (eixo horizontal)."
 />
 
 ---
@@ -69,16 +84,16 @@ Shaders modernos calculam interações da luz com propriedades físicas reais da
 
 ---
 
-## 🚀 MEGA LINK DUMP - Shaders & GLSL/HLSL/WGSL
+## ⚙️  MEGA LINK DUMP - Shaders & GLSL/HLSL/WGSL
 
-### 🎨 Playgrounds Online e Editores
+### ⚙️ Playgrounds Online e Editores
 - [Shadertoy](https://www.shadertoy.com/) — / [Explorar Shaders](https://www.shadertoy.com/browse) / [Novo Shader](https://www.shadertoy.com/new) / [Documentação](https://www.shadertoy.com/howto) / [Fórum](https://www.shadertoy.com/)
 - [GLSL Sandbox](https://glslsandbox.com/) — editor minimalista de fragment shaders — / [Website](https://glslsandbox.com/) / [GitHub](https://github.com/mrdoob/glsl-sandbox)
 - [VertexShaderArt](https://www.vertexshaderart.com/) — criação musical e visual com vertex shaders — / [Website](https://www.vertexshaderart.com/) / [Galeria](https://www.vertexshaderart.com/art)
 - [ComputeToy](https://computetoy.org/) — playground para compute shaders WebGPU em tempo real — / [Website](https://computetoy.org/) / [GitHub](https://github.com/compute-toy/compute-toy)
 - [Kitsunec Studio WebGPU](https://cohost.org/) — testador de WGSL interativo no navegador — / [WebGPU Samples](https://webgpu.github.io/webgpu-samples/)
 
-### 📖 Livros, Tutoriais e Cursos
+### ⚙️ Livros, Tutoriais e Cursos
 - [The Book of Shaders](https://thebookofshaders.com/) — / [Livro Online](https://thebookofshaders.com/) / [GitHub](https://github.com/patriciogonzalezvivo/thebookofshaders) / [Glossário GLSL](https://thebookofshaders.com/glossary/) / [Exemplos](https://github.com/Book-of-Shaders-Examples)
 - [Inigo Quilez Articles](https://iquilezles.org/articles/) — matemática, SDF (Signed Distance Fields), ruído e iluminação — / [Artigos Técnicos](https://iquilezles.org/articles/) / [SDF 3D Functions](https://iquilezles.org/articles/distfunctions/) / [YouTube](https://www.youtube.com/c/InigoQuilez)
 - [LearnOpenGL: Shaders](https://learnopengl.com/Getting-started/Shaders) — / [Tutorial Básico](https://learnopengl.com/Getting-started/Shaders) / [PBR Shading](https://learnopengl.com/PBR/Theory) / [Compute Shaders](https://learnopengl.com/Guest-Articles/2022/Compute-Shaders/Introduction)
@@ -86,7 +101,7 @@ Shaders modernos calculam interações da luz com propriedades físicas reais da
 - [Catlike Coding: Custom SRP & Shaders](https://catlikecoding.com/) — / [Tutoriais Unity/HLSL](https://catlikecoding.com/unity/tutorials/) / [Rendering Pipeline](https://catlikecoding.com/unity/tutorials/rendering/)
 - [Shader-Learn](https://shader-learn.com/) — plataforma interativa guiada para aprendizado de GLSL — / [Website](https://shader-learn.com/)
 
-### 🛠️ Ferramentas, Compiladores e Depuradores
+### ⚙️ Ferramentas, Compiladores e Depuradores
 - [glslang](https://github.com/KhronosGroup/glslang) — validador e compilador oficial de GLSL/HLSL para SPIR-V — / [GitHub](https://github.com/KhronosGroup/glslang)
 - [SPIRV-Cross](https://github.com/KhronosGroup/SPIRV-Cross) — tradutor de SPIR-V para GLSL, HLSL, MSL e C++ — / [GitHub](https://github.com/KhronosGroup/SPIRV-Cross)
 - [Naga (Rust)](https://github.com/gfx-rs/wgpu/tree/master/naga) — tradutor universal de shaders (WGSL, SPV, MSL, HLSL, GLSL) — / [GitHub](https://github.com/gfx-rs/wgpu)
@@ -94,7 +109,7 @@ Shaders modernos calculam interações da luz com propriedades físicas reais da
 - [RenderDoc](https://renderdoc.org/) — depurador gráfico profissional de frames e shaders — / [Website](https://renderdoc.org/) / [GitHub](https://github.com/baldurk/renderdoc)
 - [Spector.js](https://spector.babylonjs.com/) — extensão de navegador para inspecionar comandos WebGL e shaders — / [GitHub](https://github.com/BabylonJS/Spector.js)
 
-### 👥 Comunidades de Shaders
+### ⚙️ Comunidades de Shaders
 - [Reddit r/shaders](https://www.reddit.com/r/shaders/) — / [Comunidade](https://www.reddit.com/r/shaders/)
 - [Reddit r/shadertoy](https://www.reddit.com/r/shadertoy/) — / [Comunidade](https://www.reddit.com/r/shadertoy/)
 - [Discord Graphics Programming](https://discord.gg/graphicsprogramming) — o maior servidor de programação gráfica do Discord
