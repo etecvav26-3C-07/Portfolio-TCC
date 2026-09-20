@@ -1,59 +1,78 @@
 import { defineConfig } from 'vitepress'
+import {
+  commitRef,
+  feedback,
+  meta,
+  nav,
+  search,
+  sidebar,
+  socialLinks
+} from './constants.mts'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: 'Render Index',
-  description: 'Um site VitePress para indexação de contéudo sobre computação gráfica.',
+  title: meta.title,
+  description: meta.description,
+  titleTemplate: ':title • Render Index',
+  lang: 'pt-BR',
+  lastUpdated: true,
+  cleanUrls: true,
+  appearance: true,
+  ignoreDeadLinks: true,
+
+  sitemap: {
+    hostname: meta.hostname
+  },
+
+  head: [
+    ['meta', { name: 'theme-color', content: '#38bdf8' }],
+    ['meta', { name: 'og:type', content: 'website' }],
+    ['meta', { name: 'og:locale', content: 'pt-BR' }],
+    ['link', { rel: 'icon', href: '/box.svg', type: 'image/svg+xml' }],
+    ['meta', { name: 'keywords', content: meta.keywords.join(', ') }],
+    // Redirect to main site if embedded in iframe
+    [
+      'script',
+      {},
+      `(function(){if(window.self!==window.top){window.top.location=window.location.href;}})()`
+    ]
+  ],
 
   themeConfig: {
     logo: '/box.svg',
 
-    nav: [
-      { text: 'Início', link: '/' },
-      { text: 'Guia', link: '/guia' },
-      { text: 'Notícias', link: '/noticias' }
-    ],
+    search,
+    nav,
+    sidebar,
+    socialLinks,
 
-    sidebar: [
-      {
-        text: 'Principal',
-        items: [
-          { text: 'Início', link: '/' },
-          { text: 'Guia para iniciantes', link: '/guia' },
-          { text: 'Notícias', link: '/noticias' },
-          { text: 'API Examples', link: '/api-examples' }
-        ]
-      },
-      {
-        text: 'Aprendizado',
-        items: [
-          { text: 'Glossário', link: '/glossario' },
-          { text: 'Material Educativo', link: '/material-educativo' },
-          { text: 'Bibliotecas', link: '/bibliotecas' },
-          { text: 'Software', link: '/software' },
-          { text: 'Conceitos', link: '/conceitos' }
-        ]
-      },
-      {
-        text: 'Ferramentas e Tecnologias',
-        items: [
-          { text: 'OpenGL', link: '/opengl' },
-          { text: 'Vulkan', link: '/vulkan' },
-          { text: 'DirectX & Metal', link: '/directx-metal' },
-          { text: 'Web', link: '/web' },
-          { text: 'Ray Tracing', link: '/ray-tracing' },
-          { text: 'Shaders', link: '/shaders' },
-          { text: 'Blender', link: '/blender' },
-          { text: 'Edição de Vídeo', link: '/edicao-de-video' },
-          { text: 'Impressão 3D e Modelagem', link: '/impressao-3d-e-modelagem' }
-        ]
-      }
-    ],
+    outline: {
+      level: 'deep',
+      label: 'Nesta página'
+    },
 
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/etecvav26-3C-07/Portfolio-TCC' }
-    ],
+    editLink: {
+      pattern:
+        'https://github.com/etecvav26-3C-07/Portfolio-TCC/edit/main/produto/docs/:path',
+      text: '📝 Editar esta página no GitHub'
+    },
 
-    lastUpdated: true
+    footer: {
+      message: `${feedback} (rev: ${commitRef})`,
+      copyright: `© ${new Date().getFullYear()} Grupo 07 · Etec Vasco Antonio Venchiarutti`
+    },
+
+    docFooter: {
+      prev: 'Página anterior',
+      next: 'Próxima página'
+    },
+
+    lastUpdated: {
+      text: 'Última atualização'
+    },
+
+    darkModeSwitchLabel: 'Aparência',
+    returnToTopLabel: 'Voltar ao topo',
+    sidebarMenuLabel: 'Menu'
   }
 })

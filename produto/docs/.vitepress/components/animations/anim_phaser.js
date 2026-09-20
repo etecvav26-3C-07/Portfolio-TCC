@@ -1,3 +1,32 @@
+function createTextBadge(THREE, text, color = "#38bdf8", width = 480, height = 70) {
+  const canvas = document.createElement("canvas");
+  canvas.width = width;
+  canvas.height = height;
+  const ctx = canvas.getContext("2d");
+
+  ctx.fillStyle = "rgba(15, 23, 42, 0.9)";
+  ctx.strokeStyle = color;
+  ctx.lineWidth = 2.5;
+
+  ctx.beginPath();
+  ctx.roundRect(4, 4, width - 8, height - 8, 12);
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.font = "bold 20px sans-serif";
+  ctx.fillStyle = "#f8fafc";
+  ctx.textAlign = "center";
+  ctx.textBaseline = "middle";
+  ctx.fillText(text, width / 2, height / 2);
+
+  const texture = new THREE.CanvasTexture(canvas);
+  const spriteMat = new THREE.SpriteMaterial({ map: texture, transparent: true });
+  const sprite = new THREE.Sprite(spriteMat);
+  sprite.scale.set(width / 200, height / 200, 1);
+  sprite.userData = { canvas, ctx, texture, width, height, color };
+  return sprite;
+}
+
 export function createMesh(THREE) {
   const group = new THREE.Group();
 
@@ -63,9 +92,21 @@ export function createMesh(THREE) {
   heroGroup.position.set(-0.9, 0.05, 0);
   group.add(heroGroup);
 
+  // Badges conceituais didáticos
+  const titleBadge = createTextBadge(THREE, "Phaser: Motor de Jogos 2D / 2.5D (Arcade Physics)", "#38bdf8", 480, 60);
+  titleBadge.position.set(0, 1.7, 0);
+  titleBadge.scale.set(2.4, 0.3, 1);
+  group.add(titleBadge);
+
+  const statusBadge = createTextBadge(THREE, "Máquina de Estados: Salto Parabólico + Colisão AABB de Plataforma", "#fbbf24", 510, 60);
+  statusBadge.position.set(0, -1.5, 0);
+  statusBadge.scale.set(2.55, 0.3, 1);
+  group.add(statusBadge);
+
   group.userData = {
     heroGroup,
     coins,
+    statusBadge,
     elapsed: 0
   };
 

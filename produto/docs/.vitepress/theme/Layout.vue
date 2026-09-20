@@ -4,6 +4,7 @@ import { useRoute } from 'vitepress'
 import { watch } from 'vue'
 import { useRecentPages } from './composables/useRecentPages'
 import RecentPages from './composables/RecentPages.vue'
+import ToggleDestaques from './composables/ToggleDestaques.vue'
 
 const { Layout } = DefaultTheme
 
@@ -29,6 +30,9 @@ watch(
 
 <template>
   <Layout>
+    <template #aside-outline-before>
+      <ToggleDestaques />
+    </template>
     <template #aside-outline-after>
       <RecentPages />
     </template>

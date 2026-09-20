@@ -1,3 +1,55 @@
+function createTextBadge(THREE, text, color = "#38bdf8", width = 460, height = 70) {
+  const canvas = document.createElement("canvas");
+  canvas.width = width;
+  canvas.height = height;
+  const ctx = canvas.getContext("2d");
+
+  ctx.fillStyle = "rgba(15, 23, 42, 0.9)";
+  ctx.strokeStyle = color;
+  ctx.lineWidth = 2.5;
+
+  ctx.beginPath();
+  ctx.roundRect(4, 4, width - 8, height - 8, 12);
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.font = "bold 20px sans-serif";
+  ctx.fillStyle = "#f8fafc";
+  ctx.textAlign = "center";
+  ctx.textBaseline = "middle";
+  ctx.fillText(text, width / 2, height / 2);
+
+  const texture = new THREE.CanvasTexture(canvas);
+  const spriteMat = new THREE.SpriteMaterial({ map: texture, transparent: true });
+  const sprite = new THREE.Sprite(spriteMat);
+  sprite.scale.set(width / 200, height / 200, 1);
+  sprite.userData = { canvas, ctx, texture, width, height, color };
+  return sprite;
+}
+
+function updateBadgeText(sprite, text, color = null) {
+  const { canvas, ctx, texture, width, height } = sprite.userData;
+  const strokeColor = color || sprite.userData.color;
+
+  ctx.clearRect(0, 0, width, height);
+  ctx.fillStyle = "rgba(15, 23, 42, 0.9)";
+  ctx.strokeStyle = strokeColor;
+  ctx.lineWidth = 2.5;
+
+  ctx.beginPath();
+  ctx.roundRect(4, 4, width - 8, height - 8, 12);
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.font = "bold 20px sans-serif";
+  ctx.fillStyle = "#f8fafc";
+  ctx.textAlign = "center";
+  ctx.textBaseline = "middle";
+  ctx.fillText(text, width / 2, height / 2);
+
+  texture.needsUpdate = true;
+}
+
 export function createMesh(THREE) {
   const group = new THREE.Group();
   const count = 48;
@@ -23,6 +75,7 @@ export function createMesh(THREE) {
   if (instanced.instanceColor) instanced.instanceColor.needsUpdate = true;
   group.add(instanced);
 
+  // GPU Queue de recepção dos comandos
   const gpu = new THREE.Mesh(
     new THREE.CylinderGeometry(0.55, 0.7, 0.28, 24),
     new THREE.MeshStandardMaterial({
@@ -48,11 +101,25 @@ export function createMesh(THREE) {
   screen.position.set(0, 0.15, -1.35);
   group.add(screen);
 
-  group.userData.instanced = instanced;
-  group.userData.dummy = dummy;
-  group.userData.elapsed = 0;
-  group.userData.count = count;
-  group.userData.lanes = lanes;
+  // Badges conceituais didáticos
+  const titleBadge = createTextBadge(THREE, "Vulkan: Filas Assíncronas (Graphics • Compute • Transfer)", "#38bdf8", 480, 60);
+  titleBadge.position.set(0, 1.7, 0);
+  titleBadge.scale.set(2.4, 0.3, 1);
+  group.add(titleBadge);
+
+  const statusBadge = createTextBadge(THREE, "CPU Threads → Command Buffers → Submissão GPU Sem Trava", "#fbbf24", 480, 60);
+  statusBadge.position.set(0, -1.5, 0);
+  statusBadge.scale.set(2.4, 0.3, 1);
+  group.add(statusBadge);
+
+  group.userData = {
+    instanced,
+    dummy,
+    count,
+    lanes,
+    statusBadge,
+    elapsed: 0
+  };
   return group;
 }
 

@@ -133,9 +133,9 @@ Uma boa página de referência organiza recursos importantes em um índice e em 
 
 Os ícones padronizados ajudam a distinguir o tipo de conteúdo e a facilitar a leitura técnica:
 
-- ✅ Destaque ou recurso recomendado.
-- ⚙️ Ferramentas, bibliotecas e configurações técnicas.
-- ⚙️ Mega Link Dumps e índices aprofundados.
+- ⭐ Destaque ou recurso recomendado.
+- Ferramentas, bibliotecas e configurações técnicas.
+- ↪️ Índices aprofundados e recursos curados.
 
 ## Instalação limpa de softwares no Windows
 
@@ -143,8 +143,8 @@ Para um ambiente de desenvolvimento organizado no Windows, prefira instaladores 
 
 ### Instaladores principais
 
-- **Winget**: gerenciador de pacotes oficial da Microsoft — / [Docs](https://docs.microsoft.com/windows/package-manager/winget/) / [GitHub](https://github.com/microsoft/winget-cli) / [Community](https://github.com/microsoft/winget-pkgs) / [YouTube](https://www.youtube.com/results?search_query=winget) / [Twitter](https://twitter.com/Microsoft)
-- **Chocolatey**: gerenciador de pacotes popular para ferramentas de desenvolvimento — / [Docs](https://docs.chocolatey.org/) / [GitHub](https://github.com/chocolatey/choco) / [Community](https://community.chocolatey.org/) / [YouTube](https://www.youtube.com/results?search_query=chocolatey) / [Twitter](https://twitter.com/chocolateynuget)
+- **Winget**: gerenciador de pacotes oficial da Microsoft — / [Documentação](https://docs.microsoft.com/windows/package-manager/winget/) / [GitHub](https://github.com/microsoft/winget-cli) / [Comunidade](https://github.com/microsoft/winget-pkgs) / [YouTube](https://www.youtube.com/results?search_query=winget)
+- **Chocolatey**: gerenciador de pacotes popular para ferramentas de desenvolvimento — / [Documentação](https://docs.chocolatey.org/) / [GitHub](https://github.com/chocolatey/choco) / [Comunidade](https://community.chocolatey.org/) / [YouTube](https://www.youtube.com/results?search_query=chocolatey)
 
 Esses instaladores ajudam a instalar programas de forma limpa, sem precisar buscar arquivos de instalação manualmente.
 
@@ -403,3 +403,15 @@ Depois de estudar este guia, explore outras páginas do site para aprofundar sua
 - **Blender**: modelagem e animação prática.
 - **OpenGL** e **Vulkan**: APIs de renderização.
 - **Material Educativo**: tutoriais e cursos.
+
+---
+
+## Legenda
+
+Ícones usados em todo o site para identificar rapidamente o tipo de recurso:
+
+| Emoji | Significado |
+|---|---|
+| ⭐ | **Recomendação da Comunidade** — recurso especialmente destacado e validado |
+| 🌐 | **Portal / Índice Externo** — awesome-lists, portais oficiais (Khronos, W3C, MDN, etc.) |
+| ↪️ | **Link de Seção** — navegação rápida para um trecho específico da página |

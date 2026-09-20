@@ -1,37 +1,49 @@
 {
-  "hash": "eb38d371",
-  "configHash": "b98b2717",
-  "lockfileHash": "dcb8dc0b",
-  "browserHash": "67c9880a",
+  "hash": "455b2e6f",
+  "configHash": "f1967175",
+  "lockfileHash": "40b8ca29",
+  "browserHash": "ba7b4805",
   "optimized": {
-    "p5": {
-      "src": "../../../../node_modules/p5/lib/p5.min.js",
-      "file": "p5.js",
-      "fileHash": "9f66039a",
-      "needsInterop": true
-    },
     "three": {
       "src": "../../../../node_modules/three/build/three.module.js",
       "file": "three.js",
-      "fileHash": "d85a021f",
+      "fileHash": "31ec617c",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../../node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress_n_@vue_devtools-api.js",
-      "fileHash": "a8fb2082",
+      "fileHash": "7cf3071d",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../../node_modules/@vueuse/core/dist/index.js",
       "file": "vitepress_n_@vueuse_core.js",
-      "fileHash": "1accee8e",
+      "fileHash": "6278d303",
+      "needsInterop": false
+    },
+    "vitepress > @vueuse/integrations/useFocusTrap": {
+      "src": "../../../../node_modules/@vueuse/integrations/dist/useFocusTrap.js",
+      "file": "vitepress_n_@vueuse_integrations_useFocusTrap.js",
+      "fileHash": "476be67f",
+      "needsInterop": false
+    },
+    "vitepress > mark.js/src/vanilla.js": {
+      "src": "../../../../node_modules/mark.js/src/vanilla.js",
+      "file": "vitepress_n_mark__js_src_vanilla__js.js",
+      "fileHash": "bde1b931",
+      "needsInterop": false
+    },
+    "vitepress > minisearch": {
+      "src": "../../../../node_modules/minisearch/dist/es/index.js",
+      "file": "vitepress_n_minisearch.js",
+      "fileHash": "421f2c1c",
       "needsInterop": false
     },
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "7cd9cbdd",
+      "fileHash": "38846aca",
       "needsInterop": false
     }
   },

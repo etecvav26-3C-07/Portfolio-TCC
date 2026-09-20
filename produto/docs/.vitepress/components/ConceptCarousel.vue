@@ -37,6 +37,7 @@ const sketchMap = {
 const index = ref(0);
 const root = ref(null);
 const viewMode = ref("3d"); // '3d' ou '2d'
+let isCarouselDragging = false;
 let pointerStartX = 0;
 let pointerDelta = 0;
 
@@ -63,19 +64,31 @@ const onKeydown = (event) => {
   }
 };
 
+let pointerStartY = 0;
+
 const onPointerDown = (event) => {
   if (isControlTarget(event)) return;
   if (event.pointerType === "mouse" && event.button !== 0) return;
+  isCarouselDragging = true;
   pointerStartX = event.clientX;
+  pointerStartY = event.clientY;
   pointerDelta = 0;
 };
 
 const onPointerUp = (event) => {
-  if (isControlTarget(event)) return;
-  pointerDelta = event.clientX - pointerStartX;
-  if (Math.abs(pointerDelta) < 48) return;
-  if (pointerDelta < 0) next();
+  if (!isCarouselDragging) return;
+  isCarouselDragging = false;
+  const deltaX = event.clientX - pointerStartX;
+  const deltaY = event.clientY - pointerStartY;
+  // Se o movimento vertical for predominante, é scroll de página, não transição de slide
+  if (Math.abs(deltaY) > Math.abs(deltaX)) return;
+  if (Math.abs(deltaX) < 48) return;
+  if (deltaX < 0) next();
   else prev();
+};
+
+const onPointerCancel = () => {
+  isCarouselDragging = false;
 };
 
 const isControlTarget = (event) => {
@@ -107,6 +120,7 @@ onBeforeUnmount(() => {
     :aria-label="current.title || 'Conceitos de computação gráfica'"
     @pointerdown="onPointerDown"
     @pointerup="onPointerUp"
+    @pointercancel="onPointerCancel"
   >
     <article class="slide" :aria-live="'polite'">
       <div class="copy">

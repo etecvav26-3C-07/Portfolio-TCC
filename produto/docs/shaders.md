@@ -66,50 +66,40 @@ Shaders modernos calculam interações da luz com propriedades físicas reais da
 
 ## As Grandes Linguagens de Shader
 
-- **GLSL (OpenGL Shading Language):** Linguagem base do OpenGL e WebGL. Sintaxe muito próxima de C.
-- **HLSL (High-Level Shading Language):** Linguagem proprietária da Microsoft para DirectX (D3D11, D3D12) e Xbox.
-- **WGSL (WebGPU Shading Language):** A linguagem padrão da W3C para WebGPU no navegador, segura e fortemente tipada.
-- **MSL (Metal Shading Language):** Baseada em C++14, desenvolvida pela Apple para iOS, iPadOS e macOS.
-- **SPIR-V:** Representação intermediária binária padronizada pela Khronos. Permite escrever shaders em GLSL ou HLSL e compilá-los para um formato único que o driver da GPU consome diretamente.
+- [GLSL (OpenGL Shading Language)](https://www.khronos.org/opengl/wiki/OpenGL_Shading_Language) — linguagem base do OpenGL e WebGL, sintaxe próxima de C — / [Spec PDF](https://registry.khronos.org/OpenGL/specs/gl/GLSLangSpec.4.60.pdf) / [Wiki](https://www.khronos.org/opengl/wiki/OpenGL_Shading_Language)
+- [HLSL (High-Level Shading Language)](https://learn.microsoft.com/windows/win32/direct3dhlsl/dx-graphics-hlsl) — linguagem proprietária da Microsoft para DirectX (D3D11, D3D12) e Xbox — / [Documentação](https://learn.microsoft.com/windows/win32/direct3dhlsl/dx-graphics-hlsl) / [Referência](https://learn.microsoft.com/windows/win32/direct3dhlsl/dx-graphics-hlsl-reference)
+- 🌐 [WGSL (WebGPU Shading Language)](https://www.w3.org/TR/WGSL/) — padrão da W3C para WebGPU no navegador, segura e fortemente tipada — / [Especificação](https://www.w3.org/TR/WGSL/) / [Tour](https://google.github.io/tour-of-wgsl/)
+- [MSL (Metal Shading Language)](https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf) — baseada em C++14, desenvolvida pela Apple para iOS, iPadOS e macOS — / [Spec PDF](https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf) / [Documentação](https://developer.apple.com/documentation/metal)
+- [SPIR-V](https://www.khronos.org/spir/) — representação intermediária binária da Khronos; recebe GLSL ou HLSL e gera um binário único para o driver consumir — / [Especificação](https://registry.khronos.org/SPIR-V/) / [GitHub Tools](https://github.com/KhronosGroup/SPIRV-Tools)
 
 ---
 
-## Links Rápidos
+## Recursos
 
-- [The Book of Shaders](https://thebookofshaders.com/) — o guia visual definitivo para iniciantes
-- [Shadertoy](https://www.shadertoy.com/) — comunidade global para escrever e compartilhar fragment shaders no browser
-- [Khronos GLSL Reference](https://registry.khronos.org/OpenGL/specs/gl/GLSLangSpec.4.60.pdf) — especificação oficial do GLSL 4.6
-- [Microsoft HLSL Guide](https://learn.microsoft.com/windows/win32/direct3dhlsl/dx-graphics-hlsl) — documentação do HLSL no DirectX
-- [W3C WGSL Specification](https://www.w3.org/TR/WGSL/) — especificação oficial do WebGPU Shading Language
-
----
-
-## ⚙️  MEGA LINK DUMP - Shaders & GLSL/HLSL/WGSL
-
-### ⚙️ Playgrounds Online e Editores
+### Playgrounds Online e Editores
 - [Shadertoy](https://www.shadertoy.com/) — / [Explorar Shaders](https://www.shadertoy.com/browse) / [Novo Shader](https://www.shadertoy.com/new) / [Documentação](https://www.shadertoy.com/howto) / [Fórum](https://www.shadertoy.com/)
-- [GLSL Sandbox](https://glslsandbox.com/) — editor minimalista de fragment shaders — / [Website](https://glslsandbox.com/) / [GitHub](https://github.com/mrdoob/glsl-sandbox)
-- [VertexShaderArt](https://www.vertexshaderart.com/) — criação musical e visual com vertex shaders — / [Website](https://www.vertexshaderart.com/) / [Galeria](https://www.vertexshaderart.com/art)
-- [ComputeToy](https://computetoy.org/) — playground para compute shaders WebGPU em tempo real — / [Website](https://computetoy.org/) / [GitHub](https://github.com/compute-toy/compute-toy)
-- [Kitsunec Studio WebGPU](https://cohost.org/) — testador de WGSL interativo no navegador — / [WebGPU Samples](https://webgpu.github.io/webgpu-samples/)
+- [GLSL Sandbox](https://glslsandbox.com/) — editor minimalista de fragment shaders — / [Site](https://glslsandbox.com/) / [GitHub](https://github.com/mrdoob/glsl-sandbox)
+- [VertexShaderArt](https://www.vertexshaderart.com/) — criação musical e visual com vertex shaders — / [Site](https://www.vertexshaderart.com/) / [Galeria](https://www.vertexshaderart.com/art)
+- [ComputeToy](https://compute.toys/) — playground para compute shaders WebGPU em tempo real — / [Site](https://compute.toys/) / [GitHub](https://github.com/compute-toy)
+- [WebGPU Samples (Google)](https://webgpu.github.io/webgpu-samples/) — testador de WGSL e exemplos interativos no navegador — / [WebGPU Samples](https://webgpu.github.io/webgpu-samples/) / [GitHub](https://github.com/webgpu/webgpu-samples)
 
-### ⚙️ Livros, Tutoriais e Cursos
-- [The Book of Shaders](https://thebookofshaders.com/) — / [Livro Online](https://thebookofshaders.com/) / [GitHub](https://github.com/patriciogonzalezvivo/thebookofshaders) / [Glossário GLSL](https://thebookofshaders.com/glossary/) / [Exemplos](https://github.com/Book-of-Shaders-Examples)
-- [Inigo Quilez Articles](https://iquilezles.org/articles/) — matemática, SDF (Signed Distance Fields), ruído e iluminação — / [Artigos Técnicos](https://iquilezles.org/articles/) / [SDF 3D Functions](https://iquilezles.org/articles/distfunctions/) / [YouTube](https://www.youtube.com/c/InigoQuilez)
+### Livros, Tutoriais e Cursos
+- [The Book of Shaders](https://thebookofshaders.com/) — / [Livro Online](https://thebookofshaders.com/) / [GitHub](https://github.com/patriciogonzalezvivo/thebookofshaders) / [Glossário GLSL](https://thebookofshaders.com/glossary/) / [Exemplos](https://github.com/patriciogonzalezvivo/thebookofshaders)
+- [Inigo Quilez Articles](https://iquilezles.org/articles/) — matemática, SDF (Signed Distance Fields), ruído e iluminação — / [Artigos Técnicos](https://iquilezles.org/articles/) / [SDF 3D Functions](https://iquilezles.org/articles/distfunctions/) / [YouTube](https://www.youtube.com/@InigoQuilez)
 - [LearnOpenGL: Shaders](https://learnopengl.com/Getting-started/Shaders) — / [Tutorial Básico](https://learnopengl.com/Getting-started/Shaders) / [PBR Shading](https://learnopengl.com/PBR/Theory) / [Compute Shaders](https://learnopengl.com/Guest-Articles/2022/Compute-Shaders/Introduction)
-- [Ronja's Shader Tutorials](https://www.ronja-tutorials.com/) — shaders de alta qualidade em HLSL/Unity — / [Website](https://www.ronja-tutorials.com/) / [Patreon](https://www.patreon.com/ronja_tutorials)
+- [Ronja's Shader Tutorials](https://www.ronja-tutorials.com/) — shaders de alta qualidade em HLSL/Unity — / [Site](https://www.ronja-tutorials.com/)
 - [Catlike Coding: Custom SRP & Shaders](https://catlikecoding.com/) — / [Tutoriais Unity/HLSL](https://catlikecoding.com/unity/tutorials/) / [Rendering Pipeline](https://catlikecoding.com/unity/tutorials/rendering/)
-- [Shader-Learn](https://shader-learn.com/) — plataforma interativa guiada para aprendizado de GLSL — / [Website](https://shader-learn.com/)
+- [Shader-Learn](https://shader-learn.com/) — plataforma interativa guiada para aprendizado de GLSL — / [Site](https://shader-learn.com/)
 
-### ⚙️ Ferramentas, Compiladores e Depuradores
+### Ferramentas, Compiladores e Depuradores
 - [glslang](https://github.com/KhronosGroup/glslang) — validador e compilador oficial de GLSL/HLSL para SPIR-V — / [GitHub](https://github.com/KhronosGroup/glslang)
 - [SPIRV-Cross](https://github.com/KhronosGroup/SPIRV-Cross) — tradutor de SPIR-V para GLSL, HLSL, MSL e C++ — / [GitHub](https://github.com/KhronosGroup/SPIRV-Cross)
 - [Naga (Rust)](https://github.com/gfx-rs/wgpu/tree/master/naga) — tradutor universal de shaders (WGSL, SPV, MSL, HLSL, GLSL) — / [GitHub](https://github.com/gfx-rs/wgpu)
 - [Shaderc (Google)](https://github.com/google/shaderc) — pacote com wrappers em torno de glslang e spirv-tools — / [GitHub](https://github.com/google/shaderc)
-- [RenderDoc](https://renderdoc.org/) — depurador gráfico profissional de frames e shaders — / [Website](https://renderdoc.org/) / [GitHub](https://github.com/baldurk/renderdoc)
+- [RenderDoc](https://renderdoc.org/) — depurador gráfico profissional de frames e shaders — / [Site](https://renderdoc.org/) / [GitHub](https://github.com/baldurk/renderdoc)
 - [Spector.js](https://spector.babylonjs.com/) — extensão de navegador para inspecionar comandos WebGL e shaders — / [GitHub](https://github.com/BabylonJS/Spector.js)
 
-### ⚙️ Comunidades de Shaders
+### Comunidades de Shaders
 - [Reddit r/shaders](https://www.reddit.com/r/shaders/) — / [Comunidade](https://www.reddit.com/r/shaders/)
 - [Reddit r/shadertoy](https://www.reddit.com/r/shadertoy/) — / [Comunidade](https://www.reddit.com/r/shadertoy/)
 - [Discord Graphics Programming](https://discord.gg/graphicsprogramming) — o maior servidor de programação gráfica do Discord

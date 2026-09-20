@@ -1,6 +1,6 @@
 <template>
   <div class="three-panel">
-    <div class="canvas-frame" @pointerdown="onPointerDown" @pointermove="onPointerMove" @pointerup="onPointerUp" @pointerleave="onPointerUp">
+    <div class="canvas-frame" @pointerdown="onPointerDown" @pointermove="onPointerMove" @pointerup="onPointerUp" @pointerleave="onPointerUp" @pointercancel="onPointerUp">
       <canvas ref="canvas" class="animation-canvas"></canvas>
       <div class="three-overlay">
         <span class="type-badge">🌐 3D Interativo • Arraste para Girar</span>
@@ -345,9 +345,15 @@ const setupScene = () => {
   scene.add(particlesMesh);
 };
 
+let buildToken = 0;
 const buildMesh = async (topic) => {
+  const token = ++buildToken;
   clearMesh();
   const loaded = await loadModuleFor(topic);
+  if (token !== buildToken) {
+    if (loaded?.object) disposeObject(loaded.object);
+    return;
+  }
   if (loaded?.object && scene) {
     mesh = loaded.object;
     updateFn = loaded.update || null;
@@ -367,6 +373,10 @@ const buildMesh = async (topic) => {
 watch(
   () => props.topic,
   (topic) => {
+    isDragging = false;
+    resetOrientation();
+    userHasInteracted = false;
+    isWireframe.value = false;
     if (scene) buildMesh(topic);
   }
 );

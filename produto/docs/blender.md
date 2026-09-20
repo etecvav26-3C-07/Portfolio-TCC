@@ -1132,7 +1132,7 @@ Solte o mouse.
 ### Resultado
 
 ```text
-Viewport ↔ Outliner
+Viewport <-> Outliner
 ```
 
 Os dois editores trocam de lugar.

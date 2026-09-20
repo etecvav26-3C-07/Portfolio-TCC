@@ -55,43 +55,33 @@ Testar cada raio contra milhões de triângulos tornaria o processo inviável. A
 
 ---
 
-## Links Rápidos
+## Recursos
 
-- [Ray Tracing in One Weekend](https://raytracing.github.io/) — melhor ponto de partida prático
-- [Scratchapixel: Ray Tracing](https://www.scratchapixel.com/) — fundamentos matemáticos explicados do zero
-- [PBRT Book (Physically Based Rendering)](https://pbr-book.org/) — o livro padrão da indústria de renderização
-- [NVIDIA Ray Tracing Gems](https://developer.nvidia.com/ray-tracing-gems) — técnicas avançadas em tempo real
-- [Intel Embree](https://www.embree.org/) — biblioteca líder em kernels de ray tracing de alta performance
-
----
-
-## ⚙️  MEGA LINK DUMP - Ray Tracing & Rendering
-
-### ⚙️ Livros e Tutoriais Gratuitos
-- [Ray Tracing in One Weekend](https://raytracing.github.io/) — / [GitHub](https://github.com/RayTracing/raytracing.github.io) / [PDF](https://raytracing.github.io/books/RayTracingInOneWeekend.html) / [Online Book](https://raytracing.github.io/) / [C++ Code](https://github.com/RayTracing/raytracing.github.io/releases)
+### Livros e Tutoriais Gratuitos
+- [Ray Tracing in One Weekend](https://raytracing.github.io/) — / [GitHub](https://github.com/RayTracing/raytracing.github.io) / [PDF](https://raytracing.github.io/books/RayTracingInOneWeekend.html) / [Livro Online](https://raytracing.github.io/) / [Código C++](https://github.com/RayTracing/raytracing.github.io/releases)
 - [Ray Tracing: The Next Week](https://raytracing.github.io/books/RayTracingTheNextWeek.html) — BVH, texturas, perlin noise e volumes — / [Livro](https://raytracing.github.io/books/RayTracingTheNextWeek.html) / [GitHub](https://github.com/RayTracing/raytracing.github.io)
 - [Ray Tracing: The Rest of Your Life](https://raytracing.github.io/books/RayTracingTheRestOfYourLife.html) — Monte Carlo, PDF e importância amostral — / [Livro](https://raytracing.github.io/books/RayTracingTheRestOfYourLife.html)
-- [PBRT - Physically Based Rendering (3ª e 4ª ed)](https://pbr-book.org/) — / [Livro Completo Grátis](https://pbr-book.org/) / [Código Fonte GitHub](https://github.com/mmp/pbrt-v4) / [Documentação](https://pbr-book.org/4ed/index)
+- [PBRT - Physically Based Rendering (3ª e 4ª ed)](https://pbr-book.org/) — / [Livro Completo Grátis](https://pbr-book.org/) / [Código-fonte no GitHub](https://github.com/mmp/pbrt-v4) / [Documentação](https://pbr-book.org/4ed/index)
 - [Scratchapixel 3.0](https://www.scratchapixel.com/) — / [Visão Geral](https://www.scratchapixel.com/index.html) / [Aceleração BVH](https://www.scratchapixel.com/lessons/3d-basic-rendering/introduction-acceleration-structures) / [Matemática de Raios](https://www.scratchapixel.com/lessons/3d-basic-rendering/minimal-ray-tracer-rendering-simple-shapes)
-- [SmallPT: 99 linhas de C++ Path Tracer](https://www.kevinbeason.com/smallpt/) — / [Website](https://www.kevinbeason.com/smallpt/) / [Código C++](https://www.kevinbeason.com/smallpt/) / [Explicativo](https://docs.google.com/presentation/d/1_A-49K6aT2ghOzke_J6m_F1eT_A9k_vW/present)
+- [SmallPT: 99 linhas de C++ Path Tracer](https://www.kevinbeason.com/smallpt/) — / [Site](https://www.kevinbeason.com/smallpt/) / [Código C++](https://www.kevinbeason.com/smallpt/) / [Explicativo](https://docs.google.com/presentation/d/1_A-49K6aT2ghOzke_J6m_F1eT_A9k_vW/present)
 - [Computer Graphics from Scratch](https://gabrielgambetta.com/computer-graphics-from-scratch/) — / [Capítulo Raytracer](https://gabrielgambetta.com/computer-graphics-from-scratch/02-basic-raytracing.html) / [Demonstração Web](https://gabrielgambetta.com/computer-graphics-from-scratch/demos/raytracer-01.html)
 
-### ⚙️ Motores de Produção e Pesquisa
-- [Mitsuba 3](https://www.mitsuba-renderer.org/) — renderizador pesquisável e diferenciável — / [Website](https://www.mitsuba-renderer.org/) / [GitHub](https://github.com/mitsuba-renderer/mitsuba3) / [Docs](https://mitsuba.readthedocs.io/)
-- [LuxCoreRender](https://luxcorerender.org/) — motor open source de iluminação global e path tracing — / [Website](https://luxcorerender.org/) / [GitHub](https://github.com/LuxCoreRender/LuxCore) / [Fórum](https://forums.luxcorerender.org/)
-- [Cycles (Blender)](https://www.cycles-renderer.org/) — motor de produção baseado em física do Blender — / [Docs](https://docs.blender.org/manual/en/latest/render/cycles/) / [Código Fonte](https://github.com/blender/blender/tree/main/intern/cycles)
-- [MoonRay (DreamWorks)](https://openmoonray.org/) — renderizador de animações de Hollywood open source — / [Website](https://openmoonray.org/) / [GitHub](https://github.com/dreamworksanimation/openmoonray) / [Docs](https://openmoonray.org/documentation)
-- [Appleseed](https://appleseedhq.net/) — renderizador baseado em física para animação e VFX — / [Website](https://appleseedhq.net/) / [GitHub](https://github.com/appleseedhq/appleseed)
+### Motores de Produção e Pesquisa
+- [Mitsuba 3](https://www.mitsuba-renderer.org/) — renderizador pesquisável e diferenciável — / [Site](https://www.mitsuba-renderer.org/) / [GitHub](https://github.com/mitsuba-renderer/mitsuba3) / [Documentação](https://mitsuba.readthedocs.io/)
+- [LuxCoreRender](https://luxcorerender.org/) — motor open source de iluminação global e path tracing — / [Site](https://luxcorerender.org/) / [GitHub](https://github.com/LuxCoreRender/LuxCore) / [Fórum](https://forums.luxcorerender.org/)
+- [Cycles (Blender)](https://www.cycles-renderer.org/) — motor de produção baseado em física do Blender — / [Documentação](https://docs.blender.org/manual/en/latest/render/cycles/) / [Código Fonte](https://github.com/blender/blender/tree/main/intern/cycles)
+- [MoonRay (DreamWorks)](https://openmoonray.org/) — renderizador de animações de Hollywood open source — / [Site](https://openmoonray.org/) / [GitHub](https://github.com/dreamworksanimation/openmoonray) / [Documentação](https://openmoonray.org/documentation)
+- [Appleseed](https://appleseedhq.net/) — renderizador baseado em física para animação e VFX — / [Site](https://appleseedhq.net/) / [GitHub](https://github.com/appleseedhq/appleseed)
 - [Tungsten](https://github.com/tunabrain/tungsten) — renderizador de alta performance em C++11 — / [GitHub](https://github.com/tunabrain/tungsten)
 
-### ⚙️ APIs e Aceleração de Hardware em Tempo Real
-- [NVIDIA RTX & DXR Tutorials](https://developer.nvidia.com/rtx/ray-tracing) — / [Guia Oficial](https://developer.nvidia.com/rtx/ray-tracing) / [Tutorial DXR](https://developer.nvidia.com/rtx/raytracing/dxr/DX12-Raytracing-tutorial-Part-1) / [GitHub Samples](https://github.com/NVIDIA-RTX/RayTracingBaseWalkthrough)
+### APIs e Aceleração de Hardware em Tempo Real
+- [NVIDIA RTX & DXR Tutorials](https://developer.nvidia.com/rtx/ray-tracing) — / [Guia Oficial](https://developer.nvidia.com/rtx/ray-tracing) / [Tutorial DXR](https://developer.nvidia.com/rtx/raytracing/dxr/DX12-Raytracing-tutorial-Part-1) / [GitHub Samples](https://github.com/microsoft/DirectX-Graphics-Samples)
 - [Vulkan Ray Tracing Tutorial](https://nvpro-samples.github.io/vk_raytracing_tutorial_KHR/) — / [Tutorial Oficial](https://nvpro-samples.github.io/vk_raytracing_tutorial_KHR/) / [GitHub](https://github.com/nvpro-samples/vk_raytracing_tutorial_KHR)
-- [Intel Embree](https://www.embree.org/) — kernels otimizados para SSE, AVX, AVX-512 e ARM NEON — / [Website](https://www.embree.org/) / [GitHub](https://github.com/embree/embree) / [Documentação](https://www.embree.org/documentation.html)
-- [Intel Open Image Denoise (OIDN)](https://www.openimagedenoise.org/) — biblioteca de IA para desruído de traçado de raios — / [Website](https://www.openimagedenoise.org/) / [GitHub](https://github.com/OpenImageDenoise/oidn)
-- [NVIDIA OptiX SDK](https://developer.nvidia.com/optix) — framework para construção de ray tracers em GPU — / [Website](https://developer.nvidia.com/optix) / [Guia de Programação](https://raytracing-docs.nvidia.com/optix8/guide/index.html)
+- [Intel Embree](https://www.embree.org/) — kernels otimizados para SSE, AVX, AVX-512 e ARM NEON — / [Site](https://www.embree.org/) / [GitHub](https://github.com/embree/embree) / [Documentação](https://www.embree.org/documentation.html)
+- [Intel Open Image Denoise (OIDN)](https://www.openimagedenoise.org/) — biblioteca de IA para desruído de traçado de raios — / [Site](https://www.openimagedenoise.org/) / [GitHub](https://github.com/OpenImageDenoise/oidn)
+- [NVIDIA OptiX SDK](https://developer.nvidia.com/optix) — framework para construção de ray tracers em GPU — / [Site](https://developer.nvidia.com/optix) / [Guia de Programação](https://raytracing-docs.nvidia.com/optix8/guide/index.html)
 
-### ⚙️ Papers e Recursos Avançados
-- [NVIDIA Ray Tracing Gems I & II (PDFs Gratuitos)](https://developer.nvidia.com/ray-tracing-gems) — / [RT Gems 1](https://www.realtimerendering.com/raytracinggems/rtg/index.html) / [RT Gems 2](https://www.realtimerendering.com/raytracinggems/rtg2/index.html) / [Código Fonte GitHub](https://github.com/Apress/ray-tracing-gems)
+### Papers e Recursos Avançados
+- [NVIDIA Ray Tracing Gems I & II (PDFs Gratuitos)](https://www.realtimerendering.com/raytracinggems/) — / [RT Gems 1](https://www.realtimerendering.com/raytracinggems/rtg/index.html) / [RT Gems 2](https://www.realtimerendering.com/raytracinggems/rtg2/index.html) / [Código-fonte no GitHub](https://github.com/Apress/ray-tracing-gems)
 - [Kajiya 1986 - The Rendering Equation](https://www.cs.cmu.edu/afs/cs/academic/class/15462-s15/www/lec_slides/kajiya86.pdf) — o paper seminal de iluminação global
 - [Whitted 1980 - An Improved Illumination Model for Shaded Display](https://dl.acm.org/doi/10.1145/358876.358882) — introdução ao ray tracing recursivo

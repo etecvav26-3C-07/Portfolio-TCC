@@ -182,6 +182,7 @@ export function update(mesh, dt) {
   d.coreMesh.rotation.y += dt * 0.25;
 
   // Calcula a posição mundial do vértice em foco
+  d.coreMesh.updateMatrixWorld(true);
   const worldFocus = d.focusOrigin.clone().applyMatrix4(d.coreMesh.matrixWorld);
   const worldNormal = d.focusNormal.clone().applyQuaternion(d.coreMesh.quaternion).normalize();
 

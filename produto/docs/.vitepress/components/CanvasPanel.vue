@@ -54,8 +54,9 @@ const resizeCanvas = () => {
   if (!canvas.value) return;
   const container = canvas.value.parentElement;
   const dpr = Math.min(window.devicePixelRatio || 1, 2);
-  const w = container.clientWidth;
-  const h = Math.min(props.height, Math.max(220, w * 0.52));
+  const w = container.clientWidth || 300;
+  const containerH = container.clientHeight;
+  const h = containerH > 100 ? containerH : Math.min(props.height, Math.max(220, w * 0.52));
   canvas.value.width = w * dpr;
   canvas.value.height = h * dpr;
   canvas.value.style.width = w + "px";
@@ -114,6 +115,14 @@ watch(
     isLocalPlaying.value = val;
     if (val && pageVisible) startLoop();
     else stopLoop();
+  }
+);
+
+watch(
+  () => props.sketch,
+  () => {
+    startTime = 0;
+    lastTime = 0;
   }
 );
 

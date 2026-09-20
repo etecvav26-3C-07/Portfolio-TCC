@@ -1,0 +1,113 @@
+/**
+ * Render Index — Estilos Globais inspirados no FMHY (Free Media Heck Yeah)
+ * Design moderno com foco em indexação densa, legibilidade e micro-interações.
+ */
+
+:root {
+  --vp-c-brand-1: #38bdf8;
+  --vp-c-brand-2: #0284c7;
+  --vp-c-brand-3: #0369a1;
+  --vp-c-brand-soft: rgba(56, 189, 248, 0.12);
+}
+
+/* Espaçamento aprimorado para listas de recursos */
+.vp-doc ul {
+  padding-left: 1.25rem;
+}
+
+.vp-doc li {
+  margin: 8px 0;
+  line-height: 1.65;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+/* Item principal (primeiro link da linha) */
+.vp-doc li > a:first-of-type {
+  font-weight: 600;
+  color: var(--vp-c-brand-1);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.vp-doc li > a:first-of-type:hover {
+  border-bottom-color: var(--vp-c-brand-1);
+}
+
+/* Links secundários simples e discretos (sem formato de bolha) */
+.vp-doc li a:not(:first-of-type) {
+  font-size: 0.82rem;
+  color: var(--vp-c-text-2);
+  text-decoration: none;
+  padding: 0 3px;
+  border-radius: 3px;
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+.vp-doc li a:not(:first-of-type):hover {
+  color: var(--vp-c-brand-1);
+  text-decoration: underline;
+  background-color: var(--vp-c-brand-soft);
+}
+
+/* Realce sutil para itens com recomendação da comunidade (⭐) */
+.vp-doc li.has-destaque {
+  border-left: 2px solid #f59e0b;
+  padding-left: 8px;
+  background: rgba(245, 158, 11, 0.04);
+  border-radius: 0 4px 4px 0;
+}
+
+/* Modo filtro ativo: oculta itens não destacados */
+body.filter-destaques-active .vp-doc li:not(.has-destaque) {
+  display: none !important;
+}
+
+/* Widget de controle do filtro na barra lateral */
+.destaques-widget {
+  margin: 1rem 0;
+  padding: 0.75rem 1rem;
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-gutter);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.destaques-widget-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+}
+
+.destaques-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  background: var(--vp-c-bg-elv);
+  border: 1px solid var(--vp-c-divider);
+  color: var(--vp-c-text-2);
+  transition: all 0.2s ease;
+}
+
+.destaques-toggle-btn:hover {
+  color: #d97706;
+  border-color: #f59e0b;
+}
+
+.destaques-toggle-btn.active {
+  background: rgba(245, 158, 11, 0.12);
+  color: #d97706;
+  border-color: #f59e0b;
+  font-weight: 600;
+}

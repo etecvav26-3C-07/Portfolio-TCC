@@ -188,42 +188,32 @@ int main() {
 
 ---
 
-## Links Rápidos
+## Recursos
 
-- [LearnOpenGL](https://learnopengl.com/) — o melhor e mais conceituado tutorial de OpenGL do mundo
-- [Khronos OpenGL Registry](https://registry.khronos.org/OpenGL/) — especificações oficiais de todas as versões do OpenGL e extensões
-- [OpenGL Wiki Oficial](https://www.khronos.org/opengl/wiki/) — referência técnica enciclopédica
-- [GLFW](https://www.glfw.org/) — biblioteca padrão para criação de janelas, contexto OpenGL e inputs
-- [GLM (OpenGL Mathematics)](https://github.com/g-truc/glm) — biblioteca de cabeçalho único para vetores e matrizes
-- [WebGL Fundamentals](https://webglfundamentals.org/) — aprenda o pipeline WebGL a fundo
-
----
-
-## ⚙️  MEGA LINK DUMP - OpenGL Ecosystem
-
-### ⚙️ Tutoriais, Cursos e Livros
+### Tutoriais, Cursos e Livros
 - [LearnOpenGL (Joey de Vries)](https://learnopengl.com/) — / [GitHub do Livro](https://github.com/JoeyDeVries/LearnOpenGL) / [Começando](https://learnopengl.com/Getting-started/Hello-Window) / [Iluminação](https://learnopengl.com/Lighting/Basic-Lighting) / [Model Loading](https://learnopengl.com/Model-Loading/Assimp) / [Advanced OpenGL](https://learnopengl.com/Advanced-OpenGL/Depth-testing) / [PBR](https://learnopengl.com/PBR/Theory)
 - [Open.GL (Alexander Overvoorde)](https://open.gl/) — introdução concisa e direta ao OpenGL moderno — / [Tutorial](https://open.gl/) / [Contextos](https://open.gl/context) / [Buffers](https://open.gl/drawing) / [Shaders](https://open.gl/shaders)
-- [OGLDev: Modern OpenGL Tutorials (Etay Meiri)](https://ogldev.org/) — dezenas de tutoriais cobrindo técnicas de AAA games — / [Website](https://ogldev.org/) / [Shadow Mapping](https://ogldev.org/www/tutorial24/tutorial24.html) / [Skeletal Animation](https://ogldev.org/www/tutorial38/tutorial38.html)
+- [OGLDev: Modern OpenGL Tutorials (Etay Meiri)](https://ogldev.org/) — dezenas de tutoriais cobrindo técnicas de AAA games — / [Site](https://ogldev.org/) / [Shadow Mapping](https://ogldev.org/) / [Skeletal Animation](https://ogldev.org/)
 - [The Cherno - OpenGL C++ Playlist](https://www.youtube.com/playlist?list=PLlrATfBNZ98foTJPJ_Ev03o2oq3-GGOS2) — excelente série em vídeo passo a passo em C++ — / [YouTube Playlist](https://www.youtube.com/playlist?list=PLlrATfBNZ98foTJPJ_Ev03o2oq3-GGOS2)
-- [OpenGL SuperBible (7ª Edição)](https://www.openglsuperbible.com/) — / [Website Oficial](https://www.openglsuperbible.com/) / [Código Fonte GitHub](https://github.com/openglsuperbible/sb7code)
-- [Computer Graphics: Principles and Practice](https://cgpp.net/) — / [Website](https://cgpp.net/) / [Exemplos de Código](https://github.com/foolmoron/cgpp)
+- [OpenGL SuperBible (7ª Edição)](https://www.openglsuperbible.com/) — / [Website Oficial](https://www.openglsuperbible.com/) / [Código-fonte no GitHub](https://github.com/openglsuperbible/sb7code)
+- [Computer Graphics: Principles and Practice](https://cgpp.net/) — / [Site](https://cgpp.net/) / [Exemplos de Código](https://github.com/foolmoron/cgpp)
 
-### ⚙️ Bibliotecas Essenciais em C/C++
+### Bibliotecas Essenciais em C/C++
 - [GLFW](https://www.glfw.org/) — gerenciamento de janelas multiplataforma e contexto OpenGL — / [Download](https://www.glfw.org/download.html) / [Documentação](https://www.glfw.org/docs/latest/) / [GitHub](https://github.com/glfw/glfw)
 - [GLAD](https://glad.dav1d.de/) — gerador de carregadores de funções de extensões OpenGL e Vulkan — / [Gerador Web](https://glad.dav1d.de/) / [GitHub](https://github.com/Dav1dde/glad)
-- [GLEW](https://glew.sourceforge.net/) — The OpenGL Extension Wrangler Library (clássico) — / [Website](https://glew.sourceforge.net/) / [GitHub](https://github.com/nigels-com/glew)
+- [GLEW](https://glew.sourceforge.net/) — The OpenGL Extension Wrangler Library (clássico) — / [Site](https://glew.sourceforge.net/) / [GitHub](https://github.com/nigels-com/glew)
 - [GLM](https://github.com/g-truc/glm) — matemática gráfica baseada na especificação do GLSL — / [GitHub](https://github.com/g-truc/glm) / [Manual](https://github.com/g-truc/glm/blob/master/manual.md)
 - [stb_image](https://github.com/nothings/stb) — decodificador leve de imagens (PNG, JPEG, etc.) em arquivo único de cabeçalho C — / [GitHub](https://github.com/nothings/stb)
-- [Assimp (Open Asset Import Library)](https://www.assimp.org/) — importador universal de mais de 40 formatos 3D (FBX, OBJ, glTF, Collada) — / [Website](https://www.assimp.org/) / [GitHub](https://github.com/assimp/assimp)
+- [Assimp (Open Asset Import Library)](https://www.assimp.org/) — importador universal de mais de 40 formatos 3D (FBX, OBJ, glTF, Collada) — / [Site](https://www.assimp.org/) / [GitHub](https://github.com/assimp/assimp)
 - [Dear ImGui](https://github.com/ocornut/imgui) — biblioteca GUI imediata para criação de interfaces de depuração em OpenGL — / [GitHub](https://github.com/ocornut/imgui) / [Demonstração WebAssembly](https://pthom.github.io/imgui_manual_online/manual/imgui_manual.html)
 
-### ⚙️ Ferramentas de Depuração e Inspeção
-- [RenderDoc](https://renderdoc.org/) — captura e análise quadro a quadro de chamadas de desenho, buffers e texturas — / [Website](https://renderdoc.org/) / [GitHub](https://github.com/baldurk/renderdoc)
+### Ferramentas de Depuração e Inspeção
+- [RenderDoc](https://renderdoc.org/) — captura e análise quadro a quadro de chamadas de desenho, buffers e texturas — / [Site](https://renderdoc.org/) / [GitHub](https://github.com/baldurk/renderdoc)
 - [NVIDIA Nsight Graphics](https://developer.nvidia.com/nsight-graphics) — ferramenta de profiling avançado para GPUs NVIDIA — / [Portal](https://developer.nvidia.com/nsight-graphics)
 - [GLIntercept](https://github.com/dtrebilco/glintercept) — interceptador de chamadas OpenGL para depuração em tempo de execução — / [GitHub](https://github.com/dtrebilco/glintercept)
 
-### ⚙️ Comunidades e Fóruns
-- [Fórum Oficial Khronos OpenGL](https://community.khronos.org/c/opengl/2) — discussões oficiais sobre especificações e bugs
-- [Reddit r/opengl](https://www.reddit.com/r/opengl/) — comunidade ativa de desenvolvedores compartilhando projetos e dúvidas
-- [Stack Overflow OpenGL Tag](https://stackoverflow.com/questions/tagged/opengl) — mais de 60.000 perguntas e respostas técnicas
+### Comunidades e Fóruns
+- [Fórum Oficial Khronos OpenGL](https://community.khronos.org/c/opengl/2) — discussões oficiais sobre especificações e bugs — / [Fórum](https://community.khronos.org/c/opengl/2)
+- [Reddit r/opengl](https://www.reddit.com/r/opengl/) — comunidade ativa de desenvolvedores — / [Comunidade](https://www.reddit.com/r/opengl/) / [Top Posts](https://www.reddit.com/r/opengl/top/)
+- [Stack Overflow OpenGL](https://stackoverflow.com/questions/tagged/opengl) — mais de 60.000 perguntas e respostas técnicas — / [Tag](https://stackoverflow.com/questions/tagged/opengl)
+- [Discord Graphics Programming](https://discord.gg/graphicsprogramming) — servidor com canais dedicados a OpenGL, Vulkan e GLSL — / [Entrar](https://discord.gg/graphicsprogramming)
